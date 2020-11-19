@@ -26,10 +26,10 @@ header,
 main{
     width: 96%;
     max-width: 840px;
-    min-width: 290px;
+    min-width: 280px;
     margin: 0 auto;
     overflow: hidden;
-    padding: 0 1rem 0 1rem;
+    padding: 0 1rem;
 }
 .logo{
     float: left;
@@ -40,6 +40,15 @@ nav{
 }
 .biografia{
     margin-top: 1.875rem;
+}
+@media screen and (max-width: 310px){
+    header,
+    main{
+        padding: 0 .8rem;
+    }
+    .biografia{
+        margin: 1rem 0 .6rem;
+    }
 }
 
 /* 
@@ -90,4 +99,9 @@ a.menu:hover{
 }
 p{
     padding-bottom: 1rem;
+}
+@media screen and (max-width: 310px){
+    a.email{
+        font-size: 1.3rem;
+    }
 }

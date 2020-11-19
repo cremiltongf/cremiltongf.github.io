@@ -33,8 +33,7 @@ main{
 }
 .logo{
     float: left;
-    width: 90px;
-    max-height: 100px;
+    max-height: 60px;
 }
 nav{
     float: right;
@@ -65,18 +64,15 @@ p{
     font-size: 1.5rem; /*24px*/
 }
 
-/* 
-    logo
+/*
+    header
 */
 .logo img{
+    width: 50px;
     margin-top: 5px;
 }
-
-/*
-    nav
-*/
 nav{
-    padding-top: 26px;
+    margin-top: 12px;
 }
 a.menu{
     color: #fff;

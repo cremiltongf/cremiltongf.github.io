@@ -35,18 +35,31 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width: 620px){
+    header{
+        margin: 0 auto 1.25rem;
+    }
+}
 .logo{
     width: 106px;
     margin: 15px 10px;
     line-height: 1;
 }
-.menu{
-    padding: 10px;
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
 }
 .menu a{
+    display: block;
     font-size: 1.25rem;
+    padding: .625rem;
 }
-
+@media (max-width: 302px){
+    .menu a{
+        padding: .375rem .625rem;
+    }
+}
 /*
     main
 */
@@ -60,6 +73,7 @@ header{
 h1{
     font-size: 3.052rem;
     margin-bottom: 1rem;
+    line-height: 1;
 }
 .biografia,
 .ilustracao{

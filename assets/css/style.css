@@ -55,7 +55,7 @@ header{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
 }
 h1{
     font-size: 3.052rem;

@@ -71,6 +71,7 @@ header{
     align-items: center;
 }
 h1{
+    font-family: 'Arvo', serif;
     font-size: 3.052rem;
     margin-bottom: 1rem;
     line-height: 1;

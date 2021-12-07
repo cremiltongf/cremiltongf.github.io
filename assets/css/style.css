@@ -126,7 +126,7 @@ a.logo img{
 }
 @media(max-width: 500px){
     .menu a{
-        padding: .3125rem;
+        padding: .25rem;
     }
 }
 .menu a:hover{
@@ -149,7 +149,7 @@ a.logo img{
 */
 @media(max-width: 500px){
     .header{
-        justify-content:center;
+        justify-content: center;
     }
     a.logo{
         margin: 0 1rem;

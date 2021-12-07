@@ -126,7 +126,7 @@ a.logo img{
 }
 @media(max-width: 500px){
     .menu a{
-        padding: .25rem;
+        padding: .3125rem;
     }
 }
 .menu a:hover{

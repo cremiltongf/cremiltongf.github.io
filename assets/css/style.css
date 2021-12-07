@@ -16,11 +16,6 @@ html{
 	font-weight: normal;
     scroll-behavior: smooth;
 }
-@media(max-width: 290px){
-    html{
-        font-size: 96%;
-    }
-}
 body{
     font-size: 1.25rem;
     line-height: 1.6;
@@ -163,10 +158,6 @@ a.logo img{
     a.logo{
         margin: 0;
     }
-    .menu{
-        min-width: 364px;
-        overflow-x: scroll;
-    }
 }
 
 /*
@@ -193,6 +184,17 @@ a.logo img{
     -webkit-transition: all 0.5s 0s ease-in-out;
     -moz-transition: all 0.5s 0s ease-in-out;
     transition: all 0.5s 0s ease-in-out;
+}
+@media(max-width: 500px){
+    .cover h1{
+        color: transparent;
+        -webkit-background: linear-gradient(90deg, rgba(255,149,25,1) 0%, rgba(6,149,207,1) 100%);
+        -moz-background: linear-gradient(90deg, rgba(255,149,25,1) 0%, rgba(6,149,207,1) 100%);
+        background: linear-gradient(90deg, rgba(255,149,25,1) 0%, rgba(6,149,207,1) 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+    }
 }
 .btn{
     margin-top: 1.6rem;

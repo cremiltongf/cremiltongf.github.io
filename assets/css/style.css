@@ -121,8 +121,13 @@ a.logo img{
     list-style: none;
 }
 .menu a{
-    padding:.375rem;
+    padding: .375rem;
     color: #e5e5e5;
+}
+@media(max-width: 500px){
+    .menu a{
+        padding: .3125rem;
+    }
 }
 .menu a:hover{
     color: #ff9519;    

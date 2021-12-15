@@ -28,7 +28,10 @@ svg{
 svg:hover{
     fill: #ff9519;
 }
-p{
+.cover p,
+.about p,
+.skills p,
+.footer p{
     margin-bottom: 1rem;
 }
 .line{
@@ -116,7 +119,6 @@ a.logo img{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-left: 1.5rem;
     font-weight: 500;
 }
 .menu ul{
@@ -142,32 +144,61 @@ a.logo img{
 
 /*
  *
- * Header, Menu in Mobile
+ * Header, Menu-mobile
  *
 */
+.btn-show,
+.btn-hidden{
+    display: none;
+}
 @media(max-width: 767px){
     .header{
         left: 0;
     }
-}
-@media(max-width: 550px){
-    .header{
-        justify-content: center;
-    }
     .menu{
-        justify-content: center;
-        margin-top: 1rem;
+        display: none;
+        justify-content: flex-start;
+        margin: 1rem 0 0;
+        width: 100%;
+        background: #2b2a33;
+    }
+    .btn-container{
+        line-height: 0;
+    }
+    .menu .links{
+        display: block;
         width: 100%;
     }
-}
-@media(max-width: 430px){
-    .icon{
-        margin-top: 1rem;
+    .menu a{
+        font-size: 1.625rem;
+        display: block;
+        padding: 1.5rem 0;
+    }
+    .menu .icon li{
+        display: inline-block;
+    }
+    .icon a{
+        padding-right: 1.5rem;
+    }
+    .links a{
+        border-bottom: 1px solid #333e51;
+    }
+    .icon svg{
+        width: 2rem;
+        height: 2rem;
+    }
+    .btn-show,
+    .menu-mobile.show-menu .btn-hidden,
+    .menu-mobile.show-menu .menu{
+        display: block;
+    }
+    .menu-mobile.show-menu .btn-show{
+        display: none;
     }
 }
 
 /*
- * 
+ *
  * cover
  *
  */

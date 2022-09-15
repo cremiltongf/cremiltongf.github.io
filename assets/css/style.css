@@ -311,6 +311,6 @@ a.btn-link:hover{
 .pdf{
     width: 100%;
     max-width: 768px;
-    margin: 0 auto;
-    height: 100vh;
+    margin: 80px auto 0;
+    height: 80vh;
 }

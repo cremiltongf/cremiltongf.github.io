@@ -118,7 +118,13 @@ h2::first-letter {
     align-items: center;
 }
 .header-pdf{
+    position: absolute;
+    top: 0;
     left: calc((100% - 1440px)/2);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 a.logo,
 a.logo img{

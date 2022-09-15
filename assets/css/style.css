@@ -307,10 +307,12 @@ a.btn-link:hover{
 /*
     pdf
 */
-
+.content-pdf{
+    margin-top: 80px;
+}
 .pdf{
     width: 100%;
     max-width: 768px;
-    margin: 80px auto 0;
-    height: 80vh;
+    margin: 0 auto;
+    height: 90vh;
 }

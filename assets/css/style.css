@@ -117,6 +117,9 @@ h2::first-letter {
     justify-content: space-between;
     align-items: center;
 }
+.header-pdf{
+    left: calc((100% - 1440px)/2);
+}
 a.logo,
 a.logo img{
     width: 116px;

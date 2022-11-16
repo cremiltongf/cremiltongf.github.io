@@ -166,7 +166,6 @@ a.logo img{
 }
 .menu a,
 .menu svg{
-    color: #ff9519;
     -webkit-transition: all 0.5s 0s ease;
     -moz-transition: all 0.5s 0s ease;
     transition: all 0.5s 0s ease;

@@ -3,7 +3,7 @@
  * all
  *
  */
-*{
+ *{
     box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -326,6 +326,9 @@ a.btn-link:hover{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+}
+.footer a{
+    padding: 0 .375rem;
 }
 .footer svg{
     vertical-align: middle;

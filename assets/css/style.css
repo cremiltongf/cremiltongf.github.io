@@ -10,10 +10,9 @@
 }
 html{
     background: #2b2a33;
-    background: -moz-radial-gradient(circle, rgba(59,57,75,1) 0%, rgba(43,42,51,1) 86%);
-    background: -webkit-radial-gradient(circle, rgba(59,57,75,1) 0%, rgba(43,42,51,1) 86%);
-    background: radial-gradient(circle, rgba(59,57,75,1) 0%, rgba(43,42,51,1) 86%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b394b",endColorstr="#2b2a33",GradientType=1);
+    background: -moz-linear-gradient(45deg, rgba(79,78,93,1) 0%, rgba(43,42,51,1) 80%);
+    background: -webkit-linear-gradient(45deg, rgba(79,78,93,1) 0%, rgba(43,42,51,1) 80%);
+    background: linear-gradient(45deg, rgba(79,78,93,1) 0%, rgba(43,42,51,1) 80%);
     color: #e5e5e5;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 100%;
@@ -191,13 +190,13 @@ a.logo img{
     .menu a{
         font-size: 1.625rem;
         display: block;
-        padding: 1.5rem 0;
+        padding: 1.5rem .6rem;
     }
     .menu .icon li{
         display: inline-block;
     }
     .icon a{
-        padding-right: 1.5rem;
+        padding-right: .6rem;
     }
     .links a{
         border-bottom: 1px solid #333e51;

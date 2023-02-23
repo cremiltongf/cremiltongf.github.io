@@ -101,9 +101,9 @@ h2::first-letter {
  */
 .layout{
     width: 100%;
-    max-width: 768px;
+    max-width: 990px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1rem 1.4rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -116,7 +116,7 @@ h2::first-letter {
 .header{
     position: absolute;
     top: 0;
-    left: calc((100% - 768px)/2);
+    left: calc((100% - 990px)/2);
     z-index: 1;
     display: flex;
     justify-content: space-between;
@@ -170,7 +170,7 @@ a.logo img{
 .btn-hidden{
     display: none;
 }
-@media(max-width: 767px){
+@media(max-width: 989px){
     .header{
         left: 0;
     }

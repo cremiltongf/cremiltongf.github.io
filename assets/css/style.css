@@ -17,10 +17,9 @@ html{
     background: #2b2a33;
     color: #e5e5e5;
     font-size: 62.5%;
-	font-weight: normal;
+    font-weight: normal;
     font-family: 'IBM Plex Sans', sans-serif;
     line-height: 1.5;
-    /* scroll suave */
     scroll-behavior: smooth;
 }
 body{

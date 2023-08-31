@@ -292,3 +292,8 @@ a.btn-link:hover{
 .footer-icons svg{
     vertical-align: middle;
 }
+@media(max-width: 622px){
+    .footer{
+        margin: 0 auto 3rem;
+    }
+}

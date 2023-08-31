@@ -49,7 +49,7 @@ svg:hover{
     background: #3e4e6a;
     margin: 6rem 0;
 }
-@media (max-width: 620px){
+@media (max-width: 622px){
     .line{
         margin: 3rem 0;
     }
@@ -127,7 +127,7 @@ a:hover{
 .btn-mobile{
     display: none;
 }
- @media (max-width: 620px){
+ @media (max-width: 622px){
     .btn-mobile{
         display: block;
         padding: 1.6rem;

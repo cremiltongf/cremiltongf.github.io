@@ -128,6 +128,9 @@ a:hover{
     display: none;
 }
  @media (max-width: 622px){
+    .scroll-hidden{
+        overflow: hidden;
+    }
     .btn-mobile{
         display: block;
         padding: 1.6rem;

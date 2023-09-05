@@ -17,7 +17,7 @@ html{
     background: #2b2a33;
     color: #e5e5e5;
     font-size: 62.5%;
-    font-weight: normal;
+    font-weight: 400;
     font-family: 'IBM Plex Sans', sans-serif;
     line-height: 1.5;
     scroll-behavior: smooth;
@@ -105,7 +105,6 @@ a:hover{
 .menu a{
     display: block;
     color: #e5e5e5;
-    font-weight: 500;
 }
 .menu a:hover{
     color: #ff9519;    
@@ -187,8 +186,9 @@ a:hover{
 }
 
 .cover-title{
-    font-size: 5.4rem;
     line-height: 1;
+    font-size: 5.4rem;
+    font-weight: 700;
     color: transparent;
     -webkit-background: linear-gradient(90deg, #ff9519 0,#0695cf 90%);
     -moz-background: linear-gradient(90deg, #ff9519 0,#0695cf 90%);
@@ -220,6 +220,7 @@ a.btn-link:hover{
  */
 .about-title{
     width: 100%;
+    font-weight: 700;
     font-size: 4.2rem;
     margin: 3.2rem 0;
 }
@@ -237,6 +238,7 @@ a.btn-link:hover{
  */
 .skills-title{
     width: 100%;
+    font-weight: 700;
     font-size: 4.2rem;
     margin: 3.2rem 0;
 }

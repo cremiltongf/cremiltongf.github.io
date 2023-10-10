@@ -112,7 +112,7 @@ a:hover{
 }
 .menu-links a,
 .menu-icons a{
-    padding: 1rem 1.6rem;
+    padding:1.6rem;
 }
 .menu-icons svg{
     vertical-align: middle;

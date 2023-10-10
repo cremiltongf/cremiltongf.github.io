@@ -1,28 +1,26 @@
-window.addEventListener("load", function(){
+function mobileMenu() {
 
-    let toogleMenu = document.querySelectorAll(".toggle");
-    for (let i = 0; i < toogleMenu.length; i++){
-        toogleMenu[i].addEventListener("click", menuAction);
+    let overflowHidden = document.querySelector("body");
+    let menuMobile = document.querySelector(".mobile");
+    let toogle = document.querySelectorAll(".toggle");
+
+    for (let i = 0; i < toogle.length; i++){
+        toogle[i].addEventListener("click", menuAction);
     }
-
-    let overflowScroll = document.querySelector(".content");
-    let menuContainer = document.querySelector(".mobile");   
+ 
     function menuAction() {
-        if(menuContainer.classList.contains("show-menu")){
-            menuContainer.classList.remove("show-menu");
-            overflowScroll.classList.remove("scroll-hidden");
+        if(menuMobile.classList.contains("show-menu")){
+            menuMobile.classList.remove("show-menu");
+            overflowHidden.style.overflow = "auto";
         }
         else {
-            menuContainer.classList.add("show-menu");
-            overflowScroll.classList.add("scroll-hidden");
+            menuMobile.classList.add("show-menu");
+            overflowHidden.style.overflow = "hidden";
         }
     }
 
-
-    document.addEventListener('keydown', function(event){
-        if(event.keyCode === 27){
-            menuAction();
-        }
+    document.addEventListener("keydown", function(event){
+        if(event.key === "Escape") () =>  menuAction();
     });
-    
-});
+}
+window.addEventListener("load", mobileMenu());

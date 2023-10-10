@@ -46,7 +46,7 @@ svg:hover{
  .intro{
     max-width: 990px;
     margin: 0 auto;
-    padding: 0 1.6rem;
+    padding: 1.6rem;
     display: flex;
     flex-wrap: wrap;
  }
@@ -83,14 +83,10 @@ a:hover{
 .header .intro{
     justify-content: space-between;
     align-items: center;
-    padding: 0;
-}
-.logo{
-    padding: 1.6rem;
 }
 .logo img{
     width: 116px;
-    height: 40px;
+    margin: 1rem 0;
     vertical-align: middle;
 }
 .menu{
@@ -116,7 +112,7 @@ a:hover{
 }
 .menu-links a,
 .menu-icons a{
-    padding: 1.6rem;
+    padding: 1rem 1.6rem;
 }
 .menu-icons svg{
     vertical-align: middle;
@@ -129,20 +125,15 @@ a:hover{
     display: none;
 }
  @media (max-width: 622px){
-    .scroll-hidden{
-        overflow: hidden;
-    }
     .btn-mobile{
         display: block;
         padding: 1.6rem;
     }
     .menu-icon{
+        vertical-align: middle;
         border: none;
         background: transparent;
         cursor: pointer;
-    }
-    .menu-icon img{
-        vertical-align: middle;
     }
     .mobile{
         display: flex;
@@ -150,15 +141,15 @@ a:hover{
         justify-content: flex-start;
         align-items: flex-start;
         background: #2b2a33;
-        position: fixed;
-        top: -110%;
-        left: 0;
+        position: absolute;
+        top: 98px;
+        left: -110%;
         width: 100%;
         height: 100%;
-        transition: all .4s;
+        transition: all .3s;
     }
     .mobile.show-menu{
-        top: 72px;
+        top: 98px;
         left: 0;
     }
     .menu-links{
@@ -180,9 +171,8 @@ a:hover{
  *
  */
 .cover .intro{
-    height: calc(100vh - 72px);
+    height: calc(100vh - 96px);
     align-items: center;
-    justify-content: flex-start;
 }
 
 .cover-title{

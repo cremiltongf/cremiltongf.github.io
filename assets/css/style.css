@@ -127,7 +127,6 @@ a:hover{
  @media (max-width: 622px){
     .btn-mobile{
         display: block;
-        padding: 1.6rem;
     }
     .menu-icon{
         vertical-align: middle;

@@ -17,13 +17,13 @@ html{
     background: #2b2a33;
     color: #e5e5e5;
     font-size: 62.5%;
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'IBM Plex Sans', sans-serif;
-    line-height: 1.5;
+    line-height: 1.4;
     scroll-behavior: smooth;
 }
 body{
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 
@@ -151,7 +151,6 @@ a:hover{
     }
     .menu-links{
         flex-direction: column;
-        font-size: 2.4rem;
     }
     .menu-links,
     .menu-icons{
@@ -200,9 +199,9 @@ a:hover{
 }
 a.btn-link{
     text-align: center;
-    max-width: 14rem;
+    max-width: 16rem;
     display: block;
-    padding: .8rem 1.6rem;
+    padding: .9rem 1.8rem;
     color: #0695cf;
     border: 1px solid #0695cf;
     border-radius: .6rem;

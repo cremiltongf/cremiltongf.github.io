@@ -111,7 +111,7 @@ img{
  }
  .menu a{
     display: block;
-    padding: 1.2rem;
+    padding: .6rem 1.2rem;
     font-size: 2rem;
     font-weight: 300;
     text-decoration: none;
@@ -162,6 +162,15 @@ img{
 .scroll{
     position: absolute;
     bottom: 1rem;
+    animation: buttonscroll 0.6s ease-in 0s infinite alternate;
+}
+@keyframes buttonscroll{
+    from {
+        bottom: 1rem;
+    }
+    to {
+        bottom: 1.6rem;
+    }
 }
 
 

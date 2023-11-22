@@ -16,7 +16,7 @@
  :root {
     /* layout width */
     --max-width-layout: 1160px;
-    /* dark theme default*/
+    /* dark theme*/
     --dark-border: #121314;
     --dark-bg-primary: #1f1f1f;
     --dark-bg-secondary: var(--dark-border);
@@ -27,7 +27,7 @@
     --white-400: #909099;
     --white-500: #6b6b77;
     --white-600: #464655;
-    --blue-100: #f0f6fc;
+    --blue-100: #f0f6fc; 
     --blue-200: #d4e5f6;
     --blue-300: #aaccee;
     --blue-700: #0066cc;
@@ -54,6 +54,9 @@ body{
 img{
     max-width: 100%;
     display: block;
+}
+.box-shadow{
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, .25);
 }
 
 
@@ -108,20 +111,18 @@ img{
  }
  .menu a{
     display: block;
-    padding: 1rem;
+    padding: 1.2rem;
     font-size: 2rem;
     font-weight: 300;
     text-decoration: none;
+    transition: color .3s;
  }
- .menu a:hover{
-    text-decoration: underline;
- }
-
 
  /*
   *HERO
   */
 .hero{
+    position: relative;
     max-width: var(--max-width-layout);
     min-height: 760px;
     margin: 0 auto;
@@ -137,9 +138,7 @@ img{
 }
 .place{
     font-weight: 300;
-}
-.place{
-    margin: .8rem 0;
+    margin: .8rem 0 1.2rem;
 }
 .social{
     display: flex;
@@ -147,7 +146,10 @@ img{
     list-style: none;
 }
 .social li + li{
-    padding-left: 1.6rem;
+    padding-left: .8rem;
+}
+.social svg path{
+    transition: stroke .3s;
 }
 .social a{
     display: block;
@@ -156,6 +158,10 @@ img{
 .avatar-hero{
     display: flex;
     justify-content: flex-end;
+}
+.scroll{
+    position: absolute;
+    bottom: 1rem;
 }
 
 
@@ -312,6 +318,7 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 2rem;
+    transition: background-color .3s;
 }
 
 
@@ -331,6 +338,7 @@ img{
     margin-right: 1.6rem;
 }
 
+
 /*
  * THEME DARK - DEFAULT 
  */
@@ -346,6 +354,12 @@ img{
 /* header */
 .menu a{
     color: var(--white-200);
+}
+.menu a:hover{
+    color: var(--orange-700);
+ }
+.social svg:hover path{
+    stroke: var(--orange-700);
 }
 /* about */
 .about-container{
@@ -398,6 +412,10 @@ img{
     color: var(--white-100);
     background-color: var(--blue-700);
 }
+.project-btn .btn:hover{
+    background-color: var(--orange-700);
+}
+
 
 /* 
  * THEME WHITE

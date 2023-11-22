@@ -232,8 +232,8 @@ img{
 .course-two,
 .course-three{
     border-radius: 4px;
-    width: 74%;
-    max-width: 760px;
+    width: 78%;
+    max-width: 780px;
     padding: 3.2rem;
     display: flex;
     flex-wrap: wrap;

@@ -17,6 +17,15 @@ function menuAction() {
     }
 }
 
-document.addEventListener("keydown", function(event){
-    if(event.key === "Escape") () =>  menuAction();
+document.addEventListener("keydown", function(e){
+    if(e.key === "Escape") () =>  menuAction();
 });
+
+
+// dark mode switch
+let html = document.querySelector("html");
+let darkMode = document.querySelector(".lamp");
+darkMode.addEventListener("click", disableDarkMode)
+function disableDarkMode(){
+    html.classList.toggle("dark-off");
+}

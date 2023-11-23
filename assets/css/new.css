@@ -19,7 +19,7 @@
     /* dark theme*/
     --dark-border: #121314;
     --dark-bg-primary: #1f1f1f;
-    --dark-bg-secondary: var(--dark-border);
+    --dark-bg-secondary: #121314;
     /* text */
     --white-100: #f2f2f3;
     --white-200: #dadadc;
@@ -345,6 +345,20 @@ img{
 }
 .footer-copy{
     margin-right: 1.6rem;
+    font-weight: 300;
+}
+
+
+/* 
+ * CHANGE DARK MODE
+ */
+.lamp{
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    cursor: pointer;
 }
 
 
@@ -366,7 +380,7 @@ img{
 }
 .menu a:hover{
     color: var(--orange-700);
- }
+}
 .social svg:hover path{
     stroke: var(--orange-700);
 }
@@ -424,8 +438,79 @@ img{
 .project-btn .btn:hover{
     background-color: var(--orange-700);
 }
+/* lamp */
+.lamp svg:hover path{
+    stroke: var(--orange-700);
+}
 
 
 /* 
  * THEME WHITE
  */
+/* all */
+.dark-off{
+    background: var(--white-100);
+    color: var(--white-600);
+}
+.dark-off .line{
+    border-top: 1px solid var(--white-200);
+}
+/* lamp */
+.dark-off .lamp svg:hover path{
+    stroke: var(--orange-700);
+}
+/* header */
+.dark-off .cgf{
+    fill: var(--white-600);
+}
+.dark-off .menu a{
+    color: var(--white-600);
+}
+.dark-off .menu a:hover{
+    color: var(--orange-700);
+}
+.dark-off .social svg path{
+    stroke: var(--white-600);
+}
+.dark-off .social svg:hover path{
+    stroke: var(--orange-700);
+}
+/* hero */
+.dark-off .people-hero{
+    stroke: var(--white-600);
+}
+/* about */
+.dark-off .about-container{
+    background-color: var(--orange-100);
+    border-bottom: 2px solid var(--orange-700);
+}
+/* experience */
+.dark-off .work-one,
+.dark-off .work-two,
+.dark-off .work-three{
+    background-color: var(--blue-100);
+}
+.dark-off .work-label span{
+    color: var(--white-600);
+    background-color: var(--blue-200);
+    border: 1px solid var(--blue-300);
+}
+.dark-off .course-one,
+.dark-off .course-two,
+.dark-off .course-three{
+    background-color: var(--orange-100);
+}
+.dark-off .course-label span{
+    color: var(--white-600);
+    background-color: var(--orange-200);
+    border: 1px solid var(--orange-300);
+}
+/* projects */
+.dark-off .project{
+    background-color: var(--blue-100);
+}
+.dark-off .project-label span{
+    color: var(--white-600);
+    background-color: var(--blue-200);
+    border: 1px solid var(--blue-300);
+}

@@ -31,11 +31,12 @@ function disableDarkMode(){
 }
 
 
-//top
-window.addEventListener("load", returnTop);
-function returnTop(){
-     window.onscroll = function() { scrollFunction() };
-     function scrollFunction() {
+//return top and icon scroll hidden
+function scrollEvent(){
+    
+    window.onscroll = function() { returnTop(), scrollHidden() };
+     
+     function returnTop() {
         let buttonTop = document.querySelector(".arrow-top");
          if (document.body.scrollTop > 720 || document.documentElement.scrollTop > 720) {
             buttonTop.classList.add("arrow-top-show");
@@ -43,4 +44,29 @@ function returnTop(){
             buttonTop.classList.remove("arrow-top-show");
          }
      }
+
+     function scrollHidden(){
+        let iconScroll = document.querySelector(".scroll");
+        if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+            iconScroll.classList.add("scroll-hidden");
+        } else {
+            iconScroll.classList.remove("scroll-hidden");
+        }
+    }
 }
+window.addEventListener("load", scrollEvent);
+
+// // scroll icon hidden
+// window.addEventListener("load", iconScrollHidden);
+// function iconScrollHidden(){
+//     window.onscroll = function() { scrollHidden() };
+//     function scrollHidden(){
+//         let iconScroll = document.querySelector(".scroll");
+//         if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+//             iconScroll.classList.add("scroll-hidden");
+//         } else {
+//             iconScroll.classList.remove("scroll-hidden");
+//         }
+//     }
+
+// }

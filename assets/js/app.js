@@ -25,7 +25,21 @@ document.addEventListener("keydown", function(e){
 // dark mode switch
 let html = document.querySelector("html");
 let darkMode = document.querySelector(".lamp");
-darkMode.addEventListener("click", disableDarkMode)
+darkMode.addEventListener("click", disableDarkMode);
 function disableDarkMode(){
     html.classList.toggle("dark-off");
+}
+
+//button top
+window.addEventListener("load", returnTop);
+function returnTop(){
+     window.onscroll = function() { scrollFunction() };
+     let buttonTop = document.querySelector(".arrow-top");
+     function scrollFunction() {
+         if (document.body.scrollTop > 720 || document.documentElement.scrollTop > 720) {
+            buttonTop.classList.add("arrow-top-show");
+         } else {
+            buttonTop.classList.remove("arrow-top-show");
+         }
+     }
 }

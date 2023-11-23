@@ -349,7 +349,7 @@ img{
 
 
 /* 
- * CHANGE DARK MODE
+ * CHANGE DARK MODE and ARROW TOP
  */
 .lamp{
     width: 48px;
@@ -358,8 +358,24 @@ img{
     bottom: 1.2rem;
     right: 1.2rem;
     cursor: pointer;
+    z-index: 10;
 }
-
+.arrow-top{
+    width: 44px;
+    height: 44px;
+    position: fixed;
+    bottom: 7rem;
+    right: 1.6rem;
+    cursor: pointer;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .6s;
+}
+.arrow-top-show{
+    visibility: visible;
+    opacity: 1;
+}
 
 /*
  * THEME DARK - DEFAULT 
@@ -438,7 +454,9 @@ img{
     background-color: var(--orange-700);
 }
 /* lamp */
-.lamp svg:hover path{
+.lamp svg:hover path,
+.arrow-top svg:hover path,
+.arrow-top svg:hover circle{
     stroke: var(--orange-700);
 }
 
@@ -454,8 +472,9 @@ img{
 .dark-off .line{
     border-top: 1px solid var(--white-200);
 }
-/* lamp */
-.dark-off .lamp svg:hover path{
+/* lamp and arrow-top*/
+.dark-off .lamp svg:hover path,
+.dark-off .arrow-top svg:hover path{
     stroke: var(--orange-700);
 }
 /* header */

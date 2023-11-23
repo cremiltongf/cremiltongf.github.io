@@ -127,7 +127,7 @@ img{
     flex-wrap: wrap;
     justify-content: space-between;
  }
- a.brand img{
+ a.brand svg{
     max-width: 140px;
     vertical-align: middle;
  }

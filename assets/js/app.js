@@ -7,6 +7,10 @@ for (let i = 0; i < toggle.length; i++){
     toggle[i].addEventListener("click", navAction);
 }
 
+document.addEventListener("keydown", function(e){
+    if(e.key === "Escape") () =>  navAction();
+});
+
 function navAction() {
     if(navMobile.classList.contains("nav-show")){
         navMobile.classList.remove("nav-show");
@@ -18,10 +22,6 @@ function navAction() {
     }
 }
 
-document.addEventListener("keydown", function(e){
-    if(e.key === "Escape") () =>  navAction();
-});
-
 
 // dark mode switch
 let html = document.querySelector("html");
@@ -31,9 +31,9 @@ function disableDarkMode(){
 }
 darkMode.addEventListener("click", disableDarkMode);
 
+
 //return top and icon scroll hidden
 function scrollEvent(){
-    
     window.onscroll = function() { returnTop(), scrollHidden() };
      
      function returnTop() {
@@ -55,18 +55,3 @@ function scrollEvent(){
     }
 }
 window.addEventListener("load", scrollEvent);
-
-// // scroll icon hidden
-// window.addEventListener("load", iconScrollHidden);
-// function iconScrollHidden(){
-//     window.onscroll = function() { scrollHidden() };
-//     function scrollHidden(){
-//         let iconScroll = document.querySelector(".scroll");
-//         if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
-//             iconScroll.classList.add("scroll-hidden");
-//         } else {
-//             iconScroll.classList.remove("scroll-hidden");
-//         }
-//     }
-
-// }

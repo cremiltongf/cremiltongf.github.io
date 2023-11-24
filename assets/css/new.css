@@ -159,7 +159,7 @@ img{
 .hero{
     position: relative;
     max-width: var(--max-width-layout);
-    min-height: 760px;
+    min-height: 720px;
     margin: 64px auto;
     padding: 1.2rem;
     display: flex;

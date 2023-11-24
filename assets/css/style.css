@@ -224,6 +224,7 @@ img{
 .place{
     font-weight: 300;
     margin: .8rem 0 1.6rem;
+    line-height: 1.2;
 }
 .social{
     display: flex;

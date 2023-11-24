@@ -10,11 +10,11 @@ for (let i = 0; i < addAction.length; i++){
 function navAction() {
     if(navMobile.classList.contains("nav-show")){
         navMobile.classList.remove("nav-show");
-        // hiddenOverflow.style.overflow = "auto";
+        hiddenOverflow.classList.remove("hidden-scroll");
     }
     else {
         navMobile.classList.add("nav-show");
-        // hiddenOverflow.style.overflow = "hidden";
+        hiddenOverflow.classList.add("hidden-scroll");
     }
 }
 

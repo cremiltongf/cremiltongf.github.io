@@ -660,10 +660,8 @@ img{
     stroke: var(--orange-700);
 }
 /* scroll icon */
-@media (max-width: 768px){
-    .scroll svg path{
-        stroke: var(--blue-700); 
-    }
+.scroll svg path{
+    stroke: var(--blue-300);
 }
 /* icon menu mobile */
 @media (max-width: 730px) {

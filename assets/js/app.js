@@ -1,26 +1,26 @@
 // menu mobile and scroll hidden window
-let overflowHidden = document.querySelector("body");
+let hiddenOverflow = document.querySelector("body");
 let navMobile = document.querySelector(".nav");
-let toggle = document.querySelectorAll(".toggle");
+let addAction = document.querySelectorAll(".toggle");
 
-for (let i = 0; i < toggle.length; i++){
-    toggle[i].addEventListener("click", navAction);
+for (let i = 0; i < addAction.length; i++){
+    addAction[i].addEventListener("click", navAction);
+}
+
+function navAction() {
+    if(navMobile.classList.contains("nav-show")){
+        navMobile.classList.remove("nav-show");
+        // hiddenOverflow.style.overflow = "auto";
+    }
+    else {
+        navMobile.classList.add("nav-show");
+        // hiddenOverflow.style.overflow = "hidden";
+    }
 }
 
 document.addEventListener("keydown", function(e){
     if(e.key === "Escape") () =>  navAction();
 });
-
-function navAction() {
-    if(navMobile.classList.contains("nav-show")){
-        navMobile.classList.remove("nav-show");
-        overflowHidden.style.overflow = "auto";
-    }
-    else {
-        navMobile.classList.add("nav-show");
-        overflowHidden.style.overflow = "hidden";
-    }
-}
 
 
 // dark mode switch
@@ -34,7 +34,10 @@ darkMode.addEventListener("click", disableDarkMode);
 
 //return top and icon scroll hidden
 function scrollEvent(){
-    window.onscroll = function() { returnTop(), scrollHidden() };
+    window.onscroll = function() { 
+        returnTop();
+        scrollHidden();
+    };
      
      function returnTop() {
         let buttonTop = document.querySelector(".arrow-top");

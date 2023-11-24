@@ -218,7 +218,6 @@ img{
     }
     .avatar-hero{
         justify-content: flex-start;
-        margin-bottom: 6.4rem;
     }
     .place{
         margin: .4rem 0 .8rem;
@@ -232,7 +231,7 @@ img{
 .about{
     max-width: var(--max-width-layout);
     margin: 64px auto;
-    padding: 1.2rem;
+    padding: 1.6rem;
 }
 .about-container{
     width: 81.0344%;
@@ -256,10 +255,10 @@ img{
 }
 @media (max-width: 880px){
     .about{
-        margin: 3.2rem auto;
+        margin: 0 auto 3.2rem;
     }
     .about-container{
-        margin-top: 3.2rem;
+        margin: 3.2rem auto 0;
     }    
 }
 @media (max-width: 880px){
@@ -396,15 +395,15 @@ img{
 }
 .projects-container{
     margin-top: 64px;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    gap: 40px;
 }
 .project{
     flex: 1 1 280px;
     padding: 32px;
     border-radius: 4px;
-    margin: 1.6rem 0;
 }
 .project img{
     border-radius: 4px;
@@ -456,7 +455,7 @@ img{
  */
 .footer{
     max-width: var(--max-width-layout);
-    padding: 1rem;
+    padding: 1.6rem;
     margin: 64px auto;
     display: flex;
     flex-wrap: wrap;
@@ -470,6 +469,16 @@ img{
 @media (max-width: 880px){
     .footer{
         margin: 3.2rem auto;
+    }
+}
+@media (max-width: 340px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-copy{
+        margin: 0 0 .8rem 0;
     }
 }
 

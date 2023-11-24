@@ -1,35 +1,35 @@
+// menu mobile and scroll hidden window
 let overflowHidden = document.querySelector("body");
-let menuMobile = document.querySelector(".mobile");
-let toogle = document.querySelectorAll(".toggle");
+let navMobile = document.querySelector(".nav");
+let toggle = document.querySelectorAll(".toggle");
 
-for (let i = 0; i < toogle.length; i++){
-    toogle[i].addEventListener("click", menuAction);
+for (let i = 0; i < toggle.length; i++){
+    toggle[i].addEventListener("click", navAction);
 }
 
-function menuAction() {
-    if(menuMobile.classList.contains("show-menu")){
-        menuMobile.classList.remove("show-menu");
+function navAction() {
+    if(navMobile.classList.contains("nav-show")){
+        navMobile.classList.remove("nav-show");
         overflowHidden.style.overflow = "auto";
     }
     else {
-        menuMobile.classList.add("show-menu");
+        navMobile.classList.add("nav-show");
         overflowHidden.style.overflow = "hidden";
     }
 }
 
 document.addEventListener("keydown", function(e){
-    if(e.key === "Escape") () =>  menuAction();
+    if(e.key === "Escape") () =>  navAction();
 });
 
 
 // dark mode switch
 let html = document.querySelector("html");
 let darkMode = document.querySelector(".lamp");
-darkMode.addEventListener("click", disableDarkMode);
 function disableDarkMode(){
     html.classList.toggle("dark-off");
 }
-
+darkMode.addEventListener("click", disableDarkMode);
 
 //return top and icon scroll hidden
 function scrollEvent(){
@@ -47,7 +47,7 @@ function scrollEvent(){
 
      function scrollHidden(){
         let iconScroll = document.querySelector(".scroll");
-        if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+        if (document.body.scrollTop > 140 || document.documentElement.scrollTop > 140) {
             iconScroll.classList.add("scroll-hidden");
         } else {
             iconScroll.classList.remove("scroll-hidden");

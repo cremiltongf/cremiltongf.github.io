@@ -45,7 +45,7 @@ html{
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.44;
     scroll-behavior: smooth;
 }
 body{
@@ -57,11 +57,6 @@ img{
 }
 .box-shadow{
     box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, .25);
-}
-@media(max-width: 360px){
-    body{
-        font-size: 2.2rem;
-    }
 }
 
 /* 
@@ -78,7 +73,7 @@ img{
     line-height: .9;
  }
  h2{
-    font-size: 4.2rem;
+    font-size: 4rem;
     line-height: 1.1;
  }
  h3{
@@ -88,8 +83,11 @@ img{
     line-height: 1.25;
  }
  @media (max-width: 880px){
+    h1{
+        font-size: 5.6rem;
+     }
     h2{
-        font-size: 3.8rem;
+        font-size: 3.6rem;
     }
     h3{
         font-size: 2.8rem;
@@ -97,24 +95,15 @@ img{
 }
 @media (max-width: 840px){
     h1{
-        font-size: 5.4rem;
+        font-size: 5.2rem;
     }
     h2{
-        font-size: 3.6rem;
-    }
-    h3{
-        font-size: 2.6rem;
+        font-size: 3.2rem;
     }
 }
 @media (max-width: 360px){
     h1{
        font-size: 4.4rem;
-    }
-    h2{
-       font-size: 3.2rem;
-    }
-    h3{
-       font-size: 2.4rem;
     }
 }
 
@@ -149,7 +138,6 @@ img{
  .menu a{
     display: block;
     padding: .6rem 1.2rem;
-    font-size: 2rem;
     font-weight: 300;
     text-decoration: none;
     transition: color .3s;
@@ -161,7 +149,7 @@ img{
 .icon-menu{
     display: none;
 }
-@media (max-width: 730px) {
+@media (max-width: 780px) {
     .hidden-scroll{
         overflow: hidden;
     }
@@ -173,7 +161,7 @@ img{
         display: none;
     }
     .svg-icon-menu{
-        width: 46px;
+        width: 5.2rem;
         vertical-align: middle;
     }
     .nav.nav-show{
@@ -191,7 +179,7 @@ img{
         margin: 0 1.6rem;
     }
     .nav.nav-show .menu a{
-        font-size: 2.4rem;
+        font-size: 2.8rem;
         padding: 1.6rem 0;
     }
     @keyframes animaMenu {
@@ -258,7 +246,7 @@ img{
         margin: 6.4rem auto;
     }
     .name-hero{
-        margin-bottom: 1.6rem;
+        margin-bottom: 3.2rem;
     }
     .name-hero,
     .avatar-hero{
@@ -324,7 +312,7 @@ img{
     .about-avatar img{
         width: 200px;
         height: 200px;
-        margin-bottom: 1rem;
+        margin-bottom: 1.2rem;
     }
 }
 
@@ -390,7 +378,7 @@ img{
 }
 .work-description h2,
 .course-description h2{
-    margin: 2rem 0 1.6rem;
+    margin: 2rem 0;
 }
 .work-description h3{
     margin-bottom: 2rem;
@@ -417,7 +405,7 @@ img{
 @media (max-width: 600px){
     .work-avatar img,
     .course-avatar img{
-        margin-bottom: 1rem;
+        margin-bottom: 1.2rem;
         width: 200px;
         height: 200px;
     }
@@ -443,7 +431,7 @@ img{
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 3.2rem;
 }
 .project{
     flex: 1 1 280px;
@@ -454,7 +442,7 @@ img{
     border-radius: 4px;
 }
 .project h2{
-    margin: 2rem 0 1.6rem;
+    margin: 1.6rem 0;
     text-transform: uppercase;
 }
 .project-description{
@@ -663,10 +651,10 @@ img{
 }
 /* scroll icon */
 .scroll svg path{
-    stroke: var(--blue-300);
+    stroke: var(--blue-700);
 }
 /* icon menu mobile */
-@media (max-width: 730px) {
+@media (max-width: 780px) {
     .svg-icon-menu{
         stroke: var(--white-200);
     }

@@ -238,9 +238,13 @@ img{
     display: flex;
     justify-content: flex-end;
 }
+.avatar-hero svg{
+    width: 570px;
+    max-width: 100%;
+}
 @media (max-width: 880px){
     .avatar-hero svg{
-        max-width: 380px;
+        width: 380px;
     }
 }
 @media (max-width: 759px){
@@ -262,7 +266,7 @@ img{
     }
     .avatar-hero svg{
         width: 730px;
-        max-width: 100%;
+        padding-left: 1.6rem;
     }
 }
 

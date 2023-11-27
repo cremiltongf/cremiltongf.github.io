@@ -238,6 +238,11 @@ img{
     display: flex;
     justify-content: flex-end;
 }
+@media (max-width: 880px){
+    .avatar-hero svg{
+        max-width: 380px;
+    }
+}
 @media (max-width: 759px){
     .hero{
         flex-direction: column;
@@ -254,6 +259,10 @@ img{
     }
     .avatar-hero{
         justify-content: flex-start;
+    }
+    .avatar-hero svg{
+        width: 730px;
+        max-width: 100%;
     }
 }
 

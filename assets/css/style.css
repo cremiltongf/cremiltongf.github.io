@@ -121,8 +121,12 @@ img{
     justify-content: space-between;
     align-items: center;
  }
+ a.link-brand{
+    display: block;
+ }
  a.link-brand svg{
-    max-width: 140px;
+    max-width: 120px;
+    max-height: 39px;
     vertical-align: middle;
  }
  .nav{

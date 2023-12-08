@@ -7,15 +7,9 @@ for (let i = 0; i < addAction.length; i++){
     addAction[i].addEventListener("click", navAction);
 }
 
-function navAction() {
-    if(navMobile.classList.contains("nav-show")){
-        navMobile.classList.remove("nav-show");
-        hiddenOverflow.classList.remove("hidden-scroll");
-    }
-    else {
-        navMobile.classList.add("nav-show");
-        hiddenOverflow.classList.add("hidden-scroll");
-    }
+function navAction(){
+    navMobile.classList.toggle("nav-show");
+    hiddenOverflow.classList.toggle("hidden-scroll");
 }
 
 document.addEventListener("keydown", function(e){

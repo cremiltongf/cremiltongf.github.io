@@ -538,20 +538,19 @@ img{
  * CHANGE DARK MODE, ARROW TOP, SCROLL ICON
  */
 .lamp{
-    width: 5.2rem;
-    height: 5.2rem;
-    position: fixed;
-    bottom: 1.2rem;
-    right: 1.3rem;
     cursor: pointer;
-    z-index: 8;
+}
+.lamp,
+.lamp svg{
+    width: 3.6rem;
+    height: 3.6rem;
 }
 .arrow-top{
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4.6rem;
+    height: 4.6rem;
     position: fixed;
-    bottom: 7rem;
-    right: 1.7rem;
+    bottom: 3rem;
+    right: 3rem;
     cursor: pointer;
     z-index: 8;
     visibility: hidden;

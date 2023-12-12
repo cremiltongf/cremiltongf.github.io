@@ -19,11 +19,22 @@ document.addEventListener("keydown", function(e){
 
 // dark mode switch
 let html = document.querySelector("html");
-let darkMode = document.querySelector(".lamp");
-function disableDarkMode(){
-    html.classList.toggle("dark-off");
+let buttonDarkMode = document.querySelector(".lamp");
+const darkModeStorage = localStorage.getItem("statusDarkMode");
+
+if (darkModeStorage) {
+    html.classList.add("dark-off");
 }
-darkMode.addEventListener("click", disableDarkMode);
+
+function actionDarkMode(){
+    html.classList.toggle("dark-off");
+    if (html.classList.contains("dark-off")) {
+        localStorage.setItem("statusDarkMode", true);
+        return;
+    }
+    localStorage.removeItem("statusDarkMode");
+}
+buttonDarkMode.addEventListener("click", actionDarkMode);
 
 
 //return top and icon scroll hidden

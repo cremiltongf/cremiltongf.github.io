@@ -701,6 +701,9 @@ img{
 .dark-off .arrow-top svg:hover path{
     stroke: var(--orange-700);
 }
+.dark-off .lamp-on{
+    fill: #ffd43b;
+}
 /* header */
 .dark-off .cgf{
     fill: var(--white-600);

@@ -584,7 +584,7 @@ img{
 }
 @media (max-width: 498px){
     .arrow-top{
-        bottom: 12rem;
+        bottom: 10rem;
         right: 1.6rem;
     }
 }

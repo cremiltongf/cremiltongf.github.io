@@ -753,7 +753,7 @@ img{
     border: 1px solid var(--white-200);
 }
 /* icon menu mobile */
-@media (max-width: 730px) {
+@media (max-width: 780px) {
     .dark-off .svg-icon-menu{
         stroke: var(--white-600);
     }

@@ -13,7 +13,9 @@ function navAction(){
 }
 
 document.addEventListener("keydown", function(e){
-    if(e.key === "Escape") () =>  navAction();
+    if(e.key === "Escape" && navMobile.classList.contains("nav-show")){
+        navAction();
+    }
 });
 
 

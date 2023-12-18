@@ -3,17 +3,17 @@ let hiddenOverflow = document.querySelector("body");
 let navMobile = document.querySelector(".nav");
 let addAction = document.querySelectorAll(".toggle");
 
-for (let i = 0; i < addAction.length; i++){
+for (let i = 0; i < addAction.length; i++) {
     addAction[i].addEventListener("click", navAction);
 }
 
-function navAction(){
+function navAction() {
     navMobile.classList.toggle("nav-show");
     hiddenOverflow.classList.toggle("hidden-scroll");
 }
 
-document.addEventListener("keydown", function(e){
-    if(e.key === "Escape" && navMobile.classList.contains("nav-show")){
+document.addEventListener("keydown", function(e) {
+    if(e.key === "Escape" && navMobile.classList.contains("nav-show")) {
         navAction();
     }
 });
@@ -28,7 +28,7 @@ if (darkModeStorage) {
     html.classList.add("dark-off");
 }
 
-function actionDarkMode(){
+function actionDarkMode() {
     html.classList.toggle("dark-off");
     if (html.classList.contains("dark-off")) {
         localStorage.setItem("statusDarkMode", true);
@@ -40,22 +40,22 @@ buttonDarkMode.addEventListener("click", actionDarkMode);
 
 
 //return top and icon scroll hidden
-function scrollEvent(){
+function scrollEvent() {
     window.onscroll = function() { 
         returnTop();
         scrollHidden();
     };
      
-     function returnTop() {
-        let buttonTop = document.querySelector(".arrow-top");
-         if (document.body.scrollTop > 720 || document.documentElement.scrollTop > 720) {
+    function returnTop() {
+    let buttonTop = document.querySelector(".arrow-top");
+        if (document.body.scrollTop > 720 || document.documentElement.scrollTop > 720) {
             buttonTop.classList.add("arrow-top-show");
-         } else {
+        } else {
             buttonTop.classList.remove("arrow-top-show");
-         }
-     }
+        }
+    }
 
-     function scrollHidden(){
+    function scrollHidden() {
         let iconScroll = document.querySelector(".scroll");
         if (document.body.scrollTop > 140 || document.documentElement.scrollTop > 140) {
             iconScroll.classList.add("scroll-hidden");

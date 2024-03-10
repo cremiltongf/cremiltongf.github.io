@@ -250,7 +250,7 @@ img{
     .hero-content{
         justify-content: flex-start;
         gap: 2.8rem;
-        margin: 14rem 0 0;
+        margin: 14rem 0 3.2rem;
     }
     .hero-name,
     .hero-svg{

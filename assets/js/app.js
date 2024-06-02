@@ -1,67 +1,73 @@
-// menu mobile and scroll hidden window
-let hiddenOverflow = document.querySelector("body");
-let navMobile = document.querySelector(".nav");
-let addAction = document.querySelectorAll(".toggle");
+(function( win, doc ) {
+  
+  'use strict';
 
-for (let i = 0; i < addAction.length; i++) {
-    addAction[i].addEventListener("click", navAction);
-}
+  // nav
+  let $navMobile = doc.querySelector( '[data-js="navmobile"]' );
+  let $addToggle = doc.querySelectorAll( '[data-js="toggle"]' );
+  let $hiddenScroll = doc.querySelector( '[data-js="scroll"]' );
 
-function navAction() {
-    navMobile.classList.toggle("nav-show");
-    hiddenOverflow.classList.toggle("hidden-scroll");
-}
+  for ( let i = 0; i < $addToggle.length; i++ ) {
+    $addToggle[i].addEventListener( 'click', addToggle, false );
+  }
 
-document.addEventListener("keydown", function(e) {
-    if(e.key === "Escape" && navMobile.classList.contains("nav-show")) {
-        navAction();
+  function addToggle() {
+    $navMobile.classList.toggle( 'nav-show' );
+    $hiddenScroll.classList.toggle( 'hidden-scroll' );
+  }
+
+  function escapeNav( event ){
+    if( event.key === 'Escape' && $navMobile.classList.contains( 'nav-show' ) )
+      addToggle();
+  }
+
+  win.addEventListener( 'keydown', escapeNav, false );
+
+  // dark mode switch
+  let $html = doc.querySelector( 'html' );
+  let $buttonMode = doc.querySelector( '[data-js="icon-mode"]' );
+  let $getStatusMode = localStorage.getItem( 'statusMode' );
+
+  if ( $getStatusMode )
+    $html.classList.add( 'dark-off' );
+
+  function switchMode() {
+    $html.classList.toggle( 'dark-off' );
+    if ( $html.classList.contains( 'dark-off' ) )
+      localStorage.setItem( 'statusMode', true );
+    else
+      localStorage.removeItem( 'statusMode' );
+  }
+
+  $buttonMode.addEventListener( 'click', switchMode, false );
+
+  // return top && icon scroll
+  function scrollEvent() {
+
+    let $bodyHeight = doc.body.scrollTop;
+    let $elHeight = doc.documentElement.scrollTop;
+    let $iconScroll = doc.querySelector( '[data-js="icon-scroll"]' );
+    let $iconArrow = doc.querySelector( '[data-js="arrow"]' );
+
+    function hiddenScrollIcon() {
+      if ( $bodyHeight > 140 || $elHeight > 140 )
+        $iconScroll.classList.add( 'scroll-hidden' );
+      else
+        $iconScroll.classList.remove( 'scroll-hidden' );
     }
-});
 
-
-// dark mode switch
-let html = document.querySelector("html");
-let buttonDarkMode = document.querySelector(".lamp");
-const darkModeStorage = localStorage.getItem("statusDarkMode");
-
-if (darkModeStorage) {
-    html.classList.add("dark-off");
-}
-
-function actionDarkMode() {
-    html.classList.toggle("dark-off");
-    if (html.classList.contains("dark-off")) {
-        localStorage.setItem("statusDarkMode", true);
-        return;
-    }
-    localStorage.removeItem("statusDarkMode");
-}
-buttonDarkMode.addEventListener("click", actionDarkMode);
-
-
-//return top and icon scroll hidden
-function scrollEvent() {
-    window.onscroll = function() { 
-        returnTop();
-        scrollHidden();
-    };
-     
     function returnTop() {
-    let buttonTop = document.querySelector(".arrow-top");
-        if (document.body.scrollTop > 720 || document.documentElement.scrollTop > 720) {
-            buttonTop.classList.add("arrow-top-show");
-        } else {
-            buttonTop.classList.remove("arrow-top-show");
-        }
+      if ( $bodyHeight > 720 || $elHeight > 720 )
+        $iconArrow.classList.add( 'arrow-top-show' );
+      else
+        $iconArrow.classList.remove( 'arrow-top-show' );
     }
 
-    function scrollHidden() {
-        let iconScroll = document.querySelector(".scroll");
-        if (document.body.scrollTop > 140 || document.documentElement.scrollTop > 140) {
-            iconScroll.classList.add("scroll-hidden");
-        } else {
-            iconScroll.classList.remove("scroll-hidden");
-        }
-    }
-}
-window.addEventListener("load", scrollEvent);
+    returnTop();
+    hiddenScrollIcon();
+
+  }
+
+  win.addEventListener( 'scroll', scrollEvent, false );
+
+})( window, document );

@@ -1,6 +1,7 @@
 /* 
  * RESET
  */
+
 *,
 *:before,
 *:after{
@@ -41,6 +42,11 @@
 /*
  * ALL
  */
+*:focus-visible{
+    outline-offset: 2px;
+    outline: 4px dashed var(--orange-700);
+    border-radius: 6px;
+}
 html{
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;

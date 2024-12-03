@@ -28,13 +28,20 @@
     --white-400: #909099;
     --white-500: #6b6b77;
     --white-600: #464655;
+    --white-700: #222233;
     --blue-100: #f0f6fc; 
     --blue-200: #d4e5f6;
     --blue-300: #aaccee;
+    --blue-400: #7fb2e5;
+    --blue-500: #5599dd;
+    --blue-600: #2a7fd4;
     --blue-700: #0066cc;
     --orange-100: #fff6f1;
     --orange-200: #ffe5d7;
     --orange-300: #ffccaf;
+    --orange-400: #ffb288;
+    --orange-500: #ff9960;
+    --orange-600: #ff7f38;
     --orange-700: #ff6611;
 }
 
@@ -216,6 +223,7 @@ img{
     display: flex;
     align-items: center;
     height: calc(100vh - 150px);
+    min-height: 540px;
 }
 .hero-content{
     display: flex;
@@ -231,6 +239,11 @@ img{
 .hero-svg{
     display: flex;
     justify-content: flex-end;
+}
+.hero-svg svg{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 .place{
     font-weight: 300;
@@ -256,7 +269,7 @@ img{
     .hero-content{
         justify-content: flex-start;
         gap: 2.8rem;
-        margin: 14rem 0 3.2rem;
+        /* margin: 14rem 0 3.2rem; */
     }
     .hero-name,
     .hero-svg{
@@ -266,11 +279,12 @@ img{
         justify-content: flex-start;
     }
 }
-@media (max-width: 480px){
+/* @media (max-width: 480px){
     .hero-svg svg{
         max-width: 100%;
+        display: block;
     }
-}
+} */
 
 
 /*
@@ -675,7 +689,7 @@ img{
 }
 /* icon menu mobile */
 @media (max-width: 820px) {
-    .svg-icon-menu{
+    .svg-icon-menu {
         stroke: var(--white-200);
     }
     .nav.nav-show{
@@ -694,7 +708,7 @@ img{
 /* all */
 .dark-off{
     background: var(--white-100);
-    color: var(--white-600);
+    color: var(--white-700);
 }
 .dark-off .line{
     border-top: 1px solid var(--white-200);
@@ -709,39 +723,39 @@ img{
 }
 /* header */
 .dark-off .cgf{
-    fill: var(--white-600);
+    fill: var(--white-700);
 }
 .dark-off .menu a{
-    color: var(--white-600);
+    color: var(--white-700);
 }
 .dark-off .menu a:hover{
     color: var(--orange-700);
 }
 .dark-off .social svg path{
-    stroke: var(--white-600);
+    stroke: var(--white-700);
 }
 .dark-off .social svg:hover path{
     stroke: var(--orange-700);
 }
 /* hero */
 .dark-off .people-hero{
-    stroke: var(--white-600);
+    stroke: var(--white-700);
 }
 /* about */
 .dark-off .about-container{
-    background-color: var(--orange-100);
+    background-color: var(--orange-200);
     border-bottom: 2px solid var(--orange-700);
 }
 /* experience */
 .dark-off .work-one,
 .dark-off .work-two,
 .dark-off .work-three{
-    background-color: var(--blue-100);
+    background-color: var(--blue-200);
 }
 .dark-off .work-label span{
-    color: var(--white-600);
-    background-color: var(--blue-200);
-    border: 1px solid var(--blue-300);
+    color: var(--white-700);
+    background-color: var(--blue-300);
+    border: 1px solid var(--blue-500);
 }
 .dark-off .course-one,
 .dark-off .course-two,
@@ -749,18 +763,18 @@ img{
     background-color: var(--orange-100);
 }
 .dark-off .course-label span{
-    color: var(--white-600);
-    background-color: var(--orange-200);
-    border: 1px solid var(--orange-300);
+    color: var(--white-700);
+    background-color: var(--orange-300);
+    border: 1px solid var(--orange-500);
 }
 /* projects */
 .dark-off .project{
-    background-color: var(--blue-100);
+    background-color: var(--blue-200);
 }
 .dark-off .project-label span{
-    color: var(--white-600);
-    background-color: var(--blue-200);
-    border: 1px solid var(--blue-300);
+    color: var(--white-700);
+    background-color: var(--blue-300);
+    border: 1px solid var(--blue-500);
 }
 .dark-off .project img{
     border: 1px solid var(--white-200);
@@ -768,7 +782,7 @@ img{
 /* icon menu mobile */
 @media (max-width: 820px) {
     .dark-off .svg-icon-menu{
-        stroke: var(--white-600);
+        stroke: var(--white-700);
     }
     .dark-off .nav.nav-show{
         background-color: var(--white-100);

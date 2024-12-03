@@ -269,7 +269,6 @@ img{
     .hero-content{
         justify-content: flex-start;
         gap: 2.8rem;
-        /* margin: 14rem 0 3.2rem; */
     }
     .hero-name,
     .hero-svg{
@@ -682,7 +681,7 @@ img{
 }
 /* icon menu mobile */
 @media (max-width: 820px) {
-    .svg-icon-menu {
+    .svg-icon-menu{
         stroke: var(--white-200);
     }
     .nav.nav-show{

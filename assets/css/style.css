@@ -242,7 +242,7 @@ img{
     justify-content: flex-end;
 }
 .hero-svg svg{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -270,10 +270,12 @@ img{
     .hero-content{
         gap: 2.8rem;
     }
-    .hero-name,
-    .hero-svg{
+    .hero-name{
         flex: 1 1 100%;
         justify-content: flex-start;
+    }
+    .hero-svg{
+        display: none;
     }
 }
 

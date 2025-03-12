@@ -246,9 +246,6 @@ img{
     height: auto;
     display: block;
 }
-.social svg path{
-    transition: stroke .3s;
-}
 .place{
     font-weight: 300;
     margin: .8rem 0 1.6rem;
@@ -258,13 +255,35 @@ img{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    max-height: 3.2rem;
 }
 .social li + li{
     padding-left: .8rem;
 }
 .social a{
+    display: inline-block;
+}
+.icon-x{
+    mask: url(../img/svg/x.svg) no-repeat;
+}
+.icon-instagram{
+    mask: url(../img/svg/instagram.svg) no-repeat;
+}
+.icon-github{
+    mask: url(../img/svg/github.svg) no-repeat;
+}
+.icon-email{
+    mask: url(../img/svg/email.svg) no-repeat;
+}
+.icon{
     display: block;
-    max-height: 32px;
+    width: 32px;
+    height: 32px;
+    mask-size: contain;
+    background: var(--white-200);
+}
+.icon:hover{
+    background: var(--orange-700);
 }
 @media (max-width: 820px){
     .hero-content{

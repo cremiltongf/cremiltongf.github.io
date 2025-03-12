@@ -37,20 +37,17 @@
 
   // return top && icon scroll
   function scrollEvent() {
-    let $bodyHeight = doc.body.scrollTop;
     let $elHeight = doc.documentElement.scrollTop;
     let $iconScroll = doc.querySelector('[data-js="icon-scroll"]');
     let $iconArrow = doc.querySelector('[data-js="arrow"]');
 
     function hiddenScrollIcon() {
-      if ($bodyHeight > 140 || $elHeight > 140)
-        $iconScroll.classList.add("scroll-hidden");
+      if ($elHeight > 140) $iconScroll.classList.add("scroll-hidden");
       else $iconScroll.classList.remove("scroll-hidden");
     }
 
     function returnTop() {
-      if ($bodyHeight > 720 || $elHeight > 720)
-        $iconArrow.classList.add("arrow-top-show");
+      if ($elHeight > 720) $iconArrow.classList.add("arrow-top-show");
       else $iconArrow.classList.remove("arrow-top-show");
     }
 

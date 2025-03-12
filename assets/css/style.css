@@ -64,6 +64,9 @@ html{
 body{
     font-size: 2.4rem;
 }
+p{
+    margin-bottom: 1rem;
+}
 img{
     max-width: 100%;
     height: auto;
@@ -316,13 +319,15 @@ img{
 }
 .about-avatar{
     flex: 3;
+    margin-right: 1.8rem;
+}
+.about-avatar img{
+    border-radius: .4rem;
 }
 .about-biography{
     flex: 7;
 }
-.strong{
-    font-weight: 600;
-}
+
 @media (max-width: 880px){
     .about{
         margin: 3.2rem auto;
@@ -345,11 +350,12 @@ img{
     .about-biography{
         width: 100%;
         max-width: 100%;
+        margin: 0;
     }
     .about-avatar img{
         width: 200px;
         height: 200px;
-        margin-bottom: 1.2rem;
+        margin: 0 0 1.2rem;
     }
 }
 
@@ -529,7 +535,7 @@ img{
     justify-content: center;
 }
 .footer-copy{
-    margin-right: 1.6rem;
+    margin: 0 1.6rem 0 0;
     font-weight: 300;
 }
 @media (max-width: 880px){
@@ -542,7 +548,7 @@ img{
         flex-direction: column;
     }
     .footer-copy{
-        margin: 0 0 .8rem 0;
+        margin: 0 0 .8rem;
     }
 }
 

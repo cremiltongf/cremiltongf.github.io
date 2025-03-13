@@ -1,7 +1,7 @@
 (function (win, doc) {
   "use strict";
 
-  // nav
+  // nav mobile
   let $navMobile = doc.querySelector('[data-js="navmobile"]');
   let $addToggle = doc.querySelectorAll('[data-js="toggle"]');
   let $hiddenScroll = doc.querySelector('[data-js="scroll"]');
@@ -15,45 +15,38 @@
     $hiddenScroll.classList.toggle("hidden-scroll");
   }
 
-  function escapeNav(event) {
-    if (event.key === "Escape" && $navMobile.classList.contains("nav-show"))
-      addToggle();
-  }
-  win.addEventListener("keydown", escapeNav, false);
-
-  // dark mode switch
+  // dark mode and white mode
   let $html = doc.querySelector("html");
-  let $buttonMode = doc.querySelector('[data-js="icon-mode"]');
-  let $getStatusMode = localStorage.getItem("statusMode");
-  if ($getStatusMode) $html.classList.add("dark-off");
+  let $buttonDarkMode = doc.querySelector('[data-js="icon-dark"]');
+  let $statusDarkMode = localStorage.getItem("statusDark");
+  if ($statusDarkMode) $html.classList.add("dark-off");
 
-  function switchMode() {
+  function changeDarkMode() {
     $html.classList.toggle("dark-off");
     if ($html.classList.contains("dark-off"))
-      localStorage.setItem("statusMode", true);
-    else localStorage.removeItem("statusMode");
+      localStorage.setItem("statusDark", true);
+    else localStorage.removeItem("statusDark");
   }
-  $buttonMode.addEventListener("click", switchMode, false);
+  $buttonDarkMode.addEventListener("click", changeDarkMode, false);
 
-  // return top && icon scroll
-  function scrollEvent() {
-    let $elHeight = doc.documentElement.scrollTop;
+  // return top and icon scroll
+  function eventScroll() {
+    let $bodyHeight = doc.documentElement.scrollTop;
     let $iconScroll = doc.querySelector('[data-js="icon-scroll"]');
-    let $iconArrow = doc.querySelector('[data-js="arrow"]');
+    let $iconReturnTop = doc.querySelector('[data-js="icon-return-top"]');
 
-    function hiddenScrollIcon() {
-      if ($elHeight > 140) $iconScroll.classList.add("scroll-hidden");
+    function hiddenIconScroll() {
+      if ($bodyHeight > 140) $iconScroll.classList.add("scroll-hidden");
       else $iconScroll.classList.remove("scroll-hidden");
     }
 
     function returnTop() {
-      if ($elHeight > 720) $iconArrow.classList.add("arrow-top-show");
-      else $iconArrow.classList.remove("arrow-top-show");
+      if ($bodyHeight > 720) $iconReturnTop.classList.add("return-top-visible");
+      else $iconReturnTop.classList.remove("return-top-visible");
     }
 
+    hiddenIconScroll();
     returnTop();
-    hiddenScrollIcon();
   }
-
-  win.addEventListener("scroll", scrollEvent, false);
+  win.addEventListener("scroll", eventScroll, false);
 })(window, document);

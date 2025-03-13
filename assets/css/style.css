@@ -337,6 +337,7 @@ img{
 }
 @media (max-width: 880px){
     .about-container{
+        margin: 3.2rem auto 0;
         width: 100%;
     }
 }
@@ -349,6 +350,9 @@ img{
     .about-biography{
         width: 100%;
         max-width: 100%;
+    }
+    .about-avatar,
+    .about-biography{
         margin: 0;
     }
     .about-avatar img{
@@ -370,7 +374,7 @@ img{
 }
 .work-container,
 .education-container{
-    margin-top: 64px;
+    margin-top: 6.4rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

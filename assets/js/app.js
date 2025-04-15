@@ -11,7 +11,7 @@
   }
 
   function addToggle() {
-    $navMobile.classList.toggle("nav-show");
+    $navMobile.classList.toggle("nav-open");
     $hiddenScroll.classList.toggle("hidden-scroll");
   }
 

@@ -68,42 +68,30 @@
                 </svg>
             </a>
         </div>
-        <div data-js="toggle" class="icon-menu toggle">
-            <svg class="svg-icon-menu" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
-                style="enable-background:new 0 0 300 300" viewBox="0 0 300 300">
-                <path d="M240.5 222h-180m179-72h-180m181-72h-180"
-                    style="fill:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round" />
-            </svg>
+        <div class="navigation">
+            <label class="ui-switch">
+                <input type="checkbox" data-js="icon-dark">
+                <div class="slider">
+                    <div class="circle"></div>
+                </div>
+            </label>
+            <div class="icon-nav toggle" data-js="toggle">
+                <svg class="svg-icon-nav" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                    style="enable-background:new 0 0 300 300" viewBox="0 0 300 300">
+                    <path d="M240.5 222h-180m179-72h-180m181-72h-180"
+                        style="fill:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round" />
+                </svg>
+            </div>
+            <nav data-js="navmobile" class="nav-links">
+                <ul data-js="toggle" class="links toggle">
+                    <li><a href="#about">sobre</a></li>
+                    <li><a href="#experience">experiência</a></li>
+                    <li><a href="#education">formação</a></li>
+                    <li><a href="#projects">projetos</a></li>
+                    <li><a href="https://labs.cremilton.com/">wiki &#8599;</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav data-js="navmobile" class="nav">
-            <ul data-js="toggle" class="menu toggle">
-                <li><a href="#about">sobre</a></li>
-                <li><a href="#experience">experiência</a></li>
-                <li><a href="#education">formação</a></li>
-                <li><a href="#projects">projetos</a></li>
-                <li><a href="https://labs.cremilton.com/">wiki &#8599;</a></li>
-                <li data-js="icon-dark" class="icon-darkmode">
-                    <svg id="lamp" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
-                        <defs>
-                            <style>
-                                .cls-1 {
-                                    fill: none;
-                                    stroke: #0066cc;
-                                    stroke-linecap: round;
-                                    stroke-linejoin: round;
-                                }
-                            </style>
-                        </defs>
-                        <title>lamp</title>
-                        <path class="cls-1 lamp-on"
-                            d="M14.22,34.62V32.18c-4.83-2.92-8.8-8.61-8.8-14.65A16.63,16.63,0,0,1,25.77,1.34,16.35,16.35,0,0,1,36.83,9.88c4.39,8.82-.23,18.19-7,22.28V34.6c0,.6.23,2-2,2H16.23C13.92,36.63,14.22,35.73,14.22,34.62Z" />
-                        <path class="cls-1"
-                            d="M22,13.31l-2.25,3.9c-.5.86-.08,1.58.9,1.58h2.67c1,0,1.41.71.9,1.57L22,24.27" />
-                        <path class="cls-1" d="M14.64,42.93a27,27,0,0,1,14.69,0" />
-                    </svg>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <main class="main">

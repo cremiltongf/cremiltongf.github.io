@@ -225,7 +225,7 @@ img{
         left: 0;
         height: calc(100vh - 96px);
         opacity: 0;
-        transform: translate3d(0, calc(-100% - 96px), 0);
+        transform: translate3d(calc(-100% - 84px), 0, 0);
         transition: .4s ease all;
     }
     .nav-links li{
@@ -571,7 +571,6 @@ img{
 /*
  * RETURN TOP, SCROLL ICON
  */
-
 .return-top{
     width: 4.8rem;
     height: 4.8rem;

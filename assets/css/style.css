@@ -173,6 +173,11 @@ img{
     transition: color .3s ease;
     font-size: 2rem;
  }
+ @media (max-width: 1200px){
+    .header{
+        padding: 1.6rem 1.6rem;
+    }
+ }
 
 
  /*
@@ -228,6 +233,16 @@ img{
     .nav-links.nav-open{
         opacity: initial;
         transform: initial;
+    }
+}
+
+
+/*
+ *MAIN
+ */
+@media(max-width: 1200px){
+    .main{
+        padding: 0 1.6rem;
     }
 }
 

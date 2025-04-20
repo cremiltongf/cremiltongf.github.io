@@ -701,7 +701,6 @@ img{
     color: var(--white-200);
 }
 .line{
-    min-height: 1px;
     border-top: 1px solid var(--dark-border);
 }
 /* header */
@@ -771,8 +770,7 @@ img{
 .project-btn .btn:hover{
     background-color: var(--orange-700);
 }
-/* icon-darkmode and return-top*/
-.icon-darkmode svg:hover path,
+/* return-top*/
 .return-top svg:hover path,
 .return-top svg:hover circle{
     stroke: var(--orange-700);
@@ -807,13 +805,9 @@ img{
 .dark-off .line{
     border-top: 1px solid var(--white-200);
 }
-/* icon-darkmode and return-top*/
-.dark-off .icon-darkmode svg:hover path,
+/* return-top*/
 .dark-off .return-top svg:hover path{
     stroke: var(--orange-700);
-}
-.dark-off .icon-darkmode-on{
-    fill: #ffd43b;
 }
 /* header */
 .dark-off .cgf{
@@ -892,53 +886,54 @@ img{
  */
 .container-404{
     background-color: #272f42;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
 }
 .intro-404{
+    min-height: 100vh;
     width: 100%;
     max-width: 1160px;
     margin: 0 auto;
-    padding: 1.6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 1.6rem;
 }
-.illustration{
+.illustration-404{
     flex: 2;
     width: 100%;
     max-width: 700px;
 }
-.content{
+.text-404{
     flex: 1;
 }
-.content h1{
+.text-404 h1{
     margin-bottom: 3.2rem;
 }
-.content p{
+.text-404 p{
     margin-bottom: 1.6rem;
 }
 .lnk-home{
     color: var(--blue-700);
-    transition: all .3s ease-in-out;
+    transition: all .3s ease;
 }
 .lnk-home:hover{
     color: var(--orange-700);
 }
 @media (max-width: 768px){
-    .content-404{
+    .container-404{
+        padding: 1.6rem 2rem;
+    }
+    .text-404{
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .illustration,
-    .content{
+    .illustration-404,
+    .text-404{
         flex: 1;
-        width: 100%;
+        min-width: 100%;
     }
-    .content{
+    .text-404{
         order: -1;
     }
 }

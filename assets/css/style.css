@@ -307,9 +307,6 @@ img{
 .social a{
     display: inline-block;
 }
-.icon-x{
-    mask: url(../img/svg/x.svg) no-repeat;
-}
 .icon-instagram{
     mask: url(../img/svg/instagram.svg) no-repeat;
 }

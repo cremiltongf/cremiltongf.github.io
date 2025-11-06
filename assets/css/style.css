@@ -186,7 +186,7 @@ img{
  }
  @media (max-width: 1200px){
     .header{
-        padding: 1.6rem;
+        padding: 1.6rem 3.2rem;
     }
  }
 
@@ -244,16 +244,6 @@ img{
     .nav-links.nav-open{
         opacity: initial;
         transform: initial;
-    }
-}
-
-
-/*
- *MAIN
- */
-@media(max-width: 1200px){
-    .main{
-        padding: 0 1.6rem;
     }
 }
 
@@ -322,6 +312,11 @@ img{
     height: 32px;
     mask-size: contain;
 }
+@media(max-width: 1200px){
+    .hero{
+        padding: 1.6rem 3.2rem;
+    }
+}
 @media (max-width: 820px){
     .hero-name{
         flex: 1 1 100%;
@@ -362,7 +357,11 @@ img{
 .about-biography{
     flex: 7;
 }
-
+@media(max-width: 1200px){
+    .about{
+        padding: 1.6rem 3.2rem;
+    }
+}
 @media (max-width: 880px){
     .about{
         margin: 3.2rem auto;
@@ -450,6 +449,12 @@ img{
     text-transform: uppercase;
     padding: .8rem 1.6rem;
 }
+ @media (max-width: 1200px){
+    .experience,
+    .education{
+        padding: 1.6rem 3.2rem;
+    }
+ }
 @media (max-width: 880px){
     .experience,
     .education{
@@ -526,6 +531,11 @@ img{
     font-size: 2rem;
     transition: background-color .3s;
     margin: .8rem .8rem 0 0;
+}
+@media (max-width: 1200px){
+    .projects{
+        padding: 1.6rem 3.2rem;
+    }
 }
 @media (max-width: 880px){
     .projects{

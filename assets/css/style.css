@@ -18,9 +18,9 @@
     /* layout width */
     --max-width-layout: 1160px;
     /* dark theme*/
-    --dark-border: #121314;
-    --dark-bg-primary: #1f1f1f;
-    --dark-bg-secondary: #121314;
+    --dark-border: #101112;
+    --dark-bg-primary: rgba(31, 31, 31, .96);
+    --dark-bg-secondary: #101112;
     /* text */
     --white-100: #f2f2f3;
     --white-200: #dadadc;

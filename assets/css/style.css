@@ -297,11 +297,14 @@ img{
 .social a{
     display: inline-block;
 }
+.icon-github{
+    mask: url(../img/svg/github.svg) no-repeat;
+}
 .icon-instagram{
     mask: url(../img/svg/instagram.svg) no-repeat;
 }
-.icon-github{
-    mask: url(../img/svg/github.svg) no-repeat;
+.icon-linkedin{
+    mask: url(../img/svg/linkedin.svg) no-repeat;
 }
 .icon-email{
     mask: url(../img/svg/email.svg) no-repeat;

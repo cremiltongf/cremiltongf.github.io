@@ -855,9 +855,9 @@ img{
 }
 .dark-off .work-label span{
     color: var(--white-700);
-    background-color: var(--blue-300);
-    border: 1px solid var(--blue-500);
+    border: 1px solid var(--white-700);
 }
+/* education */
 .dark-off .course-one,
 .dark-off .course-two,
 .dark-off .course-three{
@@ -865,8 +865,7 @@ img{
 }
 .dark-off .course-label span{
     color: var(--white-700);
-    background-color: var(--orange-300);
-    border: 1px solid var(--orange-500);
+    border: 1px solid var(--white-700);
 }
 /* projects */
 .dark-off .project{
@@ -874,11 +873,10 @@ img{
 }
 .dark-off .project-label span{
     color: var(--white-700);
-    background-color: var(--blue-300);
-    border: 1px solid var(--blue-500);
+    border: 1px solid var(--white-700);
 }
 .dark-off .project img{
-    border: 1px solid var(--white-200);
+    border: 1px solid var(--white-300);
 }
 /* icon menu mobile */
 @media (max-width: 820px) {

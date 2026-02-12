@@ -707,30 +707,34 @@ img{
  /* all */
  html{
     background: var(--dark-bg-primary);
-    color: var(--white-300);
+    color: var(--white-200);
 }
 .line{
     border-top: 1px solid var(--dark-border);
 }
 /* header */
 .links a{
-    color: var(--white-300);
+    color: var(--white-200);
 }
 .links a:hover{
     color: var(--orange-700);
 }
 .icon{
-    background: var(--white-300);
+    background: var(--white-200);
 }
 .icon:hover{
     background: var(--orange-700);
 }
 /* about */
+.about h2{
+    color: var(--orange-700);
+}
 .about-content{
     background-color: var(--dark-bg-secondary);
     border-bottom: 2px solid var(--orange-700);
 }
 /* experience */
+.experience h2,
 .experience h3{
     color: var(--blue-700);
 }
@@ -741,10 +745,11 @@ img{
     border-bottom: 2px solid var(--blue-700);
 }
 .work-label span{
-    color: var(--white-300);
-    border: 1px solid var(--white-300);
+    color: var(--white-200);
+    border: 1px solid var(--white-200);
 }
 /* education */
+.education h2,
 .education h3{
     color: var(--orange-700);
 }
@@ -755,22 +760,21 @@ img{
     border-bottom: 2px solid var(--orange-700);
 }
 .course-label span{
-    color: var(--white-300);
-    border: 1px solid var(--white-300);
+    color: var(--white-200);
+    border: 1px solid var(--white-200);
 }
 /* projects */
-.project{
-    background-color: var(--dark-bg-secondary);
-}
-.project h3{
+.projects h2,
+.projects h3{
     color: var(--blue-700);
 }
 .project{
     border-bottom: 2px solid var(--blue-700);
+    background-color: var(--dark-bg-secondary);
 }
 .project-label span{
-    border: 1px solid var(--white-300);
-    color: var(--white-300);
+    border: 1px solid var(--white-200);
+    color: var(--white-200);
 }
 .project-btn .btn{
     color: var(--white-100);
@@ -791,7 +795,7 @@ img{
 /* icon menu mobile */
 @media (max-width: 820px) {
     .svg-icon-nav{
-        stroke: var(--white-300);
+        stroke: var(--white-200);
     }
     .nav-links.nav-open{
         background-color: var(--dark-bg-primary);

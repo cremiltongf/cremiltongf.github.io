@@ -107,27 +107,27 @@ img{
  h2::after{
     content: "";
     display: block;
-    width: 12.4rem;
+    width: 10rem;
     height: .5rem;
  }
  @media (max-width: 880px){
     h1{
-        font-size: 5.6rem;
+        font-size: 5.2rem;
     }
     h2{
-        font-size: 5.2rem;
+        font-size: 4.6rem;
         margin-bottom: 4rem;
     }
 }
-@media(max-width: 380px){
+@media(max-width: 420px){
     h1{
-        font-size: 4.6rem;
+        font-size: 4.4rem;
     }
     h2{
-        font-size: 4.2rem;
+        font-size: 3.8rem;
     }
     h3{
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 }
 
@@ -571,12 +571,10 @@ img{
         margin: 3.2rem auto;
     }
 }
-@media (max-width: 340px){
+@media (max-width: 360px){
     .footer{
         flex-direction: column;
-    }
-    .footer-copy{
-        margin: 0 0 .8rem;
+        gap: .8rem;
     }
 }
 
@@ -623,7 +621,7 @@ img{
 }
 @media (max-width: 498px){
     .return-top{
-        bottom: 10rem;
+        bottom: 8.4rem;
         right: 1.6rem;
     }
 }

@@ -886,6 +886,9 @@ img{
     .dark-off .svg-icon-nav{
         stroke: var(--text-black);
     }
+    .dark-off .svg-icon-nav{
+        stroke: var(--text-black);
+    }
     .dark-off .nav-links.nav-open{
         background-color: var(--bg-white);
     }

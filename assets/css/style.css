@@ -177,9 +177,19 @@ img{
     padding: .6rem 1.2rem;
     font-weight: 300;
     text-decoration: none;
-    transition: color .3s ease;
+    transition: all .3s ease;
     font-size: 2rem;
  }
+  .links a::after{
+    content: "";
+    display: block;
+    width: 28%;
+    height: 2px;
+    transition: all .3s ease;
+  }
+  .links a:hover::after{
+    width: 100%;
+  }
  @media (max-width: 1200px){
     .header{
         padding: 1.6rem 3.2rem;
@@ -707,8 +717,14 @@ img{
 .links a{
     color: var(--text-white);
 }
+.links a::after{
+    background: var(--text-white);
+}
 .links a:hover{
     color: var(--orange-base);
+}
+.links a:hover::after{
+    background: var(--orange-base);
 }
 .icon{
     background: var(--text-white);
@@ -811,14 +827,20 @@ img{
 .dark-off .links a{
     color: var(--text-black);
 }
+.dark-off .links a::after{
+    background: var(--text-black);
+}
 .dark-off .links a:hover{
-    color: var(--orange-base);
+    color: var(--blue-base);
+}
+.dark-off .links a:hover::after{
+    background: var(--blue-base);
 }
 .dark-off .icon{
     background: var(--text-black);
 }
 .dark-off .icon:hover{
-    background: var(--orange-base);
+    background: var(--blue-base);
 }
 /* hero */
 .dark-off .people-hero{

@@ -17,34 +17,6 @@
  :root {
     /* layout width */
     --max-width-layout: 1160px;
-    /* dark theme*/
-    --dark-border: #101112;
-    --dark-bg-primary: rgba(31, 31, 31, .96);
-    --dark-bg-secondary: #101112;
-    /* text */
-    --white-100: #f2f2f3;
-    --white-200: #dadadc;
-    --white-300: #b5b5bb;
-    --white-400: #909099;
-    --white-500: #6b6b77;
-    --white-600: #464655;
-    --white-700: #222233;
-    --blue-100: #f0f6fc; 
-    --blue-200: #d4e5f6;
-    --blue-300: #aaccee;
-    --blue-400: #7fb2e5;
-    --blue-500: #5599dd;
-    --blue-600: #2a7fd4;
-    --blue-700: #0066cc;
-    --orange-100: #fff6f1;
-    --orange-200: #ffe5d7;
-    --orange-300: #ffccaf;
-    --orange-400: #ffb288;
-    --orange-500: #ff9960;
-    --orange-600: #ff7f38;
-    --orange-700: #ff6611;
-
-    /*new colors*/
     /*blue-colors*/
     --blue-base: #0066CC;
     --blue-primary: #007AF5;

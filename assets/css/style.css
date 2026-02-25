@@ -43,6 +43,26 @@
     --orange-500: #ff9960;
     --orange-600: #ff7f38;
     --orange-700: #ff6611;
+
+    /*new colors*/
+    /*blue-colors*/
+    --blue-base: #0066CC;
+    --blue-primary: #007AF5;
+    --blue-secondary: #0052A3;
+    /*orange-colors*/
+    --orange-base: #FA7A2F;
+    --orange-primary:#FB9F69;
+    --orange-secondary:#E85906;
+    /*text-colors*/
+    --text-black: #101112;
+    --text-white: #D9D9DC;
+    --text-white-button: #FFFFFF;
+    --text-black-button: #000000;
+    /*bg-colors*/
+    --bg-white: #EFEDED;
+    --bg-black: #262729;
+    --bg-white-box: #FFFFFF;
+    --bg-black-box: #3B3B3B;
 }
 
 
@@ -630,13 +650,17 @@ img{
 /* From Uiverse.io by Galahhad */
 .ui-switch {
     /* switch */
-    --switch-bg: var(--white-400);
+    --switch-bg: #909099;
     --switch-width: 48px;
     --switch-height: 20px;
     /* circle */
     --circle-diameter: 32px;
-    --circle-bg: var(--blue-700);
+    --circle-bg: var(--blue-base);
     --circle-inset: calc((var(--circle-diameter) - var(--switch-height)) / 2);
+  }
+  .dark-off .ui-switch {
+    /* circle */
+    --circle-bg: var(--orange-base);
   }
   .ui-switch input {
     display: none;
@@ -675,15 +699,14 @@ img{
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
-    ;
+    /*    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);*/
   }
   .slider .circle::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background: var(--white-100);
+    background: var(--text-white);
     border-radius: inherit;
     -webkit-transition: all 500ms;
     -o-transition: all 500ms;
@@ -710,103 +733,89 @@ img{
  */
  /* all */
  html{
-    background: var(--dark-bg-primary);
-    color: var(--white-200);
+    background: var(--bg-black);
+    color: var(--text-white);
 }
 .line{
     border-top: 1px solid var(--dark-border);
 }
 /* header */
 .links a{
-    color: var(--white-200);
+    color: var(--text-white);
 }
 .links a:hover{
-    color: var(--orange-700);
+    color: var(--orange-base);
 }
 .icon{
-    background: var(--white-200);
+    background: var(--text-white);
 }
 .icon:hover{
-    background: var(--orange-700);
+    background: var(--orange-base);
 }
 /* about */
-.about h2{
-    color: var(--orange-700);
-}
 .about-content{
-    background-color: var(--dark-bg-secondary);
-    border-bottom: 2px solid var(--orange-700);
+    background-color: var(--bg-black-box);
+    border-bottom: 5px solid var(--orange-base);
 }
 /* experience */
-.experience h2,
-.experience h3{
-    color: var(--blue-700);
-}
 .work-one,
 .work-two,
 .work-three{
-    background-color: var(--dark-bg-secondary);
-    border-bottom: 2px solid var(--blue-700);
+    background-color: var(--bg-black-box);
+    border-bottom: 5px solid var(--blue-base);
 }
 .work-label span{
-    color: var(--white-200);
-    border: 1px solid var(--white-200);
+    color: var(--text-white);
+    border: 1px solid var(--text-white);
 }
 /* education */
-.education h2,
-.education h3{
-    color: var(--orange-700);
-}
 .course-one,
 .course-two,
 .course-three{
-    background-color: var(--dark-bg-secondary);
-    border-bottom: 2px solid var(--orange-700);
+    background-color: var(--bg-black-box);
+    border-bottom: 5px solid var(--orange-base);
 }
 .course-label span{
-    color: var(--white-200);
-    border: 1px solid var(--white-200);
+    color: var(--text-white);
+    border: 1px solid var(--text-white);
 }
 /* projects */
-.projects h2,
-.projects h3{
-    color: var(--blue-700);
-}
 .project{
-    border-bottom: 2px solid var(--blue-700);
-    background-color: var(--dark-bg-secondary);
+    border-bottom: 5px solid var(--blue-base);
+    background-color: var(--bg-black-box);
 }
 .project-label span{
-    border: 1px solid var(--white-200);
-    color: var(--white-200);
+    border: 1px solid var(--text-white);
+    color: var(--text-white);
 }
 .project-btn .btn{
-    color: var(--white-100);
-    background-color: var(--blue-700);
+    color: var(--text-white);
+    background-color: var(--blue-base);
 }
 .project-btn .btn:hover{
-    background-color: var(--orange-700);
+    color: var(--text-black-button);
+    background-color: var(--orange-base);
 }
 /* return-top*/
 .return-top svg:hover path,
 .return-top svg:hover circle{
-    stroke: var(--orange-700);
+    stroke: var(--orange-base);
 }
 /* scroll icon */
 .scroll svg path{
-    stroke: var(--blue-700);
+    stroke: var(--text-white);
 }
 /* icon menu mobile */
 @media (max-width: 820px) {
     .svg-icon-nav{
-        stroke: var(--white-200);
+        stroke: var(--text-white);
     }
     .nav-links.nav-open{
-        background-color: var(--dark-bg-primary);
+        background-color: var(--bg-black);
     }
 
     .nav-links.nav-open .links a{
-        border-top: 1px solid var(--dark-border);
+        border-top: 1px solid var(--bg-black-box);
     }
 }
 
@@ -816,82 +825,78 @@ img{
  */
 /* all */
 .dark-off{
-    background: var(--white-100);
-    color: var(--white-700);
+    background: var(--bg-white);
+    color: var(--text-black);
 }
 .dark-off .line{
-    border-top: 1px solid var(--white-200);
+    border-top: 1px solid var(--text-white);
 }
 /* return-top*/
 .dark-off .return-top svg:hover path{
-    stroke: var(--orange-700);
+    stroke: var(--orange-base);
 }
 /* header */
-.dark-off .cgf{
-    fill: var(--white-700);
-}
 .dark-off .links a{
-    color: var(--white-700);
+    color: var(--text-black);
 }
 .dark-off .links a:hover{
-    color: var(--orange-700);
+    color: var(--orange-base);
 }
 .dark-off .icon{
-    background: var(--white-700);
+    background: var(--text-black);
 }
 .dark-off .icon:hover{
-    background: var(--orange-700);
+    background: var(--orange-base);
 }
 /* hero */
 .dark-off .people-hero{
-    stroke: var(--white-700);
+    stroke: var(--text-black);
 }
 /* about */
 .dark-off .about-content{
-    background-color: var(--orange-200);
-    border-bottom: 2px solid var(--orange-700);
+    background-color: var(--bg-white-box);
 }
 /* experience */
 .dark-off .work-one,
 .dark-off .work-two,
 .dark-off .work-three{
-    background-color: var(--blue-200);
+    background-color: var(--bg-white-box);
 }
 .dark-off .work-label span{
-    color: var(--white-700);
-    border: 1px solid var(--white-700);
+    color: var(--text-black);
+    border: 1px solid var(--text-black);
 }
 /* education */
 .dark-off .course-one,
 .dark-off .course-two,
 .dark-off .course-three{
-    background-color: var(--orange-100);
+    background-color: var(--bg-white-box);
 }
 .dark-off .course-label span{
-    color: var(--white-700);
-    border: 1px solid var(--white-700);
+    color: var(--text-black);
+    border: 1px solid var(--text-black);
 }
 /* projects */
 .dark-off .project{
-    background-color: var(--blue-200);
+    background-color: var(--bg-white-box);
 }
 .dark-off .project-label span{
-    color: var(--white-700);
-    border: 1px solid var(--white-700);
+    color: var(--text-black);
+    border: 1px solid var(--text-black);
 }
 .dark-off .project img{
-    border: 1px solid var(--white-300);
+    /*border: 1px solid var(--text-black);*/
 }
 /* icon menu mobile */
 @media (max-width: 820px) {
     .dark-off .svg-icon-nav{
-        stroke: var(--white-700);
+        stroke: var(--text-black);
     }
     .dark-off .nav-links.nav-open{
-        background-color: var(--white-100);
+        background-color: var(--bg-white);
     }
     .dark-off .nav-links.nav-open .links a{
-        border-top: 1px solid var(--white-200);
+        border-top: 1px solid var(--text-black);
     }
 }
 
@@ -928,11 +933,11 @@ img{
     margin-bottom: 1.6rem;
 }
 .lnk-home{
-    color: var(--blue-700);
+    color: var(--blue-base);
     transition: all .3s ease;
 }
 .lnk-home:hover{
-    color: var(--orange-700);
+    color: var(--orange-base);
 }
 @media (max-width: 768px){
     .container-404{

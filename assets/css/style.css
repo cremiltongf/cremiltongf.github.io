@@ -736,9 +736,6 @@ img{
     background: var(--bg-black);
     color: var(--text-white);
 }
-.line{
-    border-top: 1px solid var(--dark-border);
-}
 /* header */
 .links a{
     color: var(--text-white);
@@ -827,9 +824,6 @@ img{
 .dark-off{
     background: var(--bg-white);
     color: var(--text-black);
-}
-.dark-off .line{
-    border-top: 1px solid var(--text-white);
 }
 /* return-top*/
 .dark-off .return-top svg:hover path{

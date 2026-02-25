@@ -56,8 +56,10 @@
 }
 html{
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
     line-height: 1.44;
     scroll-behavior: smooth;
 }
@@ -82,10 +84,13 @@ img{
  */
  h1,
  h2,
- h3{
-    font-family: 'Gabarito', sans-serif;
+ h3,
+ h4{
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     text-transform: uppercase;
-    font-weight: 600;
  }
  h1{
     font-size: 6.4rem;
@@ -102,7 +107,6 @@ img{
     margin: 0 0 1.6rem;
  }
  h4{
-    font-family: 'Roboto', sans-serif;
     font-size: 3.2rem;
     line-height: 1.4;
     font-weight: 400;

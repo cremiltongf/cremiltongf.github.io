@@ -195,6 +195,11 @@ img{
         padding: 1.6rem 3.2rem;
     }
  }
+  @media (max-width: 820px){
+    .links a::after{
+        height: 0;
+    }
+ }
 
 
  /*
@@ -816,9 +821,8 @@ img{
     .nav-links.nav-open{
         background-color: var(--bg-black);
     }
-
     .nav-links.nav-open .links a{
-        border-top: 1px solid var(--bg-black-box);
+        border-top: 1px solid var(--text-white);
     }
 }
 

@@ -315,7 +315,7 @@ img{
 .icon-email{
     mask: url(../img/svg/email.svg) no-repeat;
 }
-.icon{
+.icon-social{
     display: block;
     width: 32px;
     height: 32px;
@@ -726,10 +726,10 @@ img{
 .links a:hover::after{
     background: var(--orange-base);
 }
-.icon{
+.icon-social{
     background: var(--text-white);
 }
-.icon:hover{
+.icon-social:hover{
     background: var(--orange-base);
 }
 /* about */
@@ -836,10 +836,10 @@ img{
 .dark-off .links a:hover::after{
     background: var(--blue-base);
 }
-.dark-off .icon{
+.dark-off .icon-social{
     background: var(--text-black);
 }
-.dark-off .icon:hover{
+.dark-off .icon-social:hover{
     background: var(--blue-base);
 }
 /* hero */

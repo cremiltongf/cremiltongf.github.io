@@ -16,7 +16,7 @@
  */
  :root {
     /* layout width */
-    --max-width-layout: 1100px;
+    --max-width-layout: 1110px;
     /*blue-colors*/
     --blue-base: #0066CC;
     --blue-primary: #007AF5;
@@ -94,15 +94,15 @@ img{
     margin-bottom: 6.4rem;
  }
  h3{
-    font-size: 4rem;
+    font-size: 3.8rem;
     line-height: 1.2;
     margin: 0 0 1.6rem;
  }
  h4{
-    font-size: 3.2rem;
-    line-height: 1.4;
+    font-size: 3rem;
+    line-height: 1.3;
     font-weight: 400;
-    margin: 0 0 .8rem;
+    margin: 0 0 1.4rem;
  }
  @media (max-width: 880px){
     h1{
@@ -337,16 +337,16 @@ img{
 }
 .about-content{
     width: 100%;
-    padding: 32px;
-    border-radius: 4px;
+    padding: 3.2rem;
+    border-radius: 6px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 3.2rem;
 }
 .about-avatar{
     flex: 3;
-    margin-right: 1.8rem;
 }
 .about-avatar img,
 .work-avatar img,
@@ -360,6 +360,7 @@ img{
 }
 .about-biography{
     flex: 7;
+    max-width: 66rem;
 }
 @media(max-width: 1200px){
     .about{
@@ -433,6 +434,7 @@ img{
 .work-avatar,
 .course-avatar{
     flex: 3;
+    max-width: 24rem;
 }
 .work-description,
 .course-description{
@@ -441,6 +443,11 @@ img{
 .work-date,
 .course-date{
     flex: 2;
+    max-width: 13.8rem;
+    font-size: 5.4rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
 }
  @media (max-width: 1200px){
     .experience,
@@ -515,7 +522,7 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 2rem;
-    transition: background-color .3s;
+    transition: all .3s;
     margin: .8rem .8rem 0 0;
 }
 @media (max-width: 1200px){
@@ -720,9 +727,8 @@ img{
     background-color: var(--bg-black-box);
     border-bottom: 5px solid var(--blue-base);
 }
-.work-label span{
-    color: var(--text-white);
-    border: 1px solid var(--text-white);
+.work-date{
+    -webkit-text-stroke-color: var(--text-white);
 }
 /* education */
 .course-one,
@@ -731,10 +737,10 @@ img{
     background-color: var(--bg-black-box);
     border-bottom: 5px solid var(--orange-base);
 }
-.course-label span{
-    color: var(--text-white);
-    border: 1px solid var(--text-white);
+.course-date{
+    -webkit-text-stroke-color: var(--text-white);
 }
+
 /* projects */
 .project{
     border-bottom: 5px solid var(--blue-base);
@@ -815,9 +821,8 @@ img{
 .dark-off .work-three{
     background-color: var(--bg-white-box);
 }
-.dark-off .work-label span{
-    color: var(--text-black);
-    border: 1px solid var(--text-black);
+.dark-off .work-date{
+    -webkit-text-stroke-color: var(--text-white);
 }
 /* education */
 .dark-off .course-one,
@@ -825,9 +830,8 @@ img{
 .dark-off .course-three{
     background-color: var(--bg-white-box);
 }
-.dark-off .course-label span{
-    color: var(--text-black);
-    border: 1px solid var(--text-black);
+.dark-off .course-date{
+    -webkit-text-stroke-color: var(--text-black);
 }
 /* projects */
 .dark-off .project{

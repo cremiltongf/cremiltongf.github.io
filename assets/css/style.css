@@ -291,13 +291,13 @@ a.link-brand svg{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    max-height: 3.2rem;
 }
 .social li + li{
     padding-left: .8rem;
 }
 .social a{
-    display: inline-block;
+    display: block;
+    margin: .2rem;
 }
 .icon-github{
     mask: url(../img/svg/github.svg) no-repeat;

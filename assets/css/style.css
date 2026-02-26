@@ -716,6 +716,8 @@ a.link-brand svg{
  /* all */
 html{
     background: var(--bg-black);
+}
+body{
     color: var(--text-white);
 }
 /* header */
@@ -842,7 +844,7 @@ html{
  * THEME WHITE
  */
 /* all */
-.dark-off{
+.dark-off body{
     background: var(--bg-white);
     color: var(--text-black);
 }

@@ -58,9 +58,6 @@ html{
 body{
     font-size: 2.2rem;
 }
-p{
-    margin-bottom: 1.2rem;
-}
 img{
     max-width: 100%;
     height: auto;
@@ -86,21 +83,20 @@ img{
  }
  h1{
     font-size: 6.4rem;
-    line-height: 1;
+    line-height: .94;
  }
  h2{
     font-size: 6rem;
-    line-height: 1.1;
-    margin-bottom: 4rem;
+    margin-bottom: 4.2rem;
  }
  h3{
     font-size: 3.2rem;
-    line-height: 1.15;
+    line-height: 1.12;
     margin: 0 0 1.6rem;
  }
  h4{
     font-size: 2.6rem;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 400;
     margin: 0 0 1.6rem;
  }
@@ -190,11 +186,6 @@ img{
   .links a:hover::after{
     width: 100%;
   }
- @media (max-width: 1200px){
-    .header{
-        padding: 1.6rem 3.2rem;
-    }
- }
   @media (max-width: 820px){
     .links a::after{
         height: 0;
@@ -293,7 +284,7 @@ img{
 }
 .place{
     font-weight: 300;
-    margin: .8rem 0 1.6rem;
+    margin: 1rem 0 1.6rem;
     line-height: 1.2;
 }
 .social{
@@ -325,11 +316,6 @@ img{
     width: 32px;
     height: 32px;
     mask-size: contain;
-}
-@media(max-width: 1200px){
-    .hero{
-        padding: 1.6rem 3.2rem;
-    }
 }
 @media (max-width: 820px){
     .hero-name{
@@ -363,24 +349,15 @@ img{
 .about-avatar{
     flex: 2;
 }
-.about-avatar img,
-.work-avatar img,
-.course-avatar img{
-    width: 100%;
-    max-width: 24rem;
-    border-radius: .4rem;
-}
 .about-avatar img{
+    width: 100%;
     max-width: 26rem;
+    min-width: 18rem;
+    border-radius: .4rem;
 }
 .about-biography{
     flex: 8;
     max-width: 82rem;
-}
-@media(max-width: 1200px){
-    .about{
-        padding: 1.6rem 3.2rem;
-    }
 }
 @media (max-width: 880px){
     .about{
@@ -403,11 +380,6 @@ img{
     .about-biography{
         margin: 0;
     }
-    .about-avatar img{
-        width: 200px;
-        height: 200px;
-        margin: 0 0 1.2rem;
-    }
 }
 
 
@@ -419,10 +391,6 @@ img{
     max-width: var(--max-width-layout);
     margin: 64px auto;
     padding: 1.6rem;
-}
-.work-description p,
-.course-description p{
-    margin: 0;
 }
 .work-content,
 .course-content{
@@ -448,16 +416,23 @@ img{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 3.2rem
+    gap: 1.6rem
 }
 .work-avatar,
 .course-avatar{
-    flex: 3;
+    flex: 2;
     max-width: 24rem;
+}
+.work-avatar img,
+.course-avatar img{
+    width: 100%;
+    max-width: 24rem;
+    min-width: 16rem;
 }
 .work-description,
 .course-description{
-    flex: 5;
+    flex: 6;
+    max-width: 65rem;
 }
 .work-date,
 .course-date{
@@ -469,12 +444,6 @@ img{
     color: transparent;
     -webkit-text-stroke-width: 1px;
 }
- @media (max-width: 1200px){
-    .experience,
-    .education{
-        padding: 1.6rem 3.2rem;
-    }
- }
 @media (max-width: 880px){
     .experience,
     .education{
@@ -482,13 +451,7 @@ img{
     }
 
 }
-@media (max-width: 600px){
-    .work-avatar img,
-    .course-avatar img{
-        margin-bottom: 1.2rem;
-        width: 200px;
-        height: 200px;
-    }
+@media (max-width: 860px){
     .work-avatar,
     .course-avatar,
     .work-description,
@@ -519,22 +482,22 @@ img{
 }
 .project img{
     border-radius: 4px;
-    margin-bottom: 1.6rem;
+    margin-bottom: 3.2rem;
 }
 .project-description{
-    margin-bottom: 2rem;
+    margin-bottom: 3.2rem;
 }
 .project-label span{
     font-size: 1.6rem;
     text-transform: uppercase;
     display: inline-block;
     padding: .8rem 1.6rem;
-    margin: .8rem .8rem 0 0;
+    margin: 1.6rem .8rem 0 0;
     border-style: solid;
     border-width: 0px 0px 2px 0px;
 }
 .project-btn{
-    margin-top: .8rem;
+    margin-top: 1.6rem;
 }
 .project-btn a.btn{
     display: inline-block;
@@ -545,11 +508,6 @@ img{
     font-size: 2rem;
     transition: all .3s;
     margin: .8rem .8rem 0 0;
-}
-@media (max-width: 1200px){
-    .projects{
-        padding: 1.6rem 3.2rem;
-    }
 }
 @media (max-width: 880px){
     .projects{
@@ -570,10 +528,6 @@ img{
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
-}
-.footer-copy{
-    font-weight: 300;
-    margin: 0;
 }
 @media (max-width: 880px){
     .footer{
@@ -793,6 +747,7 @@ img{
 .project-label span{
     color: var(--text-white);
     border-color: var(--text-white);
+    background-color: var(--bg-black);
 }
 .project-btn .btn{
     color: var(--text-black);
@@ -895,6 +850,7 @@ img{
 .dark-off .project-label span{
     color: var(--text-black);
     border-color: var(--text-black);
+    background-color: var(--bg-white);
 }
 .dark-off .project-btn .btn{
     color: var(--text-white-button);

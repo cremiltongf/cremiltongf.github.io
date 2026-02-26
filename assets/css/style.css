@@ -56,7 +56,13 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    padding: 1.6rem;
     font-size: 2.2rem;
+}
+@media (max-width: 767px){
+    body{
+        padding: 0;
+    }
 }
 img{
     max-width: 100%;
@@ -265,17 +271,12 @@ a.link-brand svg{
 .hero-content{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     gap: 2rem;
 }
 .hero-name,
 .hero-svg{
     flex: 1 1 340px;
-}
-.hero-svg{
-    display: flex;
-    justify-content: flex-end;
 }
 .hero-svg svg{
     width: 100%;
@@ -431,7 +432,6 @@ a.link-brand svg{
 .work-description,
 .course-description{
     flex: 6;
-    max-width: 65rem;
 }
 .work-date,
 .course-date{
@@ -440,25 +440,63 @@ a.link-brand svg{
     font-size: 5.2rem;
     font-weight: 700;
     line-height: 5.2rem;
-    color: transparent;
     -webkit-text-stroke-width: 1px;
 }
+.work-date span,
+.course-date span{
+    display: block;
+    margin: .2rem 0;
+    height: 4px;
+    max-width: 96%;
+}
 @media (max-width: 880px){
+    .work-avatar,
+    .course-avatar{
+        max-width: 100%;
+    }
     .experience,
     .education{
         margin: 3.2rem auto;
     }
-
 }
-@media (max-width: 860px){
-    .work-avatar,
-    .course-avatar,
+@media (max-width: 767px){
     .work-description,
     .course-description{
+        order: 2;
         flex: 1 1 100%;
     }
 }
-
+@media (max-width: 420px){
+    .work-avatar,
+    .course-avatar,
+    .work-description,
+    .course-description,
+    .work-date,
+    .course-date{
+        flex: 1 1 100%;
+    }
+    .work-avatar,
+    .course-avatar{
+        display: none;
+    }
+    .work-date,
+    .course-date{
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 3.2rem;
+        -webkit-text-stroke-width: 0px;
+    }
+    .work-date span,
+    .course-date span{
+        width: 40%;
+    }
+}
+@media (min-width: 421px){
+    .work-date,
+    .course-date{
+        color: transparent;
+    }
+}
 
 /*
  * PROJETOS
@@ -720,6 +758,17 @@ html{
 .work-date{
     -webkit-text-stroke-color: var(--text-white);
 }
+@media (max-width: 420px){
+    .work-date{
+        color: var(--text-white);
+    }
+}
+.work-date span{
+    background-color: var(--blue-base);
+}
+.course-date span{
+    background-color: var(--orange-base);
+}
 /* education */
 .education h2::after{
     background: var(--orange-base);
@@ -732,6 +781,11 @@ html{
 }
 .course-date{
     -webkit-text-stroke-color: var(--text-white);
+}
+@media (max-width: 420px){
+    .work-course{
+        color: var(--text-white);
+    }
 }
 
 /* projects */
@@ -832,6 +886,11 @@ html{
 .dark-off .work-date{
     -webkit-text-stroke-color: var(--text-black);
 }
+@media (max-width: 420px){
+    .dark-off .work-date{
+        color: var(--text-black);
+    }
+}
 /* education */
 .dark-off .course-one,
 .dark-off .course-two,
@@ -840,6 +899,11 @@ html{
 }
 .dark-off .course-date{
     -webkit-text-stroke-color: var(--text-black);
+}
+@media (max-width: 420px){
+    .dark-off .course-date{
+        color: var(--text-black);
+    }
 }
 /* projects */
 .dark-off .project{

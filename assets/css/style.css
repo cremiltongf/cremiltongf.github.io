@@ -627,6 +627,8 @@ a.link-brand svg{
 }
 @media (max-width: 498px){
     .return-top{
+        width: 5.2rem;
+        height: 5.2rem;
         bottom: 8.4rem;
         right: 1.6rem;
     }

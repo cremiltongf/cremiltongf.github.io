@@ -25,17 +25,17 @@
 
  // dark mode and white mode
  let $html = doc.querySelector("html");
- let $buttonDarkMode = doc.querySelector('[data-js="icon-dark"]');
- let $statusDarkMode = localStorage.getItem("statusDark");
- if ($statusDarkMode) $html.classList.add("dark-off");
+ let $buttonSwitch = doc.querySelector('[data-js="button-switch"]');
+ let $getStatusSwitch = localStorage.getItem("statusSwitch");
+ if ($getStatusSwitch) $html.classList.add("white-on");
 
- function changeDarkMode() {
-  $html.classList.toggle("dark-off");
-  if ($html.classList.contains("dark-off"))
-   localStorage.setItem("statusDark", true);
-  else localStorage.removeItem("statusDark");
+ function switchDarkMode() {
+  $html.classList.toggle("white-on");
+  if ($html.classList.contains("white-on"))
+   localStorage.setItem("statusSwitch", true);
+  else localStorage.removeItem("statusSwitch");
  }
- $buttonDarkMode.addEventListener("click", changeDarkMode, false);
+ $buttonSwitch.addEventListener("click", switchDarkMode, false);
 
  // return top and icon scroll
  function eventScroll() {

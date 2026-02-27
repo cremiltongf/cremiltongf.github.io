@@ -358,10 +358,8 @@ a.link-brand svg{
     flex: 2;
 }
 .about-avatar img{
-    width: 100%;
-    max-width: 46rem;
-    min-width: 30rem;
     border-radius: .4rem;
+    min-width: 30rem;
 }
 .about-biography{
     flex: 8;

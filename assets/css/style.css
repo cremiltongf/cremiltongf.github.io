@@ -420,7 +420,7 @@ a.link-brand svg{
 .work-avatar,
 .course-avatar{
     flex: 2;
-    max-width: 24rem;
+    max-width: 20rem;
 }
 .work-description,
 .course-description{

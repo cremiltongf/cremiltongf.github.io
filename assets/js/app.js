@@ -53,22 +53,15 @@
  }
  $buttonSwitch.addEventListener("click", switchDarkMode, false);
 
- // scroll
+ // event scroll all
  function eventScroll() {
   let $bodyHeight = doc.documentElement.scrollTop;
   let $iconScroll = doc.querySelector('[data-js="icon-scroll"]');
-  let $iconReturnTop = doc.querySelector('[data-js="icon-return-top"]');
 
   // icon scroll
   function hiddenIconScroll() {
    if ($bodyHeight > 140) $iconScroll.classList.add("scroll-hidden");
    else $iconScroll.classList.remove("scroll-hidden");
-  }
-
-  // button return top
-  function returnTop() {
-   if ($bodyHeight > 720) $iconReturnTop.classList.add("return-top-visible");
-   else $iconReturnTop.classList.remove("return-top-visible");
   }
 
   // animation
@@ -87,7 +80,6 @@
   }
 
   hiddenIconScroll();
-  returnTop();
   if (target.length) {
    animeScroll();
   }

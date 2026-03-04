@@ -271,7 +271,7 @@ a.link-brand svg{
     max-width: var(--max-width-layout);
     margin: 0 auto;
     overflow: hidden;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
     min-height: 52rem;
     display: flex;
     flex-wrap: wrap;
@@ -565,6 +565,7 @@ a.link-brand svg{
  * FOOTER
  */
 .copy{
+    color: rgba(255, 255, 255, .4);
     font-size: 2rem;
     max-width: var(--max-width-layout);
     padding: 1.6rem;
@@ -578,7 +579,6 @@ a.link-brand svg{
 @media (max-width: 360px){
     .copy{
         flex-direction: column;
-        gap: .8rem;
         font-size: 1.8rem;
     }
 }

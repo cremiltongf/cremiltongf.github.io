@@ -438,6 +438,7 @@ a.link-brand svg{
     font-weight: 700;
     line-height: 5.2rem;
     -webkit-text-stroke-width: 1px;
+    max-width: 13rem;
 }
 .work-date span,
 .course-date span{

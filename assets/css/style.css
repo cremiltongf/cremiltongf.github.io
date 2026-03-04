@@ -567,6 +567,12 @@ a.link-brand svg{
     justify-content: center;
     gap: 1.6rem;
 }
+@media (max-width: 768px){
+    .footer{
+        font-size: 1.8rem;
+        margin: 3.2rem auto 1.6rem;
+    }
+}
 @media (max-width: 360px){
     .footer{
         flex-direction: column;

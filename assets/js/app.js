@@ -70,7 +70,7 @@
 
   function animeScroll() {
    // const windowTop = win.scrollY + win.innerHeight * 0.75;
-   const windowTop = win.scrollY + win.innerHeight * 0.85;
+   const windowTop = win.scrollY + win.innerHeight * 0.88;
    target.forEach(function (element) {
     if (windowTop > element.offsetTop) {
      element.classList.add(animationClass);
@@ -89,7 +89,7 @@
   "scroll",
   debounce(function () {
    eventScroll();
-  }, 100),
+  }, 200),
   false,
  );
 })(window, document);

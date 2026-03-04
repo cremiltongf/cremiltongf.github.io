@@ -574,12 +574,10 @@ a.link-brand svg{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 1.6rem;
 }
-@media (max-width: 360px){
+@media (max-width: 380px){
     .copy{
-        flex-direction: column;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 }
 

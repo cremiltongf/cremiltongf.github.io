@@ -88,7 +88,7 @@
   "scroll",
   debounce(function () {
    eventScroll();
-  }, 200),
+  }, 100),
   false,
  );
 })(window, document);

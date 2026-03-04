@@ -564,27 +564,22 @@ a.link-brand svg{
 /*
  * FOOTER
  */
-.footer{
+.copy{
     font-size: 2rem;
     max-width: var(--max-width-layout);
     padding: 1.6rem;
-    margin: 64px auto 1.6rem;
+    margin: 0 auto 1.6rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
 }
-@media (max-width: 768px){
-    .footer{
-        font-size: 1.8rem;
-        margin: 3.2rem auto 1.6rem;
-    }
-}
 @media (max-width: 360px){
-    .footer{
+    .copy{
         flex-direction: column;
         gap: .8rem;
+        font-size: 1.8rem;
     }
 }
 

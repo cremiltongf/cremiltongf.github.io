@@ -271,7 +271,7 @@ a.link-brand svg{
     max-width: var(--max-width-layout);
     margin: 0 auto;
     overflow: hidden;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 120px);
     min-height: 52rem;
     display: flex;
     flex-wrap: wrap;

@@ -259,6 +259,14 @@ a.link-brand svg{
 /*
  *HERO
  */
+.main{
+    overflow-x: hidden;
+}
+
+
+/*
+ *HERO
+ */
 .hero{
     max-width: var(--max-width-layout);
     margin: 0 auto;
@@ -269,7 +277,7 @@ a.link-brand svg{
     height: calc(100vh - 150px);
     min-height: 540px;
 }
-.hero-content{
+.hero-name{
     display: flex;
     flex-wrap: wrap;
     align-items: center;

@@ -1,6 +1,22 @@
 (function (win, doc) {
  "use strict";
 
+ //  debounce lodash
+ const debounce = function (func, wait, immediate) {
+  let timeout;
+  return function (...args) {
+   const context = this;
+   const later = function () {
+    timeout = null;
+    if (!immediate) func.apply(context, args);
+   };
+   const callNow = immediate && !timeout;
+   clearTimeout(timeout);
+   timeout = setTimeout(later, wait);
+   if (callNow) func.apply(context, args);
+  };
+ };
+
  // nav mobile
  let $navMobile = doc.querySelector('[data-js="navmobile"]');
  let $addToggle = doc.querySelectorAll('[data-js="toggle"]');
@@ -37,24 +53,50 @@
  }
  $buttonSwitch.addEventListener("click", switchDarkMode, false);
 
- // return top and icon scroll
+ // scroll
  function eventScroll() {
   let $bodyHeight = doc.documentElement.scrollTop;
   let $iconScroll = doc.querySelector('[data-js="icon-scroll"]');
   let $iconReturnTop = doc.querySelector('[data-js="icon-return-top"]');
 
+  // icon scroll
   function hiddenIconScroll() {
    if ($bodyHeight > 140) $iconScroll.classList.add("scroll-hidden");
    else $iconScroll.classList.remove("scroll-hidden");
   }
 
+  // button return top
   function returnTop() {
    if ($bodyHeight > 720) $iconReturnTop.classList.add("return-top-visible");
    else $iconReturnTop.classList.remove("return-top-visible");
   }
 
+  // animation
+  const target = doc.querySelectorAll("[data-animate]");
+  const animationClass = "animation";
+
+  function animeScroll() {
+   const windowTop = win.scrollY + win.innerHeight * 0.75;
+   target.forEach(function (element) {
+    if (windowTop > element.offsetTop) {
+     element.classList.add(animationClass);
+    } else {
+     element.classList.remove(animationClass);
+    }
+   });
+  }
+
   hiddenIconScroll();
   returnTop();
+  if (target.length) {
+   animeScroll();
+  }
  }
- win.addEventListener("scroll", eventScroll, false);
+ win.addEventListener(
+  "scroll",
+  debounce(function () {
+   eventScroll();
+  }, 200),
+  false,
+ );
 })(window, document);

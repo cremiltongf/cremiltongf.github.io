@@ -565,7 +565,6 @@ a.link-brand svg{
  * FOOTER
  */
 .copy{
-    color: rgba(255, 255, 255, .4);
     font-size: 2rem;
     max-width: var(--max-width-layout);
     padding: 1.6rem;
@@ -638,7 +637,8 @@ html{
 }
 /* about */
 .about-box{
-    background-color: var(--bg-black-box);
+    background: var(--bg-black-box);
+    background: linear-gradient(45deg,rgba(59, 59, 59, 1) 54%, rgba(250, 122, 47, 0.32) 100%);
     border-bottom: 5px solid var(--orange);
 }
 .about h2::after{
@@ -649,7 +649,8 @@ html{
     background: var(--blue);
 }
 .work-box{
-    background-color: var(--bg-black-box);
+    background: var(--bg-black-box);
+    background: linear-gradient(45deg,rgba(59, 59, 59, 1) 54%, rgba(0, 102, 204, 0.32) 100%);
     border-bottom: 5px solid var(--blue);
 }
 .work-date{
@@ -671,7 +672,8 @@ html{
     background: var(--orange);
 }
 .course-box{
-    background-color: var(--bg-black-box);
+    background: var(--bg-black-box);
+    background: linear-gradient(45deg,rgba(59, 59, 59, 1) 54%, rgba(250, 122, 47, 0.32) 100%);
     border-bottom: 5px solid var(--orange);
 }
 .course-date{
@@ -688,8 +690,9 @@ html{
     background: var(--blue);
 }
 .project-box{
+    background: var(--bg-black-box);
+    background: linear-gradient(45deg,rgba(59, 59, 59, 1) 54%, rgba(0, 102, 204, 0.32) 100%);
     border-bottom: 5px solid var(--blue);
-    background-color: var(--bg-black-box);
 }
 .project-label span{
     color: var(--text-white);
@@ -703,9 +706,6 @@ html{
 .project-btn .btn:hover{
     background-color: var(--orange-black);
 }
-.project-box img{
-    border: 1px solid rgba(16, 17, 18, .3);
-}
 /* icon menu mobile */
 @media (max-width: 820px) {
     .nav-links.nav-open{
@@ -714,6 +714,10 @@ html{
     .nav-links.nav-open .links a{
         border-top: 1px solid var(--text-white);
     }
+}
+/* footer */
+.copy{
+    color: rgba(255, 255, 255, .6);
 }
 
 
@@ -746,11 +750,13 @@ html.white-on{
 }
 /* about */
 .white-on .about-box{
-    background-color: var(--bg-white-box);
+    background: var(--bg-white-box);
+    background: linear-gradient(45deg,rgba(255, 255, 255, 1) 54%, rgba(250, 122, 47, 0.32) 100%);
 }
 /* experience */
 .white-on .work-box{
-    background-color: var(--bg-white-box);
+    background: var(--bg-white-box);
+    background: linear-gradient(45deg,rgba(255, 255, 255, 1) 54%, rgba(0, 102, 204, 0.32) 100%);
 }
 .white-on .work-date{
     -webkit-text-stroke-color: var(--text-black);
@@ -762,7 +768,8 @@ html.white-on{
 }
 /* education */
 .white-on .course-box{
-    background-color: var(--bg-white-box);
+    background: var(--bg-white-box);
+    background: linear-gradient(45deg,rgba(255, 255, 255, 1) 54%, rgba(250, 122, 47, 0.32) 100%);
 }
 .white-on .course-date{
     -webkit-text-stroke-color: var(--text-black);
@@ -774,7 +781,8 @@ html.white-on{
 }
 /* projects */
 .white-on .project-box{
-    background-color: var(--bg-white-box);
+    background: var(--bg-white-box);
+    background: linear-gradient(45deg,rgba(255, 255, 255, 1) 54%, rgba(0, 102, 204, 0.32) 100%);
 }
 .white-on .project-label span{
     color: var(--text-black);
@@ -788,9 +796,6 @@ html.white-on{
 .white-on .project-btn .btn:hover{
     background-color: var(--blue-black);
 }
-.white-on .project-box img{
-    border: 1px solid rgba(16, 17, 18, .3);
-}
 /* icon menu mobile */
 @media (max-width: 820px) {
     .white-on .nav-links.nav-open{
@@ -799,6 +804,10 @@ html.white-on{
     .white-on .nav-links.nav-open .links a{
         border-top: 1px solid var(--text-black);
     }
+}
+/* footer */
+.white-on .copy{
+    color: rgba(0, 0, 0, .6);
 }
 
 

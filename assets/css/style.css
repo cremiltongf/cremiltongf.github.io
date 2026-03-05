@@ -271,7 +271,7 @@ a.link-brand svg{
     max-width: var(--max-width-layout);
     margin: 0 auto;
     overflow: hidden;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 140px);
     min-height: 52rem;
     display: flex;
     flex-wrap: wrap;
@@ -495,7 +495,7 @@ a.link-brand svg{
     }
     .work-date span,
     .course-date span{
-        max-width: 30%;
+        max-width: 48%;
     }
 }
 @media (min-width: 541px){
@@ -634,6 +634,11 @@ html{
 .icon-social:hover{
     background: var(--orange-black);
 }
+/* hero */
+.hero{
+    background: var(--bg-black);
+    background: radial-gradient(circle,rgba(0, 102, 204, 0.08) 0%, rgba(38, 39, 41, 1) 52%);
+}
 /* about */
 .about-box{
     background: var(--bg-black-box);
@@ -746,6 +751,11 @@ html.white-on{
 }
 .white-on .icon-social:hover{
     background: var(--blue-black);
+}
+/* hero */
+.white-on .hero{
+    background: var(--bg-white);
+    background: radial-gradient(circle,rgba(250, 122, 47, 0.08) 0%, rgba(239, 237, 237, 1) 52%);
 }
 /* about */
 .white-on .about-box{
@@ -882,10 +892,6 @@ html.white-on{
 
 [data-animate="left"] {
     transform: translate3d(-50px, 0px, 0px);
-}
-
-[data-animate="bottom"] {
-    transform: translate3d(0px, 50px, 0px);
 }
 
 [data-animate].animation {

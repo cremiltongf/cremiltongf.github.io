@@ -563,18 +563,33 @@ a.link-brand svg{
 /*
  * FOOTER
  */
-.copy{
-    font-size: 2rem;
+.footer{
     max-width: var(--max-width-layout);
-    padding: 1.6rem;
-    margin: 0 auto 1.6rem;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    padding: 1.6rem;
+    font-size: 1.8rem;
 }
+.footer-btn a.btn{
+    opacity: .6;
+    display: inline-block;
+    border-radius: 4px;
+    padding: .6rem 1rem;
+    text-decoration: none;
+    transition: all .3s;
+    text-transform: uppercase;
+}
+.footer-btn a.btn:hover{
+    opacity: 1;
+}
+
 @media (max-width: 380px){
-    .copy{
+    .footer,
+    .footer-btn a.btn{
+        opacity: 1;
         font-size: 1.6rem;
     }
 }
@@ -704,8 +719,8 @@ html{
     background-color: var(--bg-black);
 }
 .project-btn .btn{
-    color: var(--text-black);
-    background-color: var(--bg-white-box);
+    color: var(--text-black-button);
+    background-color: var(--bg-white);
 }
 .project-btn .btn:hover{
     background-color: var(--orange-black);
@@ -722,6 +737,13 @@ html{
 /* footer */
 .copy{
     color: rgba(255, 255, 255, .6);
+}
+.footer-btn a.btn{
+    color: var(--text-black-button);
+    background: var(--bg-white);
+}
+.footer-btn a.btn:hover{
+    background: var(--orange-black);
 }
 
 
@@ -800,7 +822,7 @@ html.white-on{
 }
 .white-on .project-btn .btn{
     color: var(--text-white-button);
-    background-color: var(--bg-black-box);
+    background-color: var(--bg-black);
 }
 .white-on .project-btn .btn:hover{
     background-color: var(--blue-black);
@@ -818,7 +840,13 @@ html.white-on{
 .white-on .copy{
     color: rgba(0, 0, 0, .6);
 }
-
+.white-on .footer-btn a.btn{
+    color: var(--text-white-button);
+    background: var(--bg-black);
+}
+.white-on .footer-btn a.btn:hover{
+    background: var(--blue-black);
+}
 
 /*
  * 404

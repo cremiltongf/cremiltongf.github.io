@@ -541,9 +541,20 @@ a.link-brand svg{
     margin: 1.6rem .8rem 0 0;
     border-style: solid;
     border-width: 0px 0px 2px 0px;
+    border-radius: 4px;
 }
 .project-btn{
     margin-top: 1.6rem;
+}
+.project-btn .btn::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: all .5s;
+}
+.project-btn .btn:hover::after{
+    width: 100%;
 }
 .project-btn a.btn{
     display: inline-block;
@@ -732,6 +743,9 @@ html{
 .project-btn .btn:hover{
     background-color: var(--orange-black);
 }
+.project-btn .btn::after{
+    background: var(--bg-black);
+}
 /* icon menu mobile */
 @media (max-width: 820px) {
     .nav-links.nav-open{
@@ -833,6 +847,9 @@ html.white-on{
 }
 .white-on .project-btn .btn:hover{
     background-color: var(--blue-black);
+}
+.white-on .project-btn .btn::after{
+    background: var(--bg-white);
 }
 /* icon menu mobile */
 @media (max-width: 820px) {

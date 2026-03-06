@@ -272,7 +272,7 @@ a.link-brand svg{
     max-width: var(--max-width-layout);
     margin: 0 auto;
     overflow: hidden;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 120px);
     min-height: 52rem;
     display: flex;
     flex-wrap: wrap;
@@ -333,7 +333,7 @@ a.link-brand svg{
 }
 @media (max-width: 820px){
     .hero-name{
-        width: 100%;
+        max-width: 100%;
         justify-content: flex-start;
     }
     .hero-image{

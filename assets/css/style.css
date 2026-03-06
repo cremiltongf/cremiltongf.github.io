@@ -508,7 +508,7 @@ a.link-brand svg{
 /*
  * PROJETOS
  */
-.portifolio{
+.portfolio{
     max-width: var(--max-width-layout);
     margin: 64px auto;
     padding: 1.6rem;
@@ -554,7 +554,7 @@ a.link-brand svg{
     margin: .8rem .8rem 0 0;
 }
 @media (max-width: 880px){
-    .portifolio{
+    .portfolio{
         margin: 3.2rem auto;
     }
 }
@@ -690,7 +690,7 @@ html{
 }
 
 /* projects */
-.portifolio h2::after{
+.portfolio h2::after{
     background: var(--blue);
 }
 .project-box{

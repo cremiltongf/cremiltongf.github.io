@@ -53,43 +53,28 @@
  }
  $buttonSwitch.addEventListener("click", switchDarkMode, false);
 
- // event scroll all
- function eventScroll() {
-  let $bodyHeight = doc.documentElement.scrollTop;
-  let $iconScroll = doc.querySelector('[data-js="icon-scroll"]');
-
-  // icon scroll
-  function hiddenIconScroll() {
-   if ($bodyHeight > 140) $iconScroll.classList.add("scroll-hidden");
-   else $iconScroll.classList.remove("scroll-hidden");
-  }
-
-  // animation
-  const target = doc.querySelectorAll("[data-animate]");
-  const animationClass = "animation";
-
-  function animeScroll() {
-   // const windowTop = win.scrollY + win.innerHeight * 0.75;
-   const windowTop = win.scrollY + win.innerHeight * 0.78;
-   target.forEach(function (element) {
-    if (windowTop > element.offsetTop) {
-     element.classList.add(animationClass);
-    } else {
-     element.classList.remove(animationClass);
-    }
-   });
-  }
-
-  hiddenIconScroll();
-  if (target.length) {
-   animeScroll();
-  }
+ // animation
+ const target = doc.querySelectorAll("[data-animate]");
+ const animationClass = "animation";
+ function animationScroll() {
+  const windowTop = win.scrollY + win.innerHeight * 0.78;
+  target.forEach(function (element) {
+   if (windowTop > element.offsetTop) {
+    element.classList.add(animationClass);
+   } else {
+    element.classList.remove(animationClass);
+   }
+  });
  }
- win.addEventListener(
-  "scroll",
-  debounce(function () {
-   eventScroll();
-  }, 100),
-  false,
- );
+ animationScroll();
+
+ if (target.length) {
+  win.addEventListener(
+   "scroll",
+   debounce(function () {
+    animationScroll();
+   }, 100),
+   false,
+  );
+ }
 })(window, document);

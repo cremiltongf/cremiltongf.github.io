@@ -213,9 +213,6 @@ a.link-brand svg{
     .nav-links{
         order: initial;
      }
-    .hidden-scroll{
-        overflow: hidden;
-    }
     .links{
         width: 100%;
     }
@@ -277,6 +274,7 @@ a.link-brand svg{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
 }
 .hero-box{
     padding: 1.6rem;
@@ -608,19 +606,13 @@ a.link-brand svg{
 /*
  * SCROLL ICON
  */
-.scroll{
-    opacity: 1;
-    position: fixed;
-    transition: all .3s ease;
+.scroll-icon{
+    position: absolute;
     left: calc(50% - 11px);
     animation: buttonscroll 0.8s ease-in 0s infinite alternate;
 }
-.scroll-hidden{
-    opacity: 0;
-    overflow: hidden;
-}
-.scroll svg{
-    max-height: 6.2rem;
+.scroll-icon svg{
+    max-height: 5.2rem;
 }
 @keyframes buttonscroll{
     from {

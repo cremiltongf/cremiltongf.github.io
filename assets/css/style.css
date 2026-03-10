@@ -41,7 +41,6 @@
  */
 *:focus-visible{
     outline-offset: 2px;
-    outline: 4px dashed var(--orange-700);
     border-radius: 6px;
 }
 html{
@@ -643,6 +642,9 @@ a.link-brand svg{
  * THEME DARK - DEFAULT
  */
  /* all */
+*:focus-visible{
+    outline: 4px dashed var(--orange);
+}
 html{
     background: var(--bg-black);
     color: var(--text-white);
@@ -783,6 +785,9 @@ html{
 html.white-on{
     background: var(--bg-white);
     color: var(--text-black);
+}
+.white-on *:focus-visible{
+    outline: 4px dashed var(--blue);
 }
 /* header */
 .white-on .links a{

@@ -32,7 +32,7 @@
  }
 
  // date on footer
- let $setDate = doc.querySelector('[data-js="date"]');
+ let $setDate = doc.querySelector('[data-js="copy-date"]');
  function getDate() {
   const anoAtual = new Date().getFullYear();
   return ($setDate.innerHTML = "&copy; 2017 - " + anoAtual);

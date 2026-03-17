@@ -199,11 +199,6 @@ a.link-brand svg{
 .links a:hover::after{
     width: 100%;
 }
-@media (max-width: 820px){
-    .links a::after{
-        height: 0;
-    }
-}
 
 
  /*
@@ -789,9 +784,6 @@ html{
     .nav-links.nav-open{
         background-color: var(--bg-black);
     }
-    .nav-links.nav-open .links a{
-        border-top: 1px solid var(--text-white);
-    }
 }
 /* tools */
 .tools h2::after{
@@ -900,9 +892,6 @@ html.white-on{
 @media (max-width: 820px) {
     .white-on .nav-links.nav-open{
         background-color: var(--bg-white);
-    }
-    .white-on .nav-links.nav-open .links a{
-        border-top: 1px solid var(--text-black);
     }
 }
 /* footer */

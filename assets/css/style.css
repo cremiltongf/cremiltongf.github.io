@@ -373,9 +373,41 @@ a.link-brand svg{
     border-radius: .4rem;
     min-width: 30rem;
 }
-.about-biography{
+.about-bio{
     flex: 8;
     max-width: 82rem;
+}
+.about-bio span{
+    position: relative;
+}
+.about-bio span::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 100%;
+    left: 0;
+}
+.about h3{
+    padding-left: .6rem;
+}
+.about-tools{
+    width: 100%;
+}
+.tools-icons{
+    margin: 3.2rem 0 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3.2rem;
+}
+.tool-icon{
+    border: none;
+    width: 4.2rem;
+    height: 4.2rem;
 }
 @media (max-width: 880px){
     .about{
@@ -387,7 +419,7 @@ a.link-brand svg{
         flex-direction: column;
     }
     .about-avatar,
-    .about-biography{
+    .about-bio{
         width: 100%;
     }
     .about-avatar img{
@@ -433,6 +465,10 @@ a.link-brand svg{
 .work-avatar svg,
 .course-avatar svg{
     max-width: 16rem;
+}
+.experience h3,
+.education h3{
+    padding-left: .6rem;
 }
 .work-description,
 .course-description{
@@ -584,7 +620,7 @@ a.link-brand svg{
  */
 .footer{
     max-width: var(--max-width-layout);
-    margin: 0 auto;
+    margin: 64px auto 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -684,17 +720,10 @@ html{
 .about h2::after{
     background: var(--orange);
 }
-.about-biography span{
-    position: relative;
+.about h3{
+    border-left: 4px solid var(--orange);
 }
-.about-biography span::after{
-    content: "";
-    display: inline-block;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    top: 100%;
-    left: 0;
+.about-bio span::after{
     background: var(--orange);
 }
 /* experience */
@@ -703,7 +732,6 @@ html{
 }
 .experience h3{
     border-left: 4px solid var(--blue);
-    padding-left: .6rem;
 }
 .work-box{
     background: var(--bg-black-box);
@@ -722,14 +750,12 @@ html{
 }
 .education h3{
     border-left: 4px solid var(--orange);
-    padding-left: .6rem;
 }
 .course-box{
     background: var(--bg-black-box);
     background: linear-gradient(45deg,rgba(59, 59, 59, 1) 54%, rgba(250, 122, 47, 0.32) 100%);
     border-bottom: 5px solid var(--orange);
 }
-
 /* projects */
 .portfolio h2::after{
     background: var(--blue);
@@ -766,6 +792,10 @@ html{
     .nav-links.nav-open .links a{
         border-top: 1px solid var(--text-white);
     }
+}
+/* tools */
+.tools h2::after{
+    background: var(--orange);
 }
 /* footer */
 .copy{
@@ -886,6 +916,7 @@ html.white-on{
 .white-on .footer-btn a.btn:hover{
     background: var(--blue-black);
 }
+
 
 /*
  * 404

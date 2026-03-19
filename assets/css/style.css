@@ -141,8 +141,9 @@ h2::after{
 
 }
 
+
 /*
- * BRAND and MENU
+ * HEADER
  */
 .header{
     max-width: var(--max-width-layout);
@@ -201,9 +202,9 @@ a.link-brand svg{
 }
 
 
- /*
-  *MENU MOBILE
-  */
+/*
+ *MENU MOBILE
+ */
 .icon-nav{
     display: none;
 }

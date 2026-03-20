@@ -272,7 +272,7 @@ a.link-brand svg{
     max-width: var(--max-width-layout);
     margin: 0 auto;
     overflow: hidden;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 140px);
     max-height: 100.8rem;
     min-height: 52rem;
     display: flex;
@@ -541,7 +541,7 @@ a.link-brand svg{
 
 
 /*
- * PROJETOS
+ * PROJECTS
  */
 .portfolio{
     max-width: var(--max-width-layout);
@@ -967,7 +967,7 @@ html.white-on{
 
 
 /*
- * Animation
+ * ANIMATION
  */
 [data-animate] {
     opacity: 0;
@@ -986,7 +986,7 @@ html.white-on{
 
 
 /*
- * Switch Dark Mode
+ * SWITCH DARK MODE
  */
 /* From Uiverse.io by Galahhad */
 .ui-switch {

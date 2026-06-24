@@ -266,6 +266,77 @@ a.link-brand svg{
 
 
 /*
+ * MY LINUX
+ */
+.page{
+    max-width: var(--max-width-layout);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.8rem;
+}
+.page-box{
+    padding: 1.6rem;
+}
+.page-box .lead{
+    font-size: 2rem;
+    margin-bottom: 3.2rem;
+}
+.page h1, .page h2, .page h3{
+    margin-bottom: 2.4rem;
+    text-transform: none;
+    line-height: normal;
+}
+.page h1{
+    font-size: 3.8rem;
+}
+.page h2{
+    font-size: 3rem;
+}
+.page h3{
+    font-size: 2.6rem;
+}
+.page-box div{
+    margin-bottom: 3.2rem;
+}
+.page-box p, .page-box pre{
+    margin-bottom: 1.6rem;
+}
+pre{
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, .25);
+    border-radius: .6rem;
+    font-size: 1.6rem;
+    padding: 1rem 1.6rem;
+    max-width: 100%;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+kbd, code{
+    font-family: monospace;
+}
+.page-box ol, .page-box ul{
+    list-style-position: inside;
+    padding-left: 1.8rem;
+}
+.page-box > ol, .page-box > ul{
+   margin: 0 0 1.6rem 0;
+}
+.page-box ul li, .page-box ol li{
+    margin: 1rem 0;
+}
+.summary ul{
+    list-style-type: disc;
+}
+.fw-bold{
+    list-style: none;
+    font-weight: bold;
+}
+.page-box a{
+    transition: all .3s;
+}
+
+
+/*
  * HERO
  */
 .hero{
@@ -801,6 +872,20 @@ html{
 .footer-btn a.btn:hover{
     background: var(--orange-black);
 }
+/*my linux*/
+.page h2::after{
+    background-color: var(--orange);
+}
+pre{
+    background: var(--bg-black-box);
+    background: linear-gradient(45deg,rgba(59, 59, 59, 1) 54%, rgba(250, 122, 47, 0.32) 100%);
+}
+.page-box a{
+    color: var(--blue);
+}
+.page-box a:hover{
+    color: var(--orange);
+}
 
 
 /*
@@ -906,7 +991,12 @@ html.white-on{
 .white-on .footer-btn a.btn:hover{
     background: var(--blue-black);
 }
-
+/*my linux*/
+.white-on pre{
+    color: var(--text-black);
+    background: var(--bg-white-box);
+    background: linear-gradient(45deg,rgba(255, 255, 255, 1) 54%, rgba(0, 102, 204, 0.32) 100%);
+}
 
 /*
  * 404

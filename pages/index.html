@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="top-of-site">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Linux</title>
+    <meta name="description" content="Configurações, extensões e aplicativos do meu Fedora Workstation.">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://cremilton.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cremilton Fernandes">
+    <meta property="og:description" content="Configurações, extensões e aplicativos do meu Fedora Workstation.">
+    <meta property="og:image" content="https://cremilton.com/assets/img/cgf.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="cremilton.com">
+    <meta property="twitter:url" content="https://cremilton.com/">
+    <meta name="twitter:title" content="Cremilton Fernandes">
+    <meta name="twitter:description" content="Configurações, extensões e aplicativos do meu Fedora Workstation.">
+    <meta name="twitter:image" content="https://cremilton.com/assets/img/cgf.png">
+
+</head>
+
+<body class="home">
+
+    <header class="header">
+        <div class="brand">
+            <a class="link-brand" href="https://cremilton.com/">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_112_2231)">
+                        <path
+                            d="M60.0002 17.08V42.9133C60.0002 45.5733 59.3935 48.0933 58.3002 50.34L48.7535 40.7933V17.08C48.7535 13.86 46.1402 11.2467 42.9202 11.2467H19.2068L9.66016 1.7C11.9068 0.613333 14.4268 0 17.0868 0H42.9202C52.3402 0 60.0002 7.66 60.0002 17.08Z"
+                            fill="#0066CC" />
+                        <path
+                            d="M50.3467 58.3C48.1 59.3867 45.58 60 42.92 60H17.0867C7.66667 60 0 52.3333 0 42.9133V17.08C0 14.42 0.613333 11.9 1.70667 9.65332L11.2533 19.2067V42.9133C11.2533 46.14 13.8667 48.7467 17.0867 48.7467H40.8L50.3467 58.3Z"
+                            fill="#FA7A2F" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_112_2231">
+                            <rect width="185.453" height="60" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </div>
+        <div class="navigation">
+            <label class="ui-switch">
+                <input type="checkbox" data-js="button-switch" id="button-switch">
+                <div class="slider">
+                    <div class="circle"></div>
+                </div>
+            </label>
+            <div class="icon-nav toggle" data-js="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" class="svg-icon-nav feather feather-menu"
+                    viewBox="0 0 24 24">
+                    <path d="M3 12h18M3 6h18M3 18h18" />
+                </svg>
+            </div>
+            <nav data-js="navmobile" class="nav-links">
+                <ul data-js="toggle" class="links toggle">
+                    <li><a href="../#about">sobre</a></li>
+                    <li><a href="../#experience">experiências</a></li>
+                    <li><a href="../#education">educação</a></li>
+                    <li><a href="../#portfolio">projetos</a></li>
+                    <li><a href="../pages/">my linux</a></li>
+                    <li><a href="https://wiki.cremilton.com/">wiki &#8599;</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section id="page" class="page">
+            <div class="page-box">
+                <h1>My Linux</h1>
+                <p class="lead">
+                    Configurações, extensões e aplicativos do meu Fedora Workstation.
+                </p>
+
+                <h2>Sumário:</h2>
+                <div>
+                    <ul class="summary">
+                        <li class="fw-bold">Configuração geral</li>
+                        <ul>
+                            <li><a href="#m-config">Configuração</a></li>
+                            <li><a href="#m-tweaks">Ajustes do Gnome</a></li>
+                            <li><a href="#m-gerenciador">Gerenciador de extensões</a></li>
+                        </ul>
+
+                        <li class="fw-bold">Extensões</li>
+                        <ul>
+                            <li><a href="#m-indicator">AppIndicator</a></li>
+                            <li><a href="#m-blur">Blur my Shell</a></li>
+                            <li><a href="#m-user">User Themes</a></li>
+                            <li><a href="#m-no">No overview at start-up</a></li>
+                            <li><a href="#m-compiz">Compiz alike magic lamp effect</a></li>
+                            <li><a href="#m-dash">Dash to Dock</a></li>
+                            <li><a href="#m-media">Media Controls</a></li>
+                        </ul>
+
+                        <li class="fw-bold">Softwares</li>
+                        <ul>
+                            <li><a href="#m-git">Git</a></li>
+                            <li><a href="#m-vim">Vim</a></li>
+                            <li><a href="#m-docker">Docker</a></li>
+                            <li><a href="#m-visual">Visual Studio Code</a></li>
+                            <li><a href="#m-dropbox">Dropbox</a></li>
+                            <li><a href="#m-qbit">qBittorrent</a></li>
+                            <li><a href="#m-free">FreeFileSync</a></li>
+                            <li><a href="#m-davinci">DaVinci Resolve</a></li>
+                            <li><a href="#m-obs">OBS Studio</a></li>
+                            <li><a href="#m-hand">HandBrake</a></li>
+                            <li><a href="#m-oracle">Oracle VirtualBox</a></li>
+                            <li><a href="#m-samba">Samba</a></li>
+                        </ul>
+
+                        <li class="fw-bold">Outros</li>
+                        <ul>
+                            <li><a href="#m-keys">Atalhos personalizados</a></li>
+                            <li><a href="#m-proton">Proton</a></li>
+                            <li><a href="#m-xpadneo">xpadneo</a></li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <h2 id="m-config">Configuração geral</h2>
+                <div>
+                    <p>Em <b>Configurações</b>:</p>
+                    <ol>
+                        <li>Multitarefas &rarr; Geral</li>
+                        <ol>
+                            <li>Canto ativo - <b>ativo</b>;</li>
+                            <li>Bordas de tela ativas - <b>desativado</b>.</li>
+                        </ol>
+                        <li>Aparência &rarr; Estilo</li>
+                        <ol>
+                            <li>Escuro &rarr; <b>selecione</b>.</li>
+                        </ol>
+                        <li>Aparência &rarr; Cor de realce</li>
+                        <ol>
+                            <li>Azul &rarr; <b>selecione</b>.</li>
+                        </ol>
+                    </ol>
+                </div>
+
+                <h2 id="m-tweaks">Ajustes do Gnome</h2>
+                <div>
+                    <h3>Instalação</h3>
+                    <pre><code>
+sudo dnf install gnome-tweaks
+                </code></pre>
+                    <h3>Configuração</h3>
+                    <ol>
+                        <li>Aparência</li>
+                        <ol>
+                            <li>Estilos &rarr; Ícones &rarr; <a href="https://github.com/bikass/kora">Kora</a>.
+                            </li>
+                        </ol>
+                        <li>Janelas</li>
+                        <ol>
+                            <li>Botões da barra de título</li>
+                            <ul>
+                                <li>Maximizar &rarr; <b>desativado</b>;</li>
+                                <li>Minimizar &rarr; <b>ativo</b>;</li>
+                                <li>Posicionamento &rarr; <b>esquerda</b>.</li>
+                            </ul>
+                            <li>Ações de clique</li>
+                            <ul>
+                                <li>Centralizar novas janelas &rarr; <b>ativo</b>.</li>
+                            </ul>
+                        </ol>
+                    </ol>
+                </div>
+
+                <h2 id="m-gerenciador">Gerenciador de Extensões</h2>
+                <div>
+                    <h3>Instalação</h3>
+                    <pre><code>
+sudo flatpak install flathub com.mattjakeman.ExtensionManager
+                    </code></pre>
+
+                    <div class="alert alert-info" role="alert">
+                        <div>
+                            Instale as extensões através do Gerenciador de Extensões.
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="m-indicator">AppIndicator</h2>
+                <div>
+                    <p>O <b>AppIndicator and KStatusNotifierItem Support</b> adiciona uma área ao painel para exibir
+                        ícones
+                        indicadores. Essão extensão não requer nenhuma
+                        configuração, mas é possível mudar o local de exibição por exemplo, que por padrão é a direita.
+                    </p>
+                    <p>Mais detalhes: <a
+                            href="https://extensions.gnome.org/extension/615/appindicator-support/">AppIndicator and
+                            KStatusNotifierItem Support</a>.</p>
+                </div>
+
+                <h2 id="m-blur">Blur my Shell</h2>
+                <div>
+                    <p>Adiciona uma aparência desfocada a diferentes partes do GNOME Shell, incluindo o painel superior,
+                        o
+                        painel e a
+                        visão geral.</p>
+                    <p>Mais detalhes: <a href="https://extensions.gnome.org/extension/3193/blur-my-shell/">Blur my
+                            Shell</a>.</p>
+                    <h3>Configuração</h3>
+                    <ol>
+                        <li>Pipelines</li>
+                        <ol>
+                            <li>Adicionar Pipeline chamado <b>"Visão Geral"</b></li>
+                            <ul>
+                                <li>Adicionar efeito - <b>Desfoque gaussiano nativo</b></li>
+                                <ul>
+                                    <li>Raio &rarr; <b>3</b></li>
+                                    <li>Brilho &rarr; <b>0,37</b></li>
+                                </ul>
+                            </ul>
+                            <li>Adicionar Pipeline chamado <b>"Dash"</b></li>
+                            <ul>
+                                <li>Adicionar efeito - <b>Desfoque gaussiano nativo</b></li>
+                                <ul>
+                                    <li>Raio &rarr; <b>3</b></li>
+                                    <li>Brilho &rarr; <b>0,37</b></li>
+                                </ul>
+                                <li>Adicionar efeito &rarr; <b>Canto</b></li>
+                                <ul>
+                                    <li>Raio &rarr; <b>24</b></li>
+                                </ul>
+                            </ul>
+                        </ol>
+                        <li>Painel</li>
+                        <ol>
+                            <li>Tipo de desfoque &rarr; <b>Dinâmico</b></li>
+                            <li>Sigma &rarr; <b>3</b></li>
+                            <li>Brilho &rarr; <b>0.37</b></li>
+                            <li>Substituir plano de fundo &rarr; <b>ativado</b></li>
+                            <ul>
+                                <li>Estilo de plano de fundo &rarr; <b>transparente</b></li>
+                                <li>Desativar quando uma janela está próxima &rarr; <b>ativado</b></li>
+                                <li>Desativar na visão geral &rarr; <b>ativado</b></li>
+                            </ul>
+                        </ol>
+                        <li>Visão geral</li>
+                        <ol>
+                            <li>Pipeline <b>"Visão Geral"</b></li>
+                            <li>Estilo dos compomenentes da visão geral &rarr; <b>escuro</b></li>
+                            <li>Sigma &rarr; <b>30</b></li>
+                            <li>Brilho &rarr; <b>0,60</b></li>
+                            <li>Estilo de caixas de diálogo da pasta do aplicativo &rarr; <b>escuro</b></li>
+                        </ol>
+                        <li>Dash</li>
+                        <ol>
+                            <li>Tipo de desfoque &rarr; <b>estático</b></li>
+                            <li>Pipeline &rarr; <b>"Dash"</b></li>
+                            <li>Substituir plano de fundo &rarr; Estilo de plano de fundo &rarr;
+                                <b>transparente</b>
+                            </li>
+                            <li>Desativar na visão geral &rarr; <b>ativado</b></li>
+                        </ol>
+                    </ol>
+                </div>
+
+                <h2 id="m-user">User Themes</h2>
+                <div>
+                    <p>Carregar temas do shell a partir do diretório do usuário.</p>
+                    <p>Mais detalhes: <a href="https://extensions.gnome.org/extension/19/user-themes/">User Themes</a>.
+                    </p>
+                </div>
+
+                <h2 id="m-no">No overview at start-up</h2>
+                <div>
+                    <p>Remove a exibição da Visão Geral após inicialização do Fedora.</p>
+                    <p>Mais detalhes: <a href="https://extensions.gnome.org/extension/4099/no-overview/">No overview at
+                            start-up</a>.
+                    </p>
+                </div>
+
+                <h2 id="m-compiz">Compiz alike magic lamp effect</h2>
+                <div>
+                    <p>Adiciona efeito de lâmpada mágica às janelas.</p>
+                    <p>Mais detalhes: <a
+                            href="https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/">Compiz
+                            alike magic lamp effect</a>.</p>
+
+                    <h3>Configuração</h3>
+                    <ol>
+                        <li>Effect &rarr; default</li>
+                        <li>Duration(ms) &rarr; 230 a 240</li>
+                    </ol>
+                </div>
+
+                <h2 id="m-dash">Dash to Dock</h2>
+                <div>
+                    <p>Um dock para o Gnome Shell.</p>
+                    <p>Mais detalhes: <a href="https://extensions.gnome.org/extension/307/dash-to-dock/">Dash to
+                            Dock</a>.
+                    </p>
+
+                    <h3>Configuração</h3>
+                    <ol>
+                        <li>Posição e tamanho</li>
+                        <ol>
+                            <li>Exibir o dock &rarr; <b>monitor primário</b></li>
+                            <li>Posição na tela &rarr; <b>embaixo</b></li>
+                            <li>Ocultação inteligente &rarr; <b>ativo</b></li>
+                            <li>Ocultação inteligente &rarr; <b>configuração</b></li>
+                            <ul>
+                                <li>Esconder janela &rarr; <b>desativado</b></li>
+                            </ul>
+                        </ol>
+                        <li>Lançadores</li>
+                        <ol>
+                            <li>Mostrar lixeira &rarr; <b>desativado</b></li>
+                            <li>Show the number of unread not... &rarr; <b>desativado</b></li>
+                        </ol>
+                        <li>Comportamento</li>
+                        <ol>
+                            <li>Ação do clique &rarr; <b>focar, minimizar ou mostrar pré-visualizações</b></li>
+                            <li>Ação da rolagem &rarr; <b>não fazer nada</b></li>
+                        </ol>
+                        <li>Aparência</li>
+                        <ol>
+                            <li>Encolher o dash &rarr; <b>desativado</b></li>
+                            <li>Mostrar visão geral ao inicializar &rarr; <b>desativado</b></li>
+                            <li>Usar o tema do sistema &rarr; <b>ativo</b></li>
+                        </ol>
+                    </ol>
+                </div>
+
+                <h2 id="m-media">Media Controls</h2>
+                <div>
+                    <p>Mostra informações da midia em execução no painel.</p>
+                    <p>Mais detalhes: <a href="https://extensions.gnome.org/extension/4470/media-controls/">Media
+                            Controls</a>.</p>
+                </div>
+
+                <h2 id="m-git">Git</h2>
+                <div>
+                    <h3>Instalação</h3>
+                    <pre><code>
+sudo dnf install git
+                    </code></pre>
+                </div>
+
+                <h2 id="m-vim">Vim</h2>
+                <div>
+                    <h3>Instalação</h3>
+                    <pre><code>
+sudo dnf install vim
+                    </code></pre>
+                </div>
+
+                <h2 id="m-docker">Docker</h2>
+                <div>
+                    <p>Siga o guia do <a href="https://docs.docker.com/desktop/setup/install/linux/fedora/">Docker
+                            Docs</a>
+                        que é
+                        sucesso.</p>
+                </div>
+
+                <h2 id="m-visual">Visual Studio Code</h2>
+                <div>
+                    <p>Façao download do <a href="https://code.visualstudio.com/Download">Visual Studio Code</a>.</p>
+                    <h3>Instalação</h3>
+                    <pre><code>
+sudo dnf install "code-1.101.1-1750254783.el8.x86_64.rpm"
+                </code></pre>
+                </div>
+
+                <h2 id="m-dropbox">Dropbox</h2>
+                <div>
+                    <p>Faça o download do <a href="https://www.dropbox.com/install-linux">Dropbox</a>.</p>
+                    <h3>Instalação</h3>
+                    <pre><code>
+sudo dnf install "nautilus-dropbox-2025.05.20-1.fc42.x86_64.rpm"
+                    </code></pre>
+                </div>
+
+                <h2 id="m-qbit">qBittorrent</h2>
+                <div>
+                    <h3>Instalação</h3>
+                    <pre><code>
+sudo flatpak install flathub org.qbittorrent.qBittorrent
+                    </code></pre>
+                </div>
+
+                <h2 id="m-free">FreeFileSync</h2>
+                <div>
+                    <h3>Instalação</h3>
+                    <pre><code>
+sudo flatpak install flathub org.freefilesync.FreeFileSync
+                    </code></pre>
+                </div>
+
+                <h2 id="m-davinci">DaVinci Resolve</h2>
+                <div>
+                    <p>Baixe o <a href="https://www.blackmagicdesign.com/br/products/davinciresolve">DaVinci Resolve</a>
+                    </p>
+                </div>
+
+                <h2 id="m-obs">OBS Studio</h2>
+                <div>
+                    <p>Baixe o <a href="https://obsproject.com/pt-br/download">OBS Studio</a></p>
+                </div>
+
+                <h2 id="m-hand">HandBrake</h2>
+                <div>
+                    <p>Baixe o <a href="https://handbrake.fr/downloads.php">HandBrake</a></p>
+                </div>
+
+                <h2 id="m-oracle">Oracle VirtualBox</h2>
+                <div>
+                    <p>Baixe o <a href="https://virtualbox.org/">Oracle VirtualBox</a></p>
+                </div>
+
+                <h2 id="m-samba">Samba</h2>
+                <div>
+                    <p>No <a href="https://idroot.us/install-samba-fedora-42/">idroot</a> há um super material
+                        explicando
+                        cada detalhe
+                        de uma configuração.</p>
+                </div>
+
+                <h2 id="m-keys">Atalhos personalizados</h2>
+                <div>
+                    <ol>
+                        <li>Em <b>Configurações</b> &rarr; Teclado &rarr; Atalhos de teclado &rarr; Veja e
+                            personalize atalhos
+                            &rarr; Atalhos personalizados &rarr; Adicione:</li>
+                        <ol>
+                            <li><kbd>Ctrl + Alt + T</kbd> &rarr; <code>ptyxis</code> &rarr; para abrir o
+                                Terminal</li>
+                            <li><kbd>Ctrl + Alt + E</kbd> &rarr; <code>nautilus</code> &rarr; para abrir o
+                                Nautilus</li>
+                        </ol>
+                    </ol>
+                </div>
+
+                <h2 id="m-proton">Proton</h2>
+                <div>
+                    <p>Compatibilidade para games baseado no Wine e outros componentes.
+                    </p>
+                    <pre><code>
+sudo flatpak install flathub com.vysp3r.ProtonPlus
+                    </code></pre>
+                </div>
+
+                <h2 id="m-xpadneo">xpadneo</h2>
+                <div>
+                    <p>Driver para <a href="https://github.com/atar-axis/xpadneo">Xbox One Wireless Controller</a>.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="copy">Criado por Cremilton&nbsp;&#124;&nbsp;<span data-js="copy-date">&copy; 2017 - 2026</span></p>
+        <p class="footer-btn">
+            <a class="btn" href="#top-of-site">Return top</a>
+        </p>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXRZKFF2PC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-RXRZKFF2PC');
+    </script>
+
+</body>
+
+</html>

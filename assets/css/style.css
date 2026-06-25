@@ -78,6 +78,14 @@ strong {
 
 
 /*
+ * SCROLL HIDDEN
+ */
+.hidden-scroll{
+    overflow: hidden;
+}
+
+
+/*
  * TITLES
  */
 h1,

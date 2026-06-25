@@ -330,7 +330,7 @@ pre{
 kbd, code{
     font-family: monospace;
 }
-kbd{
+kbd, .code{
     padding: .42rem .84rem;
     border-radius: .3rem;
 }
@@ -933,7 +933,7 @@ pre{
 .page-box a:hover{
     color: var(--orange);
 }
-kbd{
+kbd, .code{
     outline: 1px solid rgba(0, 0, 0, .08);
     background: var(--bg-black-box);
     background: linear-gradient(45deg,rgba(59, 59, 59, 1) 54%, rgba(250, 122, 47, 0.32) 100%);
@@ -1053,7 +1053,7 @@ html.white-on{
     background: var(--bg-white-box);
     background: linear-gradient(45deg,rgba(255, 255, 255, 1) 54%, rgba(0, 102, 204, 0.32) 100%);
 }
-.white-on kbd{
+.white-on kbd, .white-on .code{
     background: var(--bg-white-box);
     background: linear-gradient(45deg,rgba(255, 255, 255, 1) 54%, rgba(0, 102, 204, 0.32) 100%);
 }

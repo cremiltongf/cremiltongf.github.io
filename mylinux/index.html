@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Linux</title>
-    <meta name="description" content="Configurações, extensões e aplicativos do meu Fedora Workstation.">
+    <meta name="description"
+        content="Configurações, extensões, preferências de tema e softwares do meu Fedora Workstation.">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +26,8 @@
     <meta property="og:url" content="https://cremilton.com/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Cremilton Fernandes">
-    <meta property="og:description" content="Configurações, extensões e aplicativos do meu Fedora Workstation.">
+    <meta property="og:description"
+        content="Configurações, extensões, preferências de tema e softwares do meu Fedora Workstation.">
     <meta property="og:image" content="https://cremilton.com/assets/img/cgf.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -35,7 +37,8 @@
     <meta property="twitter:domain" content="cremilton.com">
     <meta property="twitter:url" content="https://cremilton.com/">
     <meta name="twitter:title" content="Cremilton Fernandes">
-    <meta name="twitter:description" content="Configurações, extensões e aplicativos do meu Fedora Workstation.">
+    <meta name="twitter:description"
+        content="Configurações, extensões, preferências de tema e softwares do meu Fedora Workstation.">
     <meta name="twitter:image" content="https://cremilton.com/assets/img/cgf.png">
 
 </head>
@@ -103,7 +106,7 @@
 
                         <li class="fw-bold">Dependências</li>
                         <ul class="summary-list">
-                            <li><a href="#m-tweaks">Gnome Tweaks</a></li>
+                            <li><a href="#m-git">Git</a></li>
                             <li><a href="#m-gerenciador">Gerenciador de extensões</a></li>
                         </ul>
 
@@ -118,9 +121,17 @@
                             <li><a href="#m-media">Media Controls</a></li>
                         </ul>
 
+                        <li class="theme">Tema</li>
+                        <ul class="summary-list">
+                            <li><a href="#m-icon">Kora</a></li>
+                            <li><a href="#m-theme">Fluent GTK</a></li>
+                            <li><a href="#m-tweaks">Gnome Tweaks</a></li>
+                        </ul>
+
                         <li class="fw-bold">Softwares</li>
                         <ul class="summary-list">
-                            <li><a href="#m-git">Git</a></li>
+                            <li><a href="#m-firefox">Firefox</a></li>
+                            <li><a href="#m-chrome">Chrome</a></li>
                             <li><a href="#m-vim">Vim</a></li>
                             <li><a href="#m-docker">Docker</a></li>
                             <li><a href="#m-visual">Visual Studio Code</a></li>
@@ -150,54 +161,16 @@
                 <div class="content">
                     <h1>My Linux</h1>
                     <p class="lead">
-                        Configurações, extensões e aplicativos do meu Fedora Workstation.
+                        Configurações, extensões, preferências de tema e softwares do meu Fedora Workstation.
                     </p>
 
                     <h2 id="m-config">Configurações</h2>
                     <div>
                         <p>Em <b>Configurações</b> do Fedora:</p>
                         <ol>
-                            <li>Multitarefas &rarr; Geral</li>
-                            <ol>
-                                <li>Canto ativo - <b>ativo</b>;</li>
-                                <li>Bordas de tela ativas - <b>desativado</b>.</li>
-                            </ol>
                             <li>Aparência &rarr; Estilo</li>
                             <ol>
-                                <li>Escuro &rarr; <b>selecione</b>.</li>
-                            </ol>
-                            <li>Aparência &rarr; Cor de realce</li>
-                            <ol>
-                                <li>Azul &rarr; <b>selecione</b>.</li>
-                            </ol>
-                        </ol>
-                    </div>
-
-                    <h2 id="m-tweaks">Gnome Tweaks</h2>
-                    <div>
-                        <h3>Instalação</h3>
-                        <pre><code>
-sudo dnf install gnome-tweaks
-                </code></pre>
-                        <h3>Configuração</h3>
-                        <ol>
-                            <li>Aparência</li>
-                            <ol>
-                                <li>Estilos &rarr; Ícones &rarr; <a href="https://github.com/bikass/kora">Kora</a>.
-                                </li>
-                            </ol>
-                            <li>Janelas</li>
-                            <ol>
-                                <li>Botões da barra de título</li>
-                                <ul>
-                                    <li>Maximizar &rarr; <b>desativado</b>;</li>
-                                    <li>Minimizar &rarr; <b>ativo</b>;</li>
-                                    <li>Posicionamento &rarr; <b>esquerda</b>.</li>
-                                </ul>
-                                <li>Ações de clique</li>
-                                <ul>
-                                    <li>Centralizar novas janelas &rarr; <b>ativo</b>.</li>
-                                </ul>
+                                <li>Escuro &rarr; <b>Minha preferência</b>.</li>
                             </ol>
                         </ol>
                     </div>
@@ -303,7 +276,7 @@ sudo flatpak install flathub com.mattjakeman.ExtensionManager
 
                     <h2 id="m-user">User Themes</h2>
                     <div>
-                        <p>Carregar temas do shell a partir do diretório do usuário.</p>
+                        <p>Carrega temas do shell a partir do diretório do usuário.</p>
                         <p>Mais detalhes: <a href="https://extensions.gnome.org/extension/19/user-themes/">User
                                 Themes</a>.
                         </p>
@@ -375,6 +348,67 @@ sudo flatpak install flathub com.mattjakeman.ExtensionManager
                         <p>Mostra informações da mídia em execução no painel.</p>
                         <p>Mais detalhes: <a href="https://extensions.gnome.org/extension/4470/media-controls/">Media
                                 Controls</a>.</p>
+                    </div>
+
+                    <h2 id="m-kora">Kora</h2>
+                    <div>
+                        <h3>Instalação</h3>
+                        <pre><code>
+mkdir ~/Repos/ && cd ~/Repos/ && git clone https://github.com/bikass/kora.git && cp -r kora/kora ~/.local/share/icons/
+                        </code></pre>
+                        <p>Mais informações: <a
+                                href="https://github.com/bikass/kora">https://github.com/bikass/kora</a>.</p>
+                    </div>
+
+                    <h2 id="m-fluent">Fluent GTK</h2>
+                    <div>
+                        <h3>Instalação</h3>
+                        <pre><code>
+mkdir ~/Repos/ && cd ~/Repos/ && git clone https://github.com/vinceliuice/Fluent-gtk-theme.git && Fluent-gtk-theme/install.sh
+                        </code></pre>
+                        <p>Mais informações: <a
+                                href="https://github.com/vinceliuice/Fluent-gtk-theme">https://github.com/vinceliuice/Fluent-gtk-theme</a>.
+                        </p>
+                    </div>
+
+                    <h2 id="m-tweaks">Gnome Tweaks</h2>
+                    <div>
+                        <h3>Instalação</h3>
+                        <pre><code>
+sudo dnf install gnome-tweaks
+                </code></pre>
+                        <h3>Configuração</h3>
+                        <ol>
+                            <li>Aparência &rarr; Estilos</li>
+                            <ol>
+                                <li>Ícones &rarr; <b>Kora</b>;</li>
+                                <li>Shell &rarr; <b>Fluent-Dark</b>;</li>
+                                <li>Aplicativos legados &rarr; <b>Fluent-Dark</b>.</li>
+                            </ol>
+                            <li>Janelas &rarr; Botões da barra de título</li>
+                            <ol>
+                                <ul>
+                                    <li>Minimizar &rarr; <b>ativo</b>;</li>
+                                    <li>Posicionamento &rarr; <b>esquerda</b>.</li>
+                                </ul>
+                            </ol>
+                        </ol>
+                    </div>
+
+                    <h2 id="m-firefox">Firefox</h2>
+                    <div>
+                        <h3>Instalação</h3>
+                        <pre><code>
+sudo flatpak install flathub org.mozilla.firefox
+                    </code></pre>
+                    </div>
+
+                    <h2 id="m-chrome">Chrome</h2>
+                    <div>
+                        <h3>Instalação</h3>
+                        <pre><code>
+sudo flatpak install flathub com.google.Chrome
+                    </code></pre>
                     </div>
 
                     <h2 id="m-git">Git</h2>
@@ -514,6 +548,11 @@ sudo dnf remove libreoffice* -y && sudo dnf autoremove
                         <pre><code>
 sudo dnf install fira-code-fonts
                         </code></pre>
+                        <div class="alert" role="alert">
+                            <div>
+                                Fonte favorita para o Visual Studio Code.
+                            </div>
+                        </div>
                     </div>
 
                     <h2 id="m-keys">Atalhos personalizados</h2>
@@ -523,9 +562,11 @@ sudo dnf install fira-code-fonts
                                 personalize atalhos
                                 &rarr; Atalhos personalizados &rarr; Adicione:</li>
                             <ol>
-                                <li><kbd>Ctrl + Alt + T</kbd> &rarr; <code>ptyxis</code> &rarr; para abrir o
+                                <li><kbd>Ctrl + Alt + T</kbd> &rarr; <code class="code">ptyxis</code> &rarr; para abrir
+                                    o
                                     Terminal;</li>
-                                <li><kbd>Ctrl + Alt + E</kbd> &rarr; <code>nautilus</code> &rarr; para abrir o
+                                <li><kbd>Ctrl + Alt + E</kbd> &rarr; <code class="code">nautilus</code> &rarr; para
+                                    abrir o
                                     Nautilus.</li>
                             </ol>
                         </ol>

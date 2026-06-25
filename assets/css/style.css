@@ -21,7 +21,7 @@
     --blue: #0066CC;
     --blue-black: #0052A3;
     /*orange-colors*/
-    --orange: #FA7A2F;
+    --orange: #fa7a2f;
     --orange-black:#E85906;
     /*text-colors*/
     --text-white: #D9D9DC;
@@ -340,6 +340,14 @@ kbd{
 }
 .page-box a:hover{
     text-decoration: underline;
+}
+.alert{
+    padding: 1.6rem;
+    border-radius: .6rem;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, .25);
+}
+.alert div{
+    margin: 0;
 }
 
 
@@ -898,6 +906,10 @@ kbd{
     background: var(--bg-black-box);
     background: linear-gradient(45deg,rgba(59, 59, 59, 1) 54%, rgba(250, 122, 47, 0.32) 100%);
 }
+.alert{
+    background-color: rgba(250, 122, 47, .15);
+    border: 1px solid var(--orange);
+}
 
 
 /*
@@ -1013,6 +1025,10 @@ html.white-on{
     background: var(--bg-white-box);
     background: linear-gradient(45deg,rgba(255, 255, 255, 1) 54%, rgba(0, 102, 204, 0.32) 100%);
 }
+.white-on .alert{
+    background-color: rgba(0, 102, 204, .15);
+    border: 1px solid var(--blue);
+}
 
 
 /*
@@ -1069,7 +1085,6 @@ html.white-on{
     .text-404{
         min-width: 100%;
     }
-
 }
 
 

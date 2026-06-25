@@ -133,11 +133,13 @@
                             <li><a href="#m-oracle">Oracle VirtualBox</a></li>
                             <li><a href="#m-cpu">CPU-X</a></li>
                             <li><a href="#m-vlc">VLC Media Player</a></li>
+                            <li><a href="#m-only">OnlyOffice</a></li>
                             <li><a href="#m-samba">Samba</a></li>
                         </ul>
 
                         <li class="fw-bold">Outros</li>
                         <ul class="summary-list">
+                            <li><a href="#m-fira">Fonte FiraCode</a></li>
                             <li><a href="#m-keys">Atalhos personalizados</a></li>
                             <li><a href="#m-proton">Proton</a></li>
                             <li><a href="#m-xpadneo">xpadneo</a></li>
@@ -476,7 +478,25 @@ flatpak install flathub io.github.thetumultuousunicornofdarkness.cpu-x
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-                            sudo flatpak install flathub org.videolan.VLC
+sudo flatpak install flathub org.videolan.VLC
+                        </code></pre>
+                    </div>
+
+                    <h2 id="m-only">OnlyOffice</h2>
+                    <div>
+                        <h3>Instalação</h3>
+                        <pre><code>
+sudo flatpak install flathub org.onlyoffice.desktopeditors
+                        </code></pre>
+
+                        <div class="alert" role="alert">
+                            <div>
+                                Remova o Libre Office.
+                            </div>
+                        </div>
+                        <h3>Desinstalando</h3>
+                        <pre><code>
+sudo dnf remove libreoffice* -y && sudo dnf autoremove
                         </code></pre>
                     </div>
 
@@ -486,6 +506,14 @@ flatpak install flathub io.github.thetumultuousunicornofdarkness.cpu-x
                             explicando
                             cada detalhe
                             de uma configuração.</p>
+                    </div>
+
+                    <h2 id="m-fira">Fonte FiraCode</h2>
+                    <div>
+                        <h3>Instalação</h3>
+                        <pre><code>
+sudo dnf install fira-code-fonts
+                        </code></pre>
                     </div>
 
                     <h2 id="m-keys">Atalhos personalizados</h2>

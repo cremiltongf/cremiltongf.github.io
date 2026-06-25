@@ -55,11 +55,11 @@ html{
 body{
     font-size: 2.2rem;
 }
-.home{
+.home, .mylinux{
     padding: 0 1.6rem 1.6rem;
 }
 @media (max-width: 767px){
-    .home{
+    .home, .mylinux{
         padding: 0;
     }
 }
@@ -269,13 +269,30 @@ a.link-brand svg{
  */
 .page{
     max-width: var(--max-width-layout);
+    padding: 1.6rem;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     font-size: 1.8rem;
 }
 .page-box{
-    padding: 1.6rem;
+    margin-top: 3.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+}
+.summary{
+    flex: 3;
+}
+.summary-nav{
+    position: sticky;
+    top: 1.6rem;
+    z-index: 5;
+    height: 100vh;
+    overflow-y: auto;
+}
+.content{
+    flex: 7;
 }
 .page-box .lead{
     font-size: 2rem;
@@ -317,22 +334,26 @@ kbd{
     padding: .42rem .84rem;
     border-radius: .3rem;
 }
-.page-box ol, .page-box ul{
-    list-style-position: inside;
-    padding-left: 1.8rem;
+.summary-list{
+    list-style: none;
+    padding-left: 1.6rem;
 }
-.page-box > ol, .page-box > ul{
-   margin: 0 0 1.6rem 0;
-}
-.page-box ul li, .page-box ol li{
-    margin: 1rem 0;
-}
-.summary ul{
-    list-style-type: disc;
+.summary-list li{
+    margin: .8rem 0;
 }
 .fw-bold{
     list-style: none;
     font-weight: bold;
+}
+.content ol, .content ul{
+    list-style-position: inside;
+    padding-left: 1.8rem;
+}
+.content > ol, .content > ul{
+   margin: 0 0 1.6rem 0;
+}
+.content ul li, .content ol li{
+    margin: 1rem 0;
 }
 .page-box a{
     transition: all .3s;
@@ -350,7 +371,17 @@ kbd{
 .alert div{
     margin: 0;
 }
-
+@media (max-width: 940px){
+    .page{
+        flex-direction: column;
+    }
+    .summary, .content{
+        min-width: 100%;
+    }
+    .summary-nav{
+        height: auto;
+    }
+}
 
 /*
  * HERO

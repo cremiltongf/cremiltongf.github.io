@@ -90,7 +90,6 @@
     </header>
 
     <main class="main">
-
         <section id="page" class="page">
             <div class="page-box">
                 <h1>My Linux</h1>
@@ -101,10 +100,14 @@
                 <h2>Sumário:</h2>
                 <div>
                     <ul class="summary">
-                        <li class="fw-bold">Configurações</li>
+                        <li class="fw-bold">Início</li>
                         <ul>
-                            <li><a href="#m-config">Configuração geral</a></li>
-                            <li><a href="#m-tweaks">Ajustes do Gnome</a></li>
+                            <li><a href="#m-config">Configurações</a></li>
+                        </ul>
+
+                        <li class="fw-bold">Dependências</li>
+                        <ul>
+                            <li><a href="#m-tweaks">Gnome Tweaks</a></li>
                             <li><a href="#m-gerenciador">Gerenciador de extensões</a></li>
                         </ul>
 
@@ -144,9 +147,9 @@
                     </ul>
                 </div>
 
-                <h2 id="m-config">Configuração geral</h2>
+                <h2 id="m-config">Configurações</h2>
                 <div>
-                    <p>Em <b>Configurações</b>:</p>
+                    <p>Em <b>Configurações</b> do Fedora:</p>
                     <ol>
                         <li>Multitarefas &rarr; Geral</li>
                         <ol>
@@ -164,7 +167,7 @@
                     </ol>
                 </div>
 
-                <h2 id="m-tweaks">Ajustes do Gnome</h2>
+                <h2 id="m-tweaks">Gnome Tweaks</h2>
                 <div>
                     <h3>Instalação</h3>
                     <pre><code>
@@ -202,7 +205,7 @@ sudo flatpak install flathub com.mattjakeman.ExtensionManager
 
                     <div class="alert" role="alert">
                         <div>
-                            Instale as extensões através do Gerenciador de Extensões.
+                            Instale as extensões abaixo através do Gerenciador de Extensões.
                         </div>
                     </div>
                 </div>
@@ -217,6 +220,11 @@ sudo flatpak install flathub com.mattjakeman.ExtensionManager
                     <p>Mais detalhes: <a
                             href="https://extensions.gnome.org/extension/615/appindicator-support/">AppIndicator and
                             KStatusNotifierItem Support</a>.</p>
+                    <div class="alert" role="alert">
+                        <div>
+                            O Fedora já traz instalado. Só precisa ativar.
+                        </div>
+                    </div>
                 </div>
 
                 <h2 id="m-blur">Blur my Shell</h2>
@@ -227,6 +235,7 @@ sudo flatpak install flathub com.mattjakeman.ExtensionManager
                         visão geral.</p>
                     <p>Mais detalhes: <a href="https://extensions.gnome.org/extension/3193/blur-my-shell/">Blur my
                             Shell</a>.</p>
+
                     <h3>Configuração</h3>
                     <ol>
                         <li>Pipelines</li>
@@ -353,7 +362,7 @@ sudo flatpak install flathub com.mattjakeman.ExtensionManager
 
                 <h2 id="m-media">Media Controls</h2>
                 <div>
-                    <p>Mostra informações da midia em execução no painel.</p>
+                    <p>Mostra informações da mídia em execução no painel.</p>
                     <p>Mais detalhes: <a href="https://extensions.gnome.org/extension/4470/media-controls/">Media
                             Controls</a>.</p>
                 </div>
@@ -376,10 +385,12 @@ sudo dnf install vim
 
                 <h2 id="m-docker">Docker</h2>
                 <div>
-                    <p>Siga o guia do <a href="https://docs.docker.com/desktop/setup/install/linux/fedora/">Docker
-                            Docs</a>
-                        que é
-                        sucesso.</p>
+                    <div class="alert" role="alert">
+                        <div>
+                            Siga o guia do <a href="https://docs.docker.com/desktop/setup/install/linux/fedora/">Docker
+                                Docs</a> para instalação e configuração que é sucesso.
+                        </div>
+                    </div>
                 </div>
 
                 <h2 id="m-visual">Visual Studio Code</h2>
@@ -414,27 +425,33 @@ sudo flatpak install flathub org.qbittorrent.qBittorrent
                     <pre><code>
 sudo flatpak install flathub org.freefilesync.FreeFileSync
                     </code></pre>
+
+                    <div class="alert" role="alert">
+                        <div>
+                            Uso no meu trabalho para os meu backups.
+                        </div>
+                    </div>
                 </div>
 
                 <h2 id="m-davinci">DaVinci Resolve</h2>
                 <div>
-                    <p>Baixe o <a href="https://www.blackmagicdesign.com/br/products/davinciresolve">DaVinci Resolve</a>
-                    </p>
+                    <p>Baixe o <a href="https://www.blackmagicdesign.com/br/products/davinciresolve">DaVinci
+                            Resolve</a>.</p>
                 </div>
 
                 <h2 id="m-obs">OBS Studio</h2>
                 <div>
-                    <p>Baixe o <a href="https://obsproject.com/pt-br/download">OBS Studio</a></p>
+                    <p>Baixe o <a href="https://obsproject.com/pt-br/download">OBS Studio</a>.</p>
                 </div>
 
                 <h2 id="m-hand">HandBrake</h2>
                 <div>
-                    <p>Baixe o <a href="https://handbrake.fr/downloads.php">HandBrake</a></p>
+                    <p>Baixe o <a href="https://handbrake.fr/downloads.php">HandBrake</a>.</p>
                 </div>
 
                 <h2 id="m-oracle">Oracle VirtualBox</h2>
                 <div>
-                    <p>Baixe o <a href="https://virtualbox.org/">Oracle VirtualBox</a></p>
+                    <p>Baixe o <a href="https://virtualbox.org/">Oracle VirtualBox</a>.</p>
                 </div>
 
                 <h2 id="m-samba">Samba</h2>
@@ -453,9 +470,9 @@ sudo flatpak install flathub org.freefilesync.FreeFileSync
                             &rarr; Atalhos personalizados &rarr; Adicione:</li>
                         <ol>
                             <li><kbd>Ctrl + Alt + T</kbd> &rarr; <code>ptyxis</code> &rarr; para abrir o
-                                Terminal</li>
+                                Terminal;</li>
                             <li><kbd>Ctrl + Alt + E</kbd> &rarr; <code>nautilus</code> &rarr; para abrir o
-                                Nautilus</li>
+                                Nautilus.</li>
                         </ol>
                     </ol>
                 </div>
@@ -475,7 +492,6 @@ sudo flatpak install flathub com.vysp3r.ProtonPlus
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer class="footer">

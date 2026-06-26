@@ -297,7 +297,7 @@ a.link-brand svg{
     position: sticky;
     top: 1.6rem;
     z-index: 5;
-    height: 100vh;
+    height: calc(100vh - 152px);
     overflow-y: auto;
 }
 .content{

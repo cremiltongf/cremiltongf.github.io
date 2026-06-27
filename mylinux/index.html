@@ -118,7 +118,6 @@
                             <li><a href="#m-no">No overview at start-up</a></li>
                             <li><a href="#m-compiz">Compiz alike magic lamp effect</a></li>
                             <li><a href="#m-dash">Dash to Dock</a></li>
-                            <li><a href="#m-media">Media Controls</a></li>
                         </ul>
 
                         <li class="fw-bold">Tema</li>
@@ -145,6 +144,7 @@
                             <li><a href="#m-cpu">CPU-X</a></li>
                             <li><a href="#m-vlc">VLC Media Player</a></li>
                             <li><a href="#m-only">OnlyOffice</a></li>
+                            <li><a href="#m-pass">Senhas e Chaves</a></li>
                             <li><a href="#m-samba">Samba</a></li>
                         </ul>
 
@@ -343,13 +343,6 @@ sudo flatpak install flathub com.mattjakeman.ExtensionManager
                         </ol>
                     </div>
 
-                    <h2 id="m-media">Media Controls</h2>
-                    <div>
-                        <p>Mostra informações da mídia em execução no painel.</p>
-                        <p>Mais detalhes: <a href="https://extensions.gnome.org/extension/4470/media-controls/">Media
-                                Controls</a>.</p>
-                    </div>
-
                     <h2 id="m-kora">Kora</h2>
                     <div>
                         <h3>Instalação</h3>
@@ -532,6 +525,18 @@ sudo flatpak install flathub org.onlyoffice.desktopeditors
                         <pre><code>
 sudo dnf remove libreoffice* -y && sudo dnf autoremove
                         </code></pre>
+                    </div>
+
+                    <h2 id="m-pass">Senhas e Chaves</h2>
+                    <div>
+                        <h3>Instalação</h3>
+                        <pre><code>
+                            sudo flatpak install flathub org.gnome.seahorse.Application
+                        </code></pre>
+                        <div class="alert" role="alert">Para remover o pedido de senha no Chrome e Visual Studio Code.
+                            Ocorre quando
+                            o login é
+                            automático.</div>
                     </div>
 
                     <h2 id="m-samba">Samba</h2>

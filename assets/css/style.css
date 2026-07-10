@@ -80,8 +80,10 @@ strong {
 /*
  * SCROLL HIDDEN
  */
-.hidden-scroll{
-    overflow: hidden;
+@media (max-width: 820px) {
+    .hidden-scroll{
+        overflow: hidden;
+    }
 }
 
 

@@ -102,6 +102,7 @@
                         <li class="fw-bold">Início</li>
                         <ul class="summary-list">
                             <li><a href="#m-config">Configurações</a></li>
+                            <li><a href="#m-keys">Atalhos personalizados</a></li>
                         </ul>
 
                         <li class="fw-bold">Dependências</li>
@@ -151,13 +152,12 @@
                         <li class="fw-bold">Outros</li>
                         <ul class="summary-list">
                             <li><a href="#m-fira">Fonte FiraCode</a></li>
-                            <li><a href="#m-keys">Atalhos personalizados</a></li>
                             <li><a href="#m-proton">ProtonPlus</a></li>
                             <li><a href="#m-heroic">Heroic</a></li>
                             <li><a href="#m-faugus">Faugus</a></li>
                             <li><a href="#m-steam">Steam</a></li>
-                            <li><a href="#m-toys">LinuxToys</a></li>
                             <li><a href="#m-xpadneo">xpadneo</a></li>
+                            <li><a href="#m-toys">LinuxToys</a></li>
                         </ul>
                     </ul>
                 </div>
@@ -175,6 +175,23 @@
                             <li>Aparência &rarr; Estilo</li>
                             <ol>
                                 <li>Escuro &rarr; <b>Minha preferência</b>.</li>
+                            </ol>
+                        </ol>
+                    </div>
+
+                    <h2 id="m-keys">Atalhos personalizados</h2>
+                    <div>
+                        <ol>
+                            <li>Em <b>Configurações</b> &rarr; Teclado &rarr; Atalhos de teclado &rarr; Veja e
+                                personalize atalhos
+                                &rarr; Atalhos personalizados &rarr; Adicione:</li>
+                            <ol>
+                                <li><kbd>Ctrl + Alt + T</kbd> &rarr; <code class="code">ptyxis</code> &rarr; para abrir
+                                    o
+                                    Terminal;</li>
+                                <li><kbd>Ctrl + Alt + E</kbd> &rarr; <code class="code">nautilus</code> &rarr; para
+                                    abrir o
+                                    Nautilus.</li>
                             </ol>
                         </ol>
                     </div>
@@ -214,7 +231,7 @@ sudo flatpak install flathub com.mattjakeman.ExtensionManager
                                 KStatusNotifierItem Support</a>.</p>
                         <div class="alert" role="alert">
                             <div>
-                                O Fedora já traz instalado. Só precisa ativar.
+                                O Fedora já traz instalado. Só precisa habilitar.
                             </div>
                         </div>
                     </div>
@@ -576,23 +593,6 @@ sudo dnf install fira-code-fonts -y
                         </div>
                     </div>
 
-                    <h2 id="m-keys">Atalhos personalizados</h2>
-                    <div>
-                        <ol>
-                            <li>Em <b>Configurações</b> &rarr; Teclado &rarr; Atalhos de teclado &rarr; Veja e
-                                personalize atalhos
-                                &rarr; Atalhos personalizados &rarr; Adicione:</li>
-                            <ol>
-                                <li><kbd>Ctrl + Alt + T</kbd> &rarr; <code class="code">ptyxis</code> &rarr; para abrir
-                                    o
-                                    Terminal;</li>
-                                <li><kbd>Ctrl + Alt + E</kbd> &rarr; <code class="code">nautilus</code> &rarr; para
-                                    abrir o
-                                    Nautilus.</li>
-                            </ol>
-                        </ol>
-                    </div>
-
                     <h2 id="m-proton">ProtonPlus</h2>
                     <div>
                         <p>Um gerenciador de compatibilidades para games baseado no Wine e outros componentes.</p>
@@ -624,17 +624,6 @@ sudo dnf install steam -y
                         </code></pre>
                     </div>
 
-                    <h2 id="m-toys">LinuxToys</h2>
-                    <div>
-                        <h3>Instalação</h3>
-                        <p>Uma coleção amigável de ferramentas para tornar sua vida no Linux mais fácil do que nunca.
-                        </p>
-                        <pre><code>
-curl -fsSL https://linux.toys/install.sh | bash
-                        </code></pre>
-                        <p>Mais informações: <a href="https://linux.toys/">https://linux.toys/</a>.</p>
-                    </div>
-
                     <h2 id="m-xpadneo">xpadneo</h2>
                     <div>
                         <p>Driver para <a href="https://github.com/atar-axis/xpadneo">Xbox One Wireless Controller</a>.
@@ -643,6 +632,17 @@ curl -fsSL https://linux.toys/install.sh | bash
                         <pre><code>
 mkdir ~/Repos/ && cd ~/Repos/ && git clone https://github.com/atar-axis/xpadneo.git && sudo xpadneo/install.sh
                         </code></pre>
+                    </div>
+
+                    <h2 id="m-toys">LinuxToys</h2>
+                    <div>
+                        <p>Uma coleção amigável de ferramentas para tornar sua vida no Linux mais fácil do que nunca.
+                        </p>
+                        <h3>Instalação</h3>
+                        <pre><code>
+curl -fsSL https://linux.toys/install.sh | bash
+                        </code></pre>
+                        <p>Mais informações: <a href="https://linux.toys/">https://linux.toys/</a>.</p>
                     </div>
                 </div>
 

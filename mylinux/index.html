@@ -152,6 +152,7 @@
                         <li class="fw-bold">Outros</li>
                         <ul class="summary-list">
                             <li><a href="#m-fira">Fonte FiraCode</a></li>
+                            <li><a href="#m-games">Games</a></li>
                             <li><a href="#m-proton">ProtonPlus</a></li>
                             <li><a href="#m-faugus">Faugus</a></li>
                             <li><a href="#m-steam">Steam</a></li>
@@ -592,6 +593,38 @@ sudo dnf install fira-code-fonts -y
                         </div>
                     </div>
 
+                    <h2 id="m-games">Games</h2>
+                    <div>
+                        <h3>GameMode</h3>
+                        <p>GameMode é uma combinação de daemon e biblioteca para Linux que permite que jogos solicitem
+                            que um conjunto de otimizações seja aplicado temporariamente ao sistema operacional host
+                            e/ou ao processo do jogo.</p>
+                        <h4>Instalação</h4>
+                        <pre><code>
+# x64 and x32
+sudo dnf install gamemode && sudo  dnf install gamemode.i686 gamemode.x86_64
+                        </code></pre>
+                        <h3>Notificação do GameMode</h3>
+                        <h4>Instalação</h4>
+                        <pre><code>
+sudo dnf install gnome-shell-extension-gamemode
+                        </code></pre>
+                    </div>
+
+                    <h2 id="m-mangohud">MangoHud</h2>
+                    <div>
+                        <p>Sobreposição Vulkan e OpenGL para monitorar FPS, temperaturas, carga da CPU/GPU e outros.</p>
+                        <h3>Instalação</h3>
+                        <pre><code>
+sudo dnf install mangohud
+                        </code></pre>
+                        <h3>Usando</h3>
+                        <p>Adicione o comando abaixo nas opções de lançamento da Steam:</p>
+                        <pre><code>
+mangohud %command%
+                        </code></pre>
+                    </div>
+
                     <h2 id="m-proton">ProtonPlus</h2>
                     <div>
                         <p>Um gerenciador de compatibilidades para games baseado no Wine e outros componentes.</p>
@@ -608,10 +641,6 @@ sudo flatpak install flathub com.vysp3r.ProtonPlus
                         <pre><code>
 sudo flatpak install flathub io.github.Faugus.faugus-launcher
                         </code></pre>
-                        <h3>Instalação do MangoHud</h3>
-                        <pre><code>
-sudo flatpak install org.freedesktop.Platform.VulkanLayer.MangoHud/x86_64/25.08
-                        </code></pre>
                         <h3>Dependências</h3>
                         <pre><code>
 meson ninja pygobject requests pillow vdf psutil dbus-python icoextract gtk4 libadwaita libmanette
@@ -623,6 +652,11 @@ meson ninja pygobject requests pillow vdf psutil dbus-python icoextract gtk4 lib
                         <h3>Instalação</h3>
                         <pre><code>
 sudo dnf install steam -y
+                        </code></pre>
+                        <h3>Usando o GameMode</h3>
+                        <p>Adicione o comando abaixo nas opções de lançamento da Steam:</p>
+                        <pre><code>
+gamemoderun %command%
                         </code></pre>
                     </div>
 

@@ -100,6 +100,9 @@ h4{
     font-style: normal;
     text-transform: uppercase;
 }
+.main-linux h4{
+    text-transform: none;
+}
 h1,
 h2{
     font-size: 6rem;
@@ -144,7 +147,7 @@ h2::after{
     }
 }
 @media (max-width: 320px){
-   h1,
+    h1,
     h2{
         font-size: 3.6rem;
     }

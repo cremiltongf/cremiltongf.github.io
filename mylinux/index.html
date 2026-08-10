@@ -153,7 +153,6 @@
                         <ul class="summary-list">
                             <li><a href="#m-fira">Fonte FiraCode</a></li>
                             <li><a href="#m-proton">ProtonPlus</a></li>
-                            <li><a href="#m-heroic">Heroic</a></li>
                             <li><a href="#m-faugus">Faugus</a></li>
                             <li><a href="#m-steam">Steam</a></li>
                             <li><a href="#m-xpadneo">xpadneo</a></li>
@@ -602,19 +601,22 @@ sudo flatpak install flathub com.vysp3r.ProtonPlus
                     </code></pre>
                     </div>
 
-                    <h2 id="m-heroic">Heroic</h2>
-                    <p>Launcher para Epic, GOG e Amazon Luna.</p>
-                    <h3>Instalação</h3>
-                    <pre><code>
-sudo flatpak install flathub com.heroicgameslauncher.hgl
-                    </code></pre>
-
                     <h2 id="m-faugus">Faugus</h2>
-                    <p>Launcher para EA App e Ubisoft Connect.</p>
-                    <h3>Instalação</h3>
-                    <pre><code>
+                    <div>
+                        <p>Launcher para EA App, Ubisoft Connect, Epic e outros.</p>
+                        <h3>Instalação</h3>
+                        <pre><code>
 sudo flatpak install flathub io.github.Faugus.faugus-launcher
-                    </code></pre>
+                        </code></pre>
+                        <h3>Instalação do MangoHud</h3>
+                        <pre><code>
+sudo flatpak install org.freedesktop.Platform.VulkanLayer.MangoHud/x86_64/25.08
+                        </code></pre>
+                        <h3>Dependências</h3>
+                        <pre><code>
+meson ninja pygobject requests pillow vdf psutil dbus-python icoextract gtk4 libadwaita libmanette
+                        </code></pre>
+                    </div>
 
                     <h2 id="m-steam">Steam</h2>
                     <div>

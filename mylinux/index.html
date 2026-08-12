@@ -157,7 +157,6 @@
                             <li><a href="#m-faugus">Faugus</a></li>
                             <li><a href="#m-steam">Steam</a></li>
                             <li><a href="#m-xpadneo">xpadneo</a></li>
-                            <li><a href="#m-toys">LinuxToys</a></li>
                         </ul>
                     </ul>
                 </div>
@@ -602,7 +601,7 @@ sudo dnf install fira-code-fonts -y
                         <h4>Instalação</h4>
                         <pre><code>
 # x64 and x32
-sudo dnf install gamemode && sudo  dnf install gamemode.i686 gamemode.x86_64
+sudo dnf install gamemode && sudo dnf install gamemode.i686 gamemode.x86_64
                         </code></pre>
                         <h3>Notificação do GameMode</h3>
                         <h4>Instalação</h4>
@@ -616,12 +615,12 @@ sudo dnf install gnome-shell-extension-gamemode
                         <p>Sobreposição Vulkan e OpenGL para monitorar FPS, temperaturas, carga da CPU/GPU e outros.</p>
                         <h3>Instalação</h3>
                         <pre><code>
-sudo dnf install mangohud
+sudo flatpak install org.freedesktop.Platform.VulkanLayer.MangoHud/x86_64/25.08
                         </code></pre>
-                        <h3>Usando</h3>
-                        <p>Adicione o comando abaixo nas opções de lançamento da Steam:</p>
+                        <h3>Instalação do Goverlay</h3>
+                        <p>GOverlay é uma interface gráfica para configurar o MangoHud.</p>
                         <pre><code>
-mangohud %command%
+sudo flatpak install flathub io.github.benjamimgois.goverlay
                         </code></pre>
                     </div>
 
@@ -639,24 +638,38 @@ sudo flatpak install flathub com.vysp3r.ProtonPlus
                         <p>Launcher para EA App, Ubisoft Connect, Epic e outros.</p>
                         <h3>Instalação</h3>
                         <pre><code>
+# Install
 sudo flatpak install flathub io.github.Faugus.faugus-launcher
+
+# Allow Faugus Launcher to detect Steam users and games
+sudo flatpak override io.github.Faugus.faugus-launcher --filesystem=~/.var/app/com.valvesoftware.Steam/
+sudo flatpak override io.github.Faugus.faugus-launcher --talk-name=org.freedesktop.Flatpak
+
+# Allow Steam to run Faugus Launcher shortcuts
+sudo flatpak override com.valvesoftware.Steam --talk-name=org.freedesktop.Flatpak
+
+# Allow Steam to see Faugus Launcher games icons
+sudo flatpak override com.valvesoftware.Steam --filesystem=~/.var/app/io.github.Faugus.faugus-launcher/config/faugus-launcher/
+sudo flatpak override com.valvesoftware.Steam --filesystem=~/.config/faugus-launcher/
                         </code></pre>
-                        <h3>Dependências</h3>
-                        <pre><code>
-meson ninja pygobject requests pillow vdf psutil dbus-python icoextract gtk4 libadwaita libmanette
-                        </code></pre>
+                        <p>Para mais informações: <a href="https://github.com/Faugus/faugus-launcher">Faugus</a>.</p>
                     </div>
 
                     <h2 id="m-steam">Steam</h2>
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-sudo dnf install steam -y
+sudo flatpak install flathub com.valvesoftware.Steam
                         </code></pre>
-                        <h3>Usando o GameMode</h3>
-                        <p>Adicione o comando abaixo nas opções de lançamento da Steam:</p>
+                        <h3>Usando o GameMode e MangoHud</h3>
+                        <p>Adicione o comando abaixo nas opções de lançamento do jogo na Steam:</p>
                         <pre><code>
-gamemoderun %command%
+gamemoderun mangohud %command%
+                        </code></pre>
+                        <h3>Usando controles</h3>
+                        <p>Para usar controladores de jogos e dispositivos de entrada com a Steam no Fedora.</p>
+                        <pre><code>
+sudo dnf install steam-devices
                         </code></pre>
                     </div>
 
@@ -668,17 +681,6 @@ gamemoderun %command%
                         <pre><code>
 mkdir ~/Repos/ && cd ~/Repos/ && git clone https://github.com/atar-axis/xpadneo.git && sudo xpadneo/install.sh
                         </code></pre>
-                    </div>
-
-                    <h2 id="m-toys">LinuxToys</h2>
-                    <div>
-                        <p>Uma coleção amigável de ferramentas para tornar sua vida no Linux mais fácil do que nunca.
-                        </p>
-                        <h3>Instalação</h3>
-                        <pre><code>
-curl -fsSL https://linux.toys/install.sh | bash
-                        </code></pre>
-                        <p>Mais informações: <a href="https://linux.toys/">https://linux.toys/</a>.</p>
                     </div>
                 </div>
 

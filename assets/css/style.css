@@ -505,6 +505,9 @@ kbd, .code{
     flex: 8;
     max-width: 82rem;
 }
+.about-bio p{
+    margin-bottom: 1.6rem;
+}
 .about-bio span{
     position: relative;
 }

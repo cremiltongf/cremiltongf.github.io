@@ -210,7 +210,7 @@ sudo dnf install git
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-flatpak install --user flathub com.mattjakeman.ExtensionManager
+flatpak install flathub com.mattjakeman.ExtensionManager
                     </code></pre>
 
                         <div class="alert" role="alert">
@@ -434,7 +434,7 @@ sudo dnf install gnome-tweaks
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-flatpak install --user flathub org.mozilla.firefox
+flatpak install flathub org.mozilla.firefox
                         </code></pre>
                         <div class="alert" role="alert">
                             <div>
@@ -447,7 +447,7 @@ flatpak install --user flathub org.mozilla.firefox
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-flatpak install --user flathub com.google.Chrome
+flatpak install flathub com.google.Chrome
                         </code></pre>
                     </div>
 
@@ -493,7 +493,7 @@ sudo dnf install "nautilus-dropbox-2025.05.20-1.fc42.x86_64.rpm"
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-flatpak install --user flathub org.qbittorrent.qBittorrent
+flatpak install flathub org.qbittorrent.qBittorrent
                     </code></pre>
                     </div>
 
@@ -501,7 +501,7 @@ flatpak install --user flathub org.qbittorrent.qBittorrent
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-flatpak install --user flathub org.freefilesync.FreeFileSync
+flatpak install flathub org.freefilesync.FreeFileSync
                     </code></pre>
 
                         <div class="alert" role="alert">
@@ -537,14 +537,14 @@ flatpak install --user flathub org.freefilesync.FreeFileSync
                         <p>Software que exibe informações sobre a CPU, a placa-mãe e muito mais.</p>
                         <h3>Instalação</h3>
                         <pre><code>
-flatpak install --user flathub io.github.thetumultuousunicornofdarkness.cpu-x
+flatpak install flathub io.github.thetumultuousunicornofdarkness.cpu-x
                     </code></pre>
                     </div>
                     <h2 id="m-vlc">VLC Media Player</h2>
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-flatpak install --user flathub org.videolan.VLC
+flatpak install flathub org.videolan.VLC
                         </code></pre>
                     </div>
 
@@ -552,7 +552,7 @@ flatpak install --user flathub org.videolan.VLC
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-flatpak install --user flathub org.onlyoffice.desktopeditors
+flatpak install flathub org.onlyoffice.desktopeditors
                         </code></pre>
 
                         <div class="alert" role="alert">
@@ -562,7 +562,7 @@ flatpak install --user flathub org.onlyoffice.desktopeditors
                         </div>
                         <h3>Desinstalando</h3>
                         <pre><code>
-sudo dnf remove libreoffice* -y && sudo dnf autoremove
+sudo dnf remove libreoffice* && sudo dnf autoremove
                         </code></pre>
                     </div>
 
@@ -570,7 +570,7 @@ sudo dnf remove libreoffice* -y && sudo dnf autoremove
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-flatpak install --user flathub org.gnome.seahorse.Application
+flatpak install flathub org.gnome.seahorse.Application
                         </code></pre>
                         <div class="alert" role="alert">Para remover o pedido de senha no Chrome e Visual Studio Code.
                             Ocorre quando
@@ -590,7 +590,7 @@ flatpak install --user flathub org.gnome.seahorse.Application
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-sudo dnf install fira-code-fonts -y
+sudo dnf install fira-code-fonts
                         </code></pre>
                         <div class="alert" role="alert">
                             <div>
@@ -615,7 +615,6 @@ sudo dnf group install Multimedia
                             e/ou ao processo do jogo.</p>
                         <h4>Instalação</h4>
                         <pre><code>
-# x64 and x32
 sudo dnf install gamemode && sudo dnf install gamemode.i686 gamemode.x86_64
                         </code></pre>
                         <h3>Notificação do GameMode</h3>
@@ -631,12 +630,12 @@ sudo dnf install gnome-shell-extension-gamemode
                         <p>Sobreposição Vulkan e OpenGL para monitorar FPS, temperaturas, carga da CPU/GPU e outros.</p>
                         <h3>Instalação</h3>
                         <pre><code>
-flatpak install --user org.freedesktop.Platform.VulkanLayer.MangoHud/x86_64/25.08
+sudo dnf install mangohud
                         </code></pre>
                         <h3>Instalação do Goverlay</h3>
                         <p>Uma interface gráfica para configurar o MangoHud.</p>
                         <pre><code>
-flatpak install --user flathub io.github.benjamimgois.goverlay
+sudo dnf install goverlay
                         </code></pre>
                     </div>
 
@@ -645,7 +644,7 @@ flatpak install --user flathub io.github.benjamimgois.goverlay
                         <p>Um gerenciador de compatibilidades para games baseado no Wine e outros componentes.</p>
                         <h3>Instalação</h3>
                         <pre><code>
-flatpak install --user flathub com.vysp3r.ProtonPlus
+flatpak install flathub com.vysp3r.ProtonPlus
                     </code></pre>
                     </div>
 
@@ -656,8 +655,12 @@ flatpak install --user flathub com.vysp3r.ProtonPlus
                             o Nile.</p>
                         <h3>Instalação</h3>
                         <pre><code>
-flatpak install --user flathub com.heroicgameslauncher.hgl
+sudo dnf install "Heroic-2.22.3-linux-x86_64.rpm"
                         </code></pre>
+                        <p>Download: <a
+                                href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/tag/v2.22.3">Heroic
+                                Games Launcher</a>.
+                        </p>
                     </div>
 
                     <h2 id="m-faugus">Faugus</h2>
@@ -665,28 +668,17 @@ flatpak install --user flathub com.heroicgameslauncher.hgl
                         <p>Um aplicativo simples e leve para executar jogos do Windows usando o UMU-Launcher.</p>
                         <h3>Instalação</h3>
                         <pre><code>
-# Install
-flatpak install --user flathub io.github.Faugus.faugus-launcher
-
-# Allow Faugus Launcher to detect Steam users and games
-sudo flatpak override io.github.Faugus.faugus-launcher --filesystem=~/.var/app/com.valvesoftware.Steam/
-sudo flatpak override io.github.Faugus.faugus-launcher --talk-name=org.freedesktop.Flatpak
-
-# Allow Steam to run Faugus Launcher shortcuts
-sudo flatpak override com.valvesoftware.Steam --talk-name=org.freedesktop.Flatpak
-
-# Allow Steam to see Faugus Launcher games icons
-sudo flatpak override com.valvesoftware.Steam --filesystem=~/.var/app/io.github.Faugus.faugus-launcher/config/faugus-launcher/
-sudo flatpak override com.valvesoftware.Steam --filesystem=~/.config/faugus-launcher/
+sudo dnf install "faugus-launcher-2.3.0-1.fc44.noarch.rpm"
                         </code></pre>
-                        <p>Para mais informações: <a href="https://github.com/Faugus/faugus-launcher">Faugus</a>.</p>
+                        <p>Download: <a href="https://github.com/Faugus/faugus-launcher/releases/tag/2.3.0">Faugus
+                                Launcher</a>.</p>
                     </div>
 
                     <h2 id="m-steam">Steam</h2>
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-flatpak install --user flathub com.valvesoftware.Steam
+sudo dnf install steam
                         </code></pre>
                         <h3>Usando o GameMode e MangoHud</h3>
                         <p>Adicione o comando abaixo nas opções de lançamento do jogo na Steam:</p>

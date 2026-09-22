@@ -153,6 +153,7 @@
                         <li class="fw-bold">Outros</li>
                         <ul class="summary-list">
                             <li><a href="#m-fira">Fonte FiraCode</a></li>
+                            <li><a href="#m-repository">Repositório RPM Fusion</a></li>
                             <li><a href="#m-codecs">Codecs</a></li>
                             <li><a href="#m-games">Games</a></li>
                             <li><a href="#m-proton">ProtonPlus</a></li>
@@ -607,6 +608,54 @@ sudo dnf group install Multimedia
                         </code></pre>
                     </div>
 
+                    <h2 id="m-repository">Repositório RPM Fusion</h2>
+                    <div>
+                        <div class="alert" role="alert">
+                            <div>
+                                Repositório que fornece softwares complementares, disponibiliza drivers adicionais
+                                (para Nvidia e AMD), codecs de mídia, entre outros.
+                            </div>
+                        </div>
+                        <h3>Habilitando</h3>
+                        <pre><code>
+# Free repository
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+
+# Nonfree repository
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+# Update
+sudo dnf upgrade --refresh
+                        </code></pre>
+                        <h3>Driver Nvidia</h3>
+                        <pre><code>
+# 32bits e 64bits
+sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda xorg-x11-drv-nvidia-libs.i686 vulkan-loader.i686 mesa-vulkan-drivers.i686
+                        </code></pre>
+                        <div class="alert" role="alert">
+                            <div>
+                                Finalizado a instalação do driver, aguardar pelo menos 10min para reiniciar o
+                                computador.
+                            </div>
+                        </div>
+                        <h3>Drivers para Flatpak</h3>
+                        <pre><code>
+# base
+flatpak install flathub org.freedesktop.Platform.Compat.i386
+
+# checking driver version
+nvidia-smi --query-gpu=driver_version --format=csv,noheader
+
+# install driver
+flatpak install flathub org.freedesktop.Platform.GL32.nvidia-XXX-XX-XX
+                        </code></pre>
+                        <div class="alert" role="alert">
+                            <div>
+                                Permite ao Heroic Game Launcher e Faugus Launcher acessar a placa de vídeo.
+                            </div>
+                        </div>
+                    </div>
+
                     <h2 id="m-games">Games</h2>
                     <div>
                         <h3>GameMode</h3>
@@ -631,6 +680,9 @@ sudo dnf install gnome-shell-extension-gamemode
                         <h3>Instalação</h3>
                         <pre><code>
 sudo dnf install mangohud
+
+# for flatpaks
+flatpak install org.freedesktop.Platform.VulkanLayer.MangoHud
                         </code></pre>
                         <h3>Instalação do Goverlay</h3>
                         <p>Uma interface gráfica para configurar o MangoHud.</p>

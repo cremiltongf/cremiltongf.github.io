@@ -140,8 +140,9 @@
                             <li><a href="#m-qbit">qBittorrent</a></li>
                             <li><a href="#m-free">FreeFileSync</a></li>
                             <li><a href="#m-davinci">DaVinci Resolve</a></li>
-                            <li><a href="#m-obs">OBS Studio</a></li>
+                            <li><a href="#m-shutter">Shutter Encoder</a></li>
                             <li><a href="#m-hand">HandBrake</a></li>
+                            <li><a href="#m-obs">OBS Studio</a></li>
                             <li><a href="#m-oracle">Oracle VirtualBox</a></li>
                             <li><a href="#m-cpu">CPU-X</a></li>
                             <li><a href="#m-vlc">VLC Media Player</a></li>
@@ -518,14 +519,23 @@ flatpak install flathub org.freefilesync.FreeFileSync
                                 Resolve</a>.</p>
                     </div>
 
-                    <h2 id="m-obs">OBS Studio</h2>
+                    <h2 id="m-shutter">Shutter Encoder</h2>
                     <div>
-                        <p>Baixe o <a href="https://obsproject.com/pt-br/download">OBS Studio</a>.</p>
+                        <p>Um conversor desenvolvido por editores de vídeo.</p>
+                        <p>Baixe o <a href="https://www.shutterencoder.com/">Shutter Encoder</a>.</p>
                     </div>
 
                     <h2 id="m-hand">HandBrake</h2>
                     <div>
-                        <p>Baixe o <a href="https://handbrake.fr/downloads.php">HandBrake</a>.</p>
+                        <p>Reduz o tamanho de arquivos de vídeo grandes, mantendo a alta qualidade visual.</p>
+                        <pre><code>
+flatpak install flathub fr.handbrake.ghb
+                        </code></pre>
+                    </div>
+
+                    <h2 id="m-obs">OBS Studio</h2>
+                    <div>
+                        <p>Baixe o <a href="https://obsproject.com/pt-br/download">OBS Studio</a>.</p>
                     </div>
 
                     <h2 id="m-oracle">Oracle VirtualBox</h2>
@@ -731,12 +741,17 @@ flatpak install flathub io.github.Faugus.faugus-launcher
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
+# Steam
 flatpak install flathub com.valvesoftware.Steam
+
+# for controls
+sudo dnf install steam-devices
                         </code></pre>
                         <h3>Usando o GameMode e MangoHud</h3>
                         <p>Adicione o comando abaixo nas opções de lançamento do jogo na Steam:</p>
                         <pre><code>
-gamemoderun mangohud %command%
+# for flatpak
+MANGOHUD=1 gamemoderun %command%
                         </code></pre>
                     </div>
 

@@ -382,7 +382,7 @@ flatpak install flathub com.mattjakeman.ExtensionManager
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-mkdir ~/Repos/ && cd ~/Repos/ && git clone https://github.com/bikass/kora.git && cp -r kora/kora ~/.local/share/icons/
+git clone https://github.com/bikass/kora.git && cp -r kora/kora ~/.local/share/icons/
                         </code></pre>
                         <div class="alert" role="alert">
                             <div>
@@ -397,7 +397,7 @@ mkdir ~/Repos/ && cd ~/Repos/ && git clone https://github.com/bikass/kora.git &&
                     <div>
                         <h3>Instalação</h3>
                         <pre><code>
-mkdir ~/Repos/ && cd ~/Repos/ && git clone https://github.com/vinceliuice/Fluent-gtk-theme.git && Fluent-gtk-theme/install.sh
+git clone https://github.com/vinceliuice/Fluent-gtk-theme.git && Fluent-gtk-theme/install.sh
                         </code></pre>
                         <div class="alert" role="alert">
                             <div>
@@ -659,11 +659,13 @@ nvidia-smi --query-gpu=driver_version --format=csv,noheader
 
 # install driver
 flatpak install flathub org.freedesktop.Platform.GL32.nvidia-XXX-XX-XX
+
+# update flatpak
+flatpak update
                         </code></pre>
                         <div class="alert" role="alert">
                             <div>
-                                Permite ao Heroic Game Launcher e Faugus Launcher acessar a placa de vídeo. Caso sejam
-                                Flatpak.
+                                Permite ao Heroic Game Launcher e Faugus Launcher acessar a placa de vídeo dedicado.
                             </div>
                         </div>
                     </div>
@@ -762,7 +764,7 @@ MANGOHUD=1 gamemoderun %command%
                         </p>
                         <h3>Instalação</h3>
                         <pre><code>
-mkdir ~/Repos/ && cd ~/Repos/ && git clone https://github.com/atar-axis/xpadneo.git && sudo xpadneo/install.sh
+git clone https://github.com/atar-axis/xpadneo.git && sudo xpadneo/install.sh
                         </code></pre>
                     </div>
                 </div>

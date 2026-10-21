@@ -249,56 +249,71 @@ flatpak install flathub com.mattjakeman.ExtensionManager
                         <ol>
                             <li>Pipelines</li>
                             <ol>
-                                <li>Adicionar Pipeline chamado <b>"Visão Geral"</b></li>
+                                <li>Criar Pipeline chamado <b>"Blur"</b></li>
                                 <ul>
-                                    <li>Adicionar efeito - <b>Desfoque gaussiano nativo</b></li>
+                                    <li>Adicionar efeito - <b>Dual Kawase blur</b></li>
                                     <ul>
-                                        <li>Raio &rarr; <b>3</b></li>
-                                        <li>Brilho &rarr; <b>0,37</b></li>
+                                        <li>Raio &rarr; <b>4</b></li>
+                                        <li>Brilho &rarr; <b>0,36</b></li>
                                     </ul>
                                 </ul>
-                                <li>Adicionar Pipeline chamado <b>"Dash"</b></li>
+                                <li>Criar Pipeline chamado <b>"Visão Geral"</b></li>
                                 <ul>
-                                    <li>Adicionar efeito - <b>Desfoque gaussiano nativo</b></li>
+                                    <li>Adicionar efeito - <b>Dual Kawase blur</b></li>
                                     <ul>
-                                        <li>Raio &rarr; <b>3</b></li>
-                                        <li>Brilho &rarr; <b>0,37</b></li>
-                                    </ul>
-                                    <li>Adicionar efeito &rarr; <b>Canto</b></li>
-                                    <ul>
-                                        <li>Raio &rarr; <b>24</b></li>
+                                        <li>Raio &rarr; <b>16</b></li>
+                                        <li>Brilho &rarr; <b>0,32</b></li>
                                     </ul>
                                 </ul>
                             </ol>
                             <li>Painel</li>
                             <ol>
+                                <li>Desfoque do painel &rarr; <b>Ativo</b></li>
                                 <li>Tipo de desfoque &rarr; <b>Dinâmico</b></li>
-                                <li>Sigma &rarr; <b>3</b></li>
-                                <li>Brilho &rarr; <b>0.37</b></li>
-                                <li>Substituir plano de fundo &rarr; <b>ativado</b></li>
+                                <li>Pipeline &rarr; <b>Blur</b></li>
+                                <li>Substituir plano de fundo &rarr; <b>ativo</b></li>
                                 <ul>
                                     <li>Estilo de plano de fundo &rarr; <b>transparente</b></li>
-                                    <li>Override background dynamically &rarr; <b>ativado</b></li>
+                                    <li>Override background dynamically &rarr; <b>ativo</b></li>
                                     <li>When window is near &rarr; <b>Background on Window Proximity</b></li>
-                                    <li>Desativar na visão geral &rarr; <b>ativado</b></li>
+                                    <li>Desativar na visão geral &rarr; <b>ativo</b></li>
                                 </ul>
                             </ol>
                             <li>Visão geral</li>
                             <ol>
-                                <li>Pipeline <b>"Visão Geral"</b></li>
+                                <li>Desfoque do plano de fundo &rarr; <b>ativo</b></li>
+                                <li>Pipeline &rarr; <b>Visão Geral</b></li>
                                 <li>Estilo dos compomenentes da visão geral &rarr; <b>escuro</b></li>
-                                <li>Sigma &rarr; <b>30</b></li>
-                                <li>Brilho &rarr; <b>0,60</b></li>
+                                <li>Desfoque da pasta do aplicativo &rarr; <b>ativo</b></li>
+                                <li>Pipeline &rarr; <b>Visão Geral</b></li>
                                 <li>Estilo de caixas de diálogo da pasta do aplicativo &rarr; <b>escuro</b></li>
                             </ol>
                             <li>Dash</li>
                             <ol>
-                                <li>Tipo de desfoque &rarr; <b>estático</b></li>
-                                <li>Pipeline &rarr; <b>"Dash"</b></li>
-                                <li>Substituir plano de fundo &rarr; Estilo de plano de fundo &rarr;
-                                    <b>transparente</b>
+                                <li>Dock blur &rarr; <b>ativo<b></li>
+                                <li>Tipo de desfoque &rarr; <b>dinâmico</b></li>
+                                <li>Pipeline &rarr; <b>"Blur"</b></li>
+                                <li>Substituir plano de fundo &rarr;
+                                    <b>ativo</b>
+                                </li>
+                                <li>Estilo de plano de fundo &rarr; <b>escuro</b>
                                 </li>
                                 <li>Desativar na visão geral &rarr; <b>ativado</b></li>
+                            </ol>
+                            <li>Popups</li>
+                            <ol>
+                                <li>Popup blur &rarr; <b>ativo<b></li>
+                                <li>Tipo de desfoque &rarr; <b>dinâmico</b></li>
+                                <li>Pipeline &rarr; <b>"Blur"</b></li>
+                                <li>Substituir plano de fundo &rarr;
+                                    <b>ativo</b>
+                                </li>
+                                <li>Preserve shell theme &rarr;
+                                    <b>ativo</b>
+                                </li>
+                                <li>Estilo de plano de fundo &rarr;
+                                    <b>escuro</b>
+                                </li>
                             </ol>
                         </ol>
                     </div>

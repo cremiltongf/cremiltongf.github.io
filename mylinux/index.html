@@ -154,8 +154,10 @@
                         <ul class="summary-list">
                             <li><a href="#m-fira">Fonte FiraCode</a></li>
                             <li><a href="#m-repository">Repositório RPM Fusion</a></li>
+                            <li><a href="#m-vga">Drivers de Vídeo</a></li>
                             <li><a href="#m-codecs">Codecs</a></li>
-                            <li><a href="#m-games">Games</a></li>
+                            <li><a href="#m-gamemode">Gamemode</a></li>
+                            <li><a href="#m-mangohud">MangoHud</a></li>
                             <li><a href="#m-proton">ProtonPlus</a></li>
                             <li><a href="#m-heroic">Heroic</a></li>
                             <li><a href="#m-faugus">Faugus</a></li>
@@ -607,19 +609,6 @@ sudo dnf install fira-code-fonts
                         </div>
                     </div>
 
-                    <h2 id="m-codecs">Codecs</h2>
-                    <div>
-                        <h3>Instalação</h3>
-                        <pre><code>
-# Completely version
-sudo dnf swap ffmpeg-free ffmpeg --allowerasing
-
-# GStreamer and extras
-sudo dnf install gstreamer1-plugins-{bad-*,good-*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
-sudo dnf install lame* --exclude=lame-devel
-                        </code></pre>
-                    </div>
-
                     <h2 id="m-repository">Repositório RPM Fusion</h2>
                     <div>
                         <div class="alert" role="alert">
@@ -639,6 +628,21 @@ sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfre
 # Update
 sudo dnf upgrade --refresh
                         </code></pre>
+
+                        <h2 id="m-codecs">Codecs</h2>
+                        <div>
+                            <h3>Instalação</h3>
+                            <pre><code>
+# Completely version
+sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+
+# GStreamer and extras
+sudo dnf install gstreamer1-plugins-{bad-*,good-*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+sudo dnf install lame* --exclude=lame-devel
+                        </code></pre>
+                        </div>
+
+                        <h2 id="m-vga">Drivers de Vídeo</h2>
                         <h3>Driver Nvidia</h3>
                         <pre><code>
 # 32bits e 64bits
@@ -671,7 +675,7 @@ flatpak update
                         </div>
                     </div>
 
-                    <h2 id="m-games">Games</h2>
+                    <h2 id="m-gamemode">Gamemode</h2>
                     <div>
                         <h3>GameMode</h3>
                         <p>GameMode é uma combinação de daemon e biblioteca para Linux que permite que jogos solicitem

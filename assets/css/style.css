@@ -343,6 +343,7 @@ pre{
 }
 kbd, code{
     font-family: monospace;
+    font-weight: normal;
 }
 kbd, .code{
     padding: .42rem .84rem;
